@@ -1,0 +1,41 @@
+name: translation
+
+on:
+  pull_request:
+    types: [closed]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # 判断是否 merge 至 main 分支 
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+    steps:
+      # 获取代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      # 检查是否有 /translation 目录下的更改
+      - name: Check translation changes
+        run: |
+          if git diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} | grep '^translation/'; then
+            echo "Translation changes detected, continuing."
+          else
+            echo "No translation changes detected, aborting."
+            exit 1
+          fi
+
+      # 获取修改文件路径
+      - name: Get modify filenames
+        run: |
+          git diff --diff-filter=AM --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} | grep '^translation/' > modify_files.txt
+          cat modify_files.txt
+
+      # 发送请求测试
+      - name: Trigger request
+        run: |
+          for filename in $(cat modify_files.txt); do
+            curl -X POST -H "Content-Type: application/json" -d '{"filename": "'"$filename"'"}' ${{ secrets.SECRET_URL }}
+          done
