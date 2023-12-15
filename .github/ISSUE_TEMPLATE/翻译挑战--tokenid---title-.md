@@ -1,5 +1,5 @@
 ---
-name: 翻译挑战
+name: 翻译挑战-{tokenID}-{title}
 about: 把挑战翻译成多语言
 title: "[翻译挑战]"
 labels: 待翻译
