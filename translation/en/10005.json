@@ -1,6 +1,6 @@
 {
     "title": "Explore ERC-6551",
-    "description": "ERC-6551 proposal defines a system that provides a smart contract account for each ERC-721 token. These accounts bound to tokens allow ERC-721 tokens to own assets and interact with applications without the need to modify existing ERC-721 smart contracts or infrastructure.",
+    "description": "ERC-6551 proposal defines a system that provides a smart contract account for each ERC-721 token. These token bound accounts allow ERC-721 tokens to own assets and interact with applications without the need to modify existing ERC-721 smart contracts or infrastructure.",
     "questions": [
         {
             "title": "Who proposed ERC-6551?",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "title": "Which of the following are correct about Token Binding Accounts (TBA)?",
+            "title": "Which of the following are correct about Token Binding Accounts(TBA)?",
             "options": [
                 "Controlled by private keys",
                 "Essentially a contract account",
@@ -27,15 +27,15 @@
             ]
         },
         {
-            "title": "Which of the following are correct about Token Binding Accounts (TBA)?",
+            "title": "Which of the following are correct about Token Binding Accounts(TBA)?",
             "options": [
-                "Owned by ERC-721 tokens",
-                "Owned by the holder of ERC-721 tokens",
-                "Control is delegated to the holder of ERC-721 tokens"
+                "Owned by ERC-721 token",
+                "Owned by the holder of ERC-721 token",
+                "Right of control is delegated to the holder of ERC-721 token"
             ]
         },
         {
-            "title": "Each non-fungible token can only have one Token Binding Account (TBA)",
+            "title": "Each non-fungible token can only have one Token Binding Account(TBA)",
             "options": [
                 "Correct",
                 "Incorrect"
@@ -75,32 +75,32 @@
         {
             "title": "Which of the following is incorrect about the registry contract?",
             "options": [
-                "Deploy all Token Binding Account (TBA) contracts using the create2 opcode",
-                "The contract address of the Token Binding Account (TBA) can be calculated in advance before actual deployment",
-                "The contract address of the Token Binding Account (TBA) must be known after deployment"
+                "Deploy all Token Binding Account(TBA) contracts using the create2 opcode",
+                "The contract address of the Token Binding Account(TBA) can be calculated in advance before actual deployment",
+                "The contract address of the Token Binding Account(TBA) must be known after deployment"
             ]
         },
         {
-            "title": "What are the factors that affect the creation of Token Binding Account (TBA) contract addresses?",
+            "title": "What are the factors that affect the creation of Token Binding Account(TBA) contract addresses?",
             "options": [
-                "Implementation (IERC6551Account interface) contract address",
+                "Implementation(IERC6551Account interface) contract address",
                 "Token contract address",
                 "Token ID",
                 "Token holder address",
                 "Chain ID",
-                "Salt (random value)"
+                "Salt(random value)"
             ]
         },
         {
             "title": "Which of the following are correct about the registry contract?",
             "options": [
-                "Create Token Binding Account (TBA) contracts through proxy mode",
-                "Create Token Binding Account (TBA) contracts directly",
-                "Can reuse existing on-chain Token Binding Account (TBA) contracts"
+                "Create Token Binding Account(TBA) contracts through proxy mode",
+                "Create Token Binding Account(TBA) contracts directly",
+                "Can reuse existing on-chain Token Binding Account(TBA) contracts"
             ]
         },
         {
-            "title": "Transferring ERC-721 tokens to their Token Binding Account (TBA) will result in assets being unable to be withdrawn",
+            "title": "Transferring ERC-721 tokens to their Token Binding Account(TBA) will result in assets being unable to be withdrawn",
             "options": [
                 "Correct",
                 "Incorrect"
