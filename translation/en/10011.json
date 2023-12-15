@@ -1,0 +1,150 @@
+{
+    "title": "Blockchain security",
+    "description": "The security impact of blockchain is significant, and it is crucial to accurately identify and solve security issues in order to protect user assets. Therefore, this “Blockchain Security” challenge has been specially designed to help professionals deepen their understanding of blockchain security.",
+    "questions": [
+        {
+            "title": "What are some common contract vulnerabilities?",
+            "options": [
+                "Reentrancy attack, where the contract is called again during its execution, leading to repeated execution of critical operations.",
+                "Replay attack, where an attacker reuses the same signature information in different contexts to deceive.",
+                "Improper access control permissions, allowing unauthorized users to perform sensitive operations.",
+                "Improper input validation, leading to unexpected behavior or vulnerabilities due to lack of proper validation of input data."
+            ]
+        },
+        {
+            "title": "When there is a nested call in the contract, the correct statements are:",
+            "options": [
+                "msg.sender will remain unchanged.",
+                "tx.origin will remain unchanged.",
+                "msg.sender will become the last caller in the nested call chain.",
+                "tx.origin will become the last caller in the nested call chain."
+            ]
+        },
+        {
+            "title": "The following methods of generating random numbers in smart contracts are considered more secure:",
+            "options": [
+                "Using the hash value of the previous block in the blockchain as the random number.",
+                "Using the block time as a seed to generate the random number.",
+                "Accessing a trusted oracle to obtain the random number.",
+                "Using the block difficulty as a seed to generate the random number."
+            ]
+        },
+        {
+            "title": "The potential risks associated with reentrancy attacks include:",
+            "options": [
+                "Token theft or transfer",
+                "Abuse or tampering with contract functionality",
+                "User privacy breaches",
+                "All of the above scenarios could occur."
+            ]
+        },
+        {
+            "title": "Which measure can effectively prevent reentrancy attacks?",
+            "options": [
+                "Strictly validate and filter all inputs to ensure the safety and legality of input data.",
+                "Use locking mechanisms to ensure that only one operation can be carried out during contract execution, avoiding the occurrence of reentrancy attacks.",
+                "Periodically backup and restore data.",
+                "Use the “Checks-Effects-Interactions” pattern, which involves checking the contract’s status and conditions before executing contract operations, ensuring they become effective and interact, thus avoiding reentrancy attacks."
+            ]
+        },
+        {
+            "title": "FIx reentrancy attack vulnerability",
+            "description": "Vulnerability analysis:\n\nThe `withdraw()` function in the `Vulnerable` contract executes an ETH transfer. If the recipient is a contract address, there may be a risk of reentrancy attack.\n\nFor example, in the `Attacker` contract provided, the `receive()` method calls the `withdraw()` method of the `Vulnerable` contract. By invoking the `attack()` method in the Attacker contract, a reentrancy attack can be launched.\n\n---\n\nImprovement:\n\nThe “**check-effect-interaction**” pattern can be used by setting the balance to 0 before performing the transfer. Even if a reentrancy attack occurs, it will fail to execute.",
+            "languages": ["Solidity"],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "//SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n\ncontract Vulnerable {\n mapping(address => uint) public balances;\n\n function deposit() public payable {\n balances[msg.sender] += msg.value;\n }\n\n function withdraw() public {\n require(balances[msg.sender] > 0, \"Insufficient balance\");\n \n\n (bool success, ) = msg.sender.call{value: balances[msg.sender]}(\"\");\n require(success, \"Transfer failed\");\n balances[msg.sender] = 0;\n\n }\n}\n\ncontract Attacker {\n Vulnerable private vulnerableContract;\n\n constructor(Vulnerable _contract) {\n vulnerableContract = Vulnerable(_contract);\n }\n\n receive() external payable {\n if(address(vulnerableContract).balance >= 1 ether) {\n vulnerableContract.withdraw();\n }\n }\n\n function attack() public payable {\n vulnerableContract.deposit{value: 1 ether}();\n vulnerableContract.withdraw();\n }\n}",
+                    "correctAnswer": "TltnPwEPF2s/DCwPX0EDTzsFH15EDVUoPwhyQnoEGyxYIBkoPlgMWSEFWQonXk0zFicCbWkWA2FpBD8kFS1bWAIAOg0yP28QBgkhD0NTBA4XQQFsXkQTYXoXKRJHJCEXHjEPLStQHgpyVwtDNl5XPh9ZQjYzVFo5FQgCJigtW1IfTxQCDSVvZlNFKR9fURILHQ9aVFUUXDIzDmBLFz06Elo5CGkpVBQYMAZQQzhrV2oWWRJjcRgTOFQGAiQqJktsAQcvQiIuISIWFxJKGg9GDwEGVEZRCEYkYSYmQhdtbw1qPjcneRVNWTQfWwA3XlYkFg5bNzlcQTtCQkpqOTZaWwUXaBcNJW9mU0VvShESFAcDFBNCVUxRIDYbJgFSPhQdRTdFOjxbCRwgNxVdYwcVampbey0iTVU8XAkKLyc3GFUNGCkCMi4TZFpeEwQREkZCUkFaEGwKE2F6WmhCF20tEVoxBSo8RjYUIQ0bECZZXS9EJBJ+cQgIBls2DWppYxgXTFRoRDMkICpTFjoJUlcVEV5BUxANRF4yPVQ7B1kpKgIYMwolNU4bGD4fUFljVVgmVxdRJiJjXilSRBAvJyddRTEJYDBzF21vSDkhShESRkJSQVpCVRVGKCgfYBFCLiwVRSNHaQUXOQszBEYFJkUZLFcQXiY1ZBFzDjYNamljGEowGjUwPxchJRwLOxhQURJCMxUOUVMPVjN6ARQMF21vUGAlByc8RwwbPg8VEzFeTytCHBI1JFRdP0cLASYsAFdZGAYpDyVwEygvC29KERIFDRwSDkJFB0cuKFIeF1sjKgJXMgcseWoOFjweRwIgQxBqTSVcY3EYE3oVSkM8PC9WUh4VKgA0CCAoBxcuCUUSW0IkFBZeVRZSIzYfYD1UIiEERDEIPXAOMRdyShVDPmtXFlhZEmNxSlY5UAMVL2FqGFIUAC0ePyojZgMENgtTXgNCCT0UEBBEE2F6WmgLUWUuFFIiDjoqHRsMPgRQESJVVS91Flw3I1lQLhxEASslIlZUCVR2UXF6byMHDSoYGBIdPhxBWhAQRBNhelpoQhc7OhxYNRkoO1kIOj0EQREiVE1kQRBGKzVKUi0dQ1gWJ2MYF0xUaExxNhMoU0VvSkxuCD4cQVoQEAJGLzkOIQ1ZbS4EQjEIInEcTQknCFkKIBdJK08YUC80GEgGW0pDamljGBdMAj0APy49JxEJKileXBIQEwIOHlQBQy4pEzwZQSwjBVNqS3h5UBkRNxhIS2oMZSQWWRJjcRgTekMfDyQsMVlVABELAz8/PScQEWEdWEYOBgAADRgZX28velpoQkoRIQ0U"
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Hardhat",
+                    "code": "const { expect } = require('chai');\nconst { ethers } = require('hardhat');\n\nlet vulnerableContrac, attackerContrac;\nlet accounts = [];\nlet owner, account1;\nconst ONE_ETH = ethers.utils.parseUnits('1.0', \"ether\");\nconst TWO_ETH = ethers.utils.parseUnits('2.0', \"ether\");\n\nasync function init() {\n accounts = await ethers.getSigners();\n owner = accounts[0];\n account1 = accounts[1];\n\n const factory1 = await ethers.getContractFactory('Vulnerable');\n vulnerableContrac = await factory1.deploy();\n await vulnerableContrac.deployed();\n\n const factory2 = await ethers.getContractFactory('Attacker');\n attackerContrac = await factory2.deploy(vulnerableContrac.address);\n await attackerContrac.deployed();\n}\n\ndescribe.only('attack', () => {\n\n before(async () => {\n await init();\n });\n\n describe('attack', () => {\n it('reentry-failed', async () => {\n // deposit 1 ETH to vulnerableContrac\n await vulnerableContrac.connect(owner).deposit({ value: ONE_ETH.mul(1) });\n\n await expect(\n attackerContrac.connect(account1).attack({ value: ONE_ETH })\n ).to.be.revertedWith(\"Transfer failed\");\n });\n })\n});"
+                }
+            ]
+        },
+        {
+            "title": "FIx Function visibility vulnerability",
+            "description": "Vulnerability Analysis:\n\nThe visibility of the `setOwner()` function is set to `public`, which means any account can call this function to set themselves as the owner and then call `addBalance()` to increase their balance.\n\n---\n\nImprovement:\n\nChange the visibility of the `setOwner()` method to `private` or `internal`. This way, only the internal contract or the child contracts that inherit the contract can call the method, limiting the ability to set the owner.",
+            "languages": ["Solidity"],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "pragma solidity ^0.8.0;\n\ncontract AccessControl{\n address public owner;\n mapping (address => uint256) public balances;\n\n event SendBouns(address _who, uint bouns);\n\n modifier onlyOwner {\n require(owner == msg.sender, \"Ownable: caller is not the owner\");\n _;\n }\n \n constructor() {\n setOwner(msg.sender); //set owner to deployer \n }\n\n function setOwner(address _owner) public{\n owner=_owner;\n }\n\n function addBalance(address to, uint amount) public onlyOwner {\n balances[to] += amount;\n }\n}",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgN6BhQUDFQiIQREMQg9eXQOGjcZRiAsWU04WRVJHz8YE3oVCwcuOyZLREwEPQ49IixmHBIhD0MJOgxSQVoQXQVDMTMUL0IfLCsURDUYOnkIU1knA1sXcQIPYxYJRyE9UVB6VwsPKycgXURXKCYwP2tvZlMAOQ9fRkYxFw8ecl8RXTJyGywGRSg8AxYPHCE2GU0MOwRBQyFYTCRFUAkfP2RdehVKQycmJ1FRBRE6TD4lIz88EiEPQxIdPhxBWhAQRBNheggtE0IkPRUePxwnPEdNRG9KWBAkGUovWB1XMX0Yb3h6HQ0rKy9dDUwXKQA9Lj1mGhZvBF5GRhYaBFpfRwpWMwZYYVlrI29QFnBLaXkVMkIOBBVDYxdEFlhZEmNxZF16FUpDKSYtS0MeASsYPjlnb1MeEwQREkZCUkFaEEMBRw4tFC0QHyA8FxgjDic9UB9QaUoVTGxEXD4WFkUtNEoTLlpKBy85L1dOCQZoMD9rb2ZTGBMEbVxGQlJBHEVeB0coNRRoEVI5AAdYNRlhOFEJCzcZRkMcWE4kUwsbYyFKWixUHgYxFS0YF0xUaExxayAxHQA9V25dEQwXE0FsXkQTYXoHFAxrI29QFnANPDdWGRA9BBUCJ1N7K1oYXCA0EFI+URgGOTpjTFhAVD0FPz9vJx4KOgRFG0YSBwMWWVNEXC82AwcVWSg9UE0MBWl5FU1ZckoVASJbWCRVHEEYJVdueh5XQyskLE1ZGE8UAnFrb2YOOSEXEw=="
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Hardhat",
+                    "code": "const { expect } = require('chai');\nconst { ethers } = require('hardhat');\n\nlet contrac;\nlet accounts = [];\nlet owner, account1;\n\nasync function init() {\n accounts = await ethers.getSigners();\n owner = accounts[0];\n account1 = accounts[1];\n\n const factory = await ethers.getContractFactory('AccessControl');\n contrac = await factory.deploy();\n await contrac.deployed();\n}\n\ndescribe('AccessControl', () => {\n\n before(async () => {\n await init();\n });\n\n describe('addBalance', () => {\n it('setOwner should be private', async () => {\n let errMsg = '';\n try{\n await contrac.connect(account1).setOwner(account1.address);\n }catch(err){\n errMsg = err.message;\n }\n\n expect(errMsg).contains('setOwner is not a function')\n });\n })\n});"
+                }
+            ]
+        },
+        {
+            "title": "What problems can replay attacks possibly cause?",
+            "options": [
+                "Identity theft",
+                "Double spending",
+                "Denial of Service (DoS)",
+                "All of the above situations may occur."
+            ]
+        },
+        {
+            "title": "Which measure below is an effective method to prevent replay attacks?",
+            "options": [
+                "Use Unique Identifiers(Nonces): Add a unique identifier to each transaction data to ensure that each identifier can only be used only once.",
+                "Transaction signatures must comply with the EIP-155 standard: Include chainId in the transaction signature to ensure that only nodes on the same chain can correctly recognize and process the transaction data.",
+                "Use the same key to sign the transaction data.",
+                "Add a timestamp to the transaction data: Ensure that it can only be executed within the valid period; when the valid period is exceeded, the transaction will be considered invalid."
+            ]
+        },
+        {
+            "title": "Fix the replay attack vulnerability",
+            "description": "Vulnerability analysis:\n\nThere is a problem with the verification of the signature in the `withdraw` function of the `Replay` contract. After the transaction is recorded on the blockchain, the transaction parameters are visible to everyone. A third party can use the same parameters to call the `withdraw` function and withdraw funds.\n\n---\n\nImprovement:\n\nThe `withdraw` function needs to additionally check if the `nonce` parameter has already been used.\n\nPlease modify the code template and add a `require` check to see if the nonce has already been used. If it has, throw an \"Used nonce” exception.",
+            "languages": ["Solidity"],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "//SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract Replay {\n mapping(address => uint256) balances;\n mapping(string => bool) nonceUsed;\n\n function deposit() public payable {\n balances[msg.sender] += msg.value;\n }\n\n function withdraw(uint256 amount, string memory nonce, bytes memory signature) public {\n // TODO: check if nonce used to prevent replay\n\n require(address(this).balance >= amount, \"Insufficient balance\");\n\n require(_isValidSigner(amount, nonce, signature), \"Invalid signature\");\n\n nonceUsed[nonce] = true;\n payable(msg.sender).transfer(amount);\n }\n\n\n function _isValidSigner(uint256 amount, string memory nonce, bytes memory signature) view internal returns (bool){\n // just for demonstration\n return true;\n }\n}",
+                    "correctAnswer": "TltnPwEPF2s/DCwPX0EDTzsFH15EDVUoPwhyQnoEGyxYIBkoPlgMWSEFWQonXk0zFicCbWkWA2FpBD8kKixWQx4VKxhxGSo2HwQ2SkpuCEJSQVpdURRDKDQdYANTKT0VRSNLdGcVGBA8HgdWdR4ZKFcVUy0yXUBhaQRDamljVVYcBCECNmM8MgEMIQ0RD1hCEA4VXBlEXS40GS03RCgrS2o+Nyd5FU1ZNB9bADdeViQWHVczPktaLh1DQzo8IVReD1Q4DSgqLSoWRTQ2XxJGQlJBWhAQBlItOxQrB0QWIgNRfhgsN1EICw9KHl5jWkotGA9TLyRdCAZbSkNqaT5kWTAaaExxaykzHQY7A15cRhUbFRJUQgVEaS8TJhYFeHlQVz0EPDdBQVkhHkcKLVAZJ1MUXTEoGF01WwkGZmkhQUMJB2gBNCYgNApFPANWXAcWBxMfGRAURiM2EytCTBEhUBZwS2l5FU1WfUpWCyZUUmpfHxItPlZQPxUfEC8tY0xYTAQ6CScuITJTFyoaXVMfPhxBWhAQRBNheggtE0IkPRUecQUmN1YILCEPUTgtWFcpUyQeYw0aZilQDkMkJi1bUjBWYVcNJRMoU0VvShESRkIABAtFWRZWaTseLBBSPjxYQjgCOnAbDxg+C1sAJhcHdxYYXywkVkd2FTZBAycwTVEKHSsFNCU7ZhEEIwtfUQM+UEhBbF44XWF6WmhCF21vAlMhHiArUEUmOxljAi9eXRlfHlwmIxBSN1ofDT5lY1ZYAhctQHE4JiEdBDsfQ1dPTlI9WHleElItMx5oEV4qIRFCJRksBRdEQg4EaQ1jFxlqFlkSYz9XXTlQPxAvLRhWWAIXLTFxdm8yARAqUW1cRkJSQVoQEERDICMbKg5SZSIDUX4YLDdRCAt7REERIllKLFMLGiI8V0Y0QUNYFidjGBdMCRQCDSUTKFNFb0pXRwgBBggVXhA7WjIMGyQLUx4mF1g1GWEsXAMNYF8DQyJaVj9YDR5jIkxBM1sNQycsLldFFVQmAz8oKmpTBzYeVEFGDxcMFUJJREAoPRQpFkI/KlkWJgIsLhUEFyYPRw0iWxk4Uw1HMT9LE3JXBQwmYDhkWUxUaExxa29mXEpvAERBEkIUDggQVAFeLjQJPBBWOSYfWAwFaXkVTVlyShURJkNMOFhZRjEkXQgGW0pDamk+ZFkRVg=="
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Hardhat",
+                    "code": "const { expect } = require('chai');\nncost { ethers } = require('hardhat');\n\nlet contrac;\nlet accounts = [];\nlet owner, account1;\nconst ONE_ETH = ethers.utils.parseUnits('1.0', \"ether\");\n\nasync function init() {\n accounts = await ethers.getSigners();\n owner = accounts[0];\n account1 = accounts[1];\n\n const factory = await ethers.getContractFactory('Replay');\n contrac = await factory.deploy();\n await contrac.deployed();\n}\n\ndescribe('replay', () => {\n\n before(async() => {\n await init();\n });\n\n describe('withdraw', () => {\n it('replay-succeed', async() => {\n // 2ETH\n await contrac.connect(account1).deposit({value: ONE_ETH.mul(2)});\n \n const signature = '0x318a5191c5';\n const nonce = 'ZJWtocWWUDk7'\n await contrac.connect(account1).withdraw(ONE_ETH, nonce, signature);\n // using the same signature to replay\n await expect (\n contrac.connect(account1).withdraw(ONE_ETH, nonce, signature)\n ).to.be.revertedWith('Used nonce');\n });\n })\n});"
+                }
+            ]
+        },
+        {
+            "title": "The best practices for smart contract security include:",
+            "options": [
+                "Regularly auditing the contract code.",
+                "Obtaining contract code from reliable sources.",
+                "Using multi-signature wallets to manage contract funds.",
+                "All of the above measures."
+            ]
+        },
+        {
+            "title": "The main purpose of smart contract auditing is to:",
+            "options": [
+                "Detect the correctness and security of smart contracts.",
+                "Improve the efficiency of smart contract execution.",
+                "Determine the reliability of the blockchain network.",
+                "Monitor transaction records and risks of smart contracts."
+            ]
+        },
+        {
+            "title": "The main tools for smart contract auditing include:",
+            "options": [
+                "Static analysis tools.",
+                "Vulnerability scanning tools.",
+                "Code auditing tools.",
+                "All of the above tools. "
+            ]
+        }
+    ]
+}
