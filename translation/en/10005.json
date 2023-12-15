@@ -1,0 +1,110 @@
+{
+    "title": "Explore ERC-6551",
+    "description": "ERC-6551 proposal defines a system that provides a smart contract account for each ERC-721 token. These token bound accounts allow ERC-721 tokens to own assets and interact with applications without the need to modify existing ERC-721 smart contracts or infrastructure.",
+    "questions": [
+        {
+            "title": "Who proposed ERC-6551?",
+            "options": [
+                "Vitalik Buterin",
+                "Benny Giang",
+                "Hayden Adams"
+            ]
+        },
+        {
+            "title": "What is the core content of ERC-6551?",
+            "options": [
+                "Binding accounts for non-fungible tokens",
+                "Binding accounts for fungible tokens"
+            ]
+        },
+        {
+            "title": "Which of the following are correct about Token Binding Accounts(TBA)?",
+            "options": [
+                "Controlled by private keys",
+                "Essentially a contract account",
+                "Can own any type of on-chain assets",
+                "Can interact with DAPP"
+            ]
+        },
+        {
+            "title": "Which of the following are correct about Token Binding Accounts(TBA)?",
+            "options": [
+                "Owned by ERC-721 token",
+                "Owned by the holder of ERC-721 token",
+                "Right of control is delegated to the holder of ERC-721 token"
+            ]
+        },
+        {
+            "title": "Each non-fungible token can only have one Token Binding Account(TBA)",
+            "options": [
+                "Correct",
+                "Incorrect"
+            ]
+        },
+        {
+            "title": "What is the compatibility of ERC-6551?",
+            "options": [
+                "Incompatible with previously deployed ERC-721 contracts",
+                "Backward compatible with most ERC-721 contracts"
+            ]
+        },
+        {
+            "title": "Cryptopunks is incompatible with this proposal because the Cryptopunks contract does not implement which method?",
+            "options": [
+                "ownerOf",
+                "transfer",
+                "tokenURI"
+            ]
+        },
+        {
+            "title": "What are the two main components of this proposal?",
+            "options": [
+                "An unlicensed registry for deploying bound token accounts",
+                "Standard interface for implementing token binding accounts",
+                "ERC-721 extension interface"
+            ]
+        },
+        {
+            "title": "Which of the following are correct about the registry contract?",
+            "options": [
+                "Unlicensed",
+                "Immutable",
+                "No owner"
+            ]
+        },
+        {
+            "title": "Which of the following is incorrect about the registry contract?",
+            "options": [
+                "Deploy all Token Binding Account(TBA) contracts using the create2 opcode",
+                "The contract address of the Token Binding Account(TBA) can be calculated in advance before actual deployment",
+                "The contract address of the Token Binding Account(TBA) must be known after deployment"
+            ]
+        },
+        {
+            "title": "What are the factors that affect the creation of Token Binding Account(TBA) contract addresses?",
+            "options": [
+                "Implementation(IERC6551Account interface) contract address",
+                "Token contract address",
+                "Token ID",
+                "Token holder address",
+                "Chain ID",
+                "Salt(random value)"
+            ]
+        },
+        {
+            "title": "Which of the following are correct about the registry contract?",
+            "options": [
+                "Create Token Binding Account(TBA) contracts through proxy mode",
+                "Create Token Binding Account(TBA) contracts directly",
+                "Can reuse existing on-chain Token Binding Account(TBA) contracts"
+            ]
+        },
+        {
+            "title": "Transferring ERC-721 tokens to their Token Binding Account(TBA) will result in assets being unable to be withdrawn",
+            "options": [
+                "Correct",
+                "Incorrect"
+            ]
+        }
+    ]
+}
