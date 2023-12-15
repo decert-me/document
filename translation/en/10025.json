@@ -1,0 +1,21 @@
+{
+    "title": "Programming Basic Examination for OpenSpace Web3 Bootcamp",
+    "description": "This is a simple test of programming and English skills. The questions that follow will evaluate your understanding of Linux commands and programming concepts.\nPlease answer the question with the Linux command, SQL query statement, and code.",
+    "questions": [
+        {
+            "title": "How to list all files, including hidden files, in the current directory using a Linux command?"
+        },
+        {
+            "title": "Rename 'world-hello.txt' to 'hello_world.md' using the Linux command."
+        },
+        {
+            "title": "How to request the latest code using Git command. "
+        },
+        {
+            "title": "There is a MySQL table named `students` with columns `id`, `name`, `gender`, and `age`. Please write a SQL\nquery to retrieve male students who are older than 10 years old."
+        },
+        {
+            "title": "Please provide code to find the minimum number in an array using your preferred programming language."
+        }
+    ]
+}

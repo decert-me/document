@@ -1,0 +1,74 @@
+{
+    "title": "ERC-20 ",
+    "description": "ERC-20是以太坊上最重要的智能合约标准之一。它已经成为以太坊区块链上用于可替换通证(代币)实现的所有智能合约的技术标准。\nERC-20 标准功能包括：将代币从一个帐户转到另一个帐户；获取帐户的当前代币余额；获取代币的总供应量；批准由第三方帐户使用帐户中一定的代币额度",
+    "questions": [
+        {
+            "title": "在 ERC-20 标准中，哪个函数用于查询代币余额？",
+            "options": ["balance", "balanceOf", "amount"]
+        },
+        {
+            "title": "在 ERC-20 标准中，哪个函数用于查询代币符号？",
+            "options": ["icon", "name", "symbol", "figure"]
+        },
+        {
+            "title": "在 ERC-20 标准中，哪个函数用于执行代币转账？",
+            "options": ["send", "transfer", "approve", "mint"]
+        },
+        {
+            "title": "在 ERC-20 标准中，哪个函数用于查询代币符号的小数位数？",
+            "options": ["decimals", "decimal", "digits", "digit"]
+        },
+        {
+            "title": "在 ERC-20 标准中，哪个函数用于查询代币总供应量？",
+            "options": ["totalSupply", "supply", "totalAmount", "amount"]
+        },
+        {
+            "title": "ERC-20 标准的发行总量是否可以动态调整？",
+            "options": [
+                "是，可以动态调整",
+                "否，发行总量固定不变",
+                "取决于合约实现"
+            ]
+        },
+        {
+            "title": "在 ERC-20 标准中，代币转账会触发哪种类型的事件？",
+            "options": ["Approve", "Send", "Mint", "Transfer"]
+        },
+        {
+            "title": "在 ERC-20 标准中，approve 函数的作用是什么？",
+            "options": [
+                "查询代币授权额度",
+                "执行代币转账",
+                "授权第三方可以从自己的账户转移代币"
+            ]
+        },
+        {
+            "title": "下面关于 approve 函数的说法正确的是：",
+            "options": [
+                "只能授权给一个地址",
+                "可以授权给多个地址",
+                "同一地址只能授权一次",
+                "同一地址可以授权多次"
+            ]
+        },
+        {
+            "title": "在 ERC-20 标准中，transferFrom 函数的作用是什么？",
+            "options": [
+                "从自己的账户转移代币",
+                "授权第三方可以从自己的账户转移代币"
+            ]
+        },
+        {
+            "title": "transferFrom 函数执行转账时，是否需要授权？",
+            "options": ["是，必须先授权", "否，无需授权", "取决于合约实现"]
+        },
+        {
+            "title": "下面关于 allowance 函数的说法正确的是：",
+            "options": [
+                "查询账户的代币余额 ",
+                "查询账户之间的代币授权额度",
+                "必须先进行授权"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,266 @@
+{
+    "title": "Solidity 开发基础测试",
+    "description": "本挑战用来测试以太坊智能合约开发基础知识的了解，主要涉及的内容有开发基础、Solidity 语法及程序的理解。\n挑战包含约 30 道选择题，可能有一个或多个答案，请仔细答题。",
+    "questions": [
+        {
+            "title": "以下哪一项**不是** Remix 在线IDE的功能：",
+            "options": [
+                "代码补全提示",
+                "代码编译及部署",
+                "编译器版本选择",
+                "查看账号历史交易记录"
+            ]
+        },
+        {
+            "title": "MetaMask 钱包可以连接以下哪些网络：",
+            "options": [
+                " BNB Chain",
+                "以太坊",
+                "Polygon 链 ",
+                "Tron（波场）",
+                "Cosmos"
+            ]
+        },
+        {
+            "title": "以下关于 Solidity 语言描述正确的是：",
+            "options": [
+                "Solidity 定义变量时和 JavaScript 语法类似，不需要指定变量的数据类型",
+                "Solidity 是静态类型语言，因此定义变量时必须指定变量的类型",
+                "Solidity 是一门高级编程语言， 支持继承特性，不过被继承的”父“合约需要先部署。"
+            ]
+        },
+        {
+            "title": "以下关于 Solidity 语法描述正确的是：",
+            "options": [
+                "Solidity 使用 library 关键词定义一个库",
+                "Solidity 使用 contract 关键词定义合约",
+                "Solidity 使用 class 关键词定义类",
+                "Solidity 使用 struct 关键词定义结构体"
+            ]
+        },
+        {
+            "title": "以下关于语句 `pragma solidity ^0.8.0;` 的含义描述正确的有：",
+            "options": [
+                "用来指定用哪个版本的编译器编译代码",
+                "需要使用 >= 0.8.0 但< 0.9 版本的编译器 ",
+                "功能上和语句  pragma solidity >=0.8.0 <0.9.0; 等价"
+            ]
+        },
+        {
+            "title": "在合约中定义了 `uint public total;` 状态变量， 那么:",
+            "options": [
+                "total 的最大值是 2^256 - 1",
+                "total 的最大值是 2^256",
+                "total 的最小值是 0",
+                "total 的默认值是 0 ",
+                "total 的最小值是-2^256"
+            ]
+        },
+        {
+            "title": "用 uint 定义整型时，可以加一个数值指定变量占用的空间大小， 如： uint8，下列哪个关键字是**不合法**的数据类型：",
+            "options": [
+                "uint256",
+                "uint24",
+                "uint12",
+                "uint32"
+            ]
+        },
+        {
+            "title": "以下关于uint 的使用 ，以下代码正确的是:",
+            "options": [
+                "int8 a = -1;",
+                "uint8 x = 120 + 360;",
+                "uint y = 120 / 1.51;",
+                "uint z = 2 ** 8;"
+            ]
+        },
+        {
+            "title": " address(this).balance 的含义是:",
+            "options": [
+                "获取我的账号持有多少以太币 ？",
+                "获取当前合约持有多少以太币"
+            ]
+        },
+        {
+            "title": "在链上部署了一个合约, 合约地址为 `h` ， 其合约代码为：\n\n```\n contract Hello {\n    function sayHi() public {\n    }\n} \n```\n则：",
+            "options": [
+                "用户可以向地址 h 转入以太币",
+                "可以声明合约类型 Hello c = Hello(h),  并调用 c.sayHi(); ",
+                "h 合约将永远在链上存在无法销毁"
+            ]
+        },
+        {
+            "title": "Solidity 中复杂类型需要定义数据所在的位置，以下关于数据位置描述正确的是：",
+            "options": [
+                "Solidity 中有 3 个关键字表示位置：memory（内存） 、storage（存储）、calldata（调用数据）",
+                "calldata 仅能保存不可变数据",
+                "memory（内存）的数据仅存在于函数调用期间",
+                "若有两个数据位置不同的变量进行赋值，则会进行数据拷贝。 "
+            ]
+        },
+        {
+            "title": "在函数内声明数组 `uint[] memory c = new uint[](7);` ， 则以下语句正确的有：",
+            "options": [
+                "uint l =  c.length;",
+                "c.push(10);",
+                "uint x = c.pop();",
+                "c[7] = 10;"
+            ]
+        },
+        {
+            "title": "映射是一个键值对的存储结构， 若定义：`mapping(address => uint) public balances;` 表示地址持有的余额， 则：",
+            "options": [
+                "使用 balances.length; 可获取到地址数量",
+                "获取 0 地址余额可使用： balances[address(0)] ",
+                "balances[msg.sender] = 10 表示更新调用地址的余额",
+                "balances[address(this)] 表示获取合约持有的余额 "
+            ]
+        },
+        {
+            "title": "以下有 3 个结构体定义：\n```\nstruct CustomType1 {\n    bool myBool;\n    uint myInt;\n}\n\nstruct CustomType2 {\n   string myString,\n    uint myInt\n}\n\n\nstruct CustomType3 {\n    mapping(string=>CustomType3) indexs;\n    uint myInt;\n}\n```\n\n哪些结构体定义是**错误**的：",
+            "options": [
+                "CustomType1",
+                "CustomType2",
+                "CustomType3"
+            ]
+        },
+        {
+            "title": "以下关于 address 地址类型使用正确的有：",
+            "options": [
+                " address a =  address(1); ",
+                "if (address(2) > address(1)) {            }",
+                "payable(a).transfer(1) "
+            ]
+        },
+        {
+            "title": "以下货币单位单位换算正确的是：",
+            "options": [
+                "1 gwei == 1e9 wei ",
+                "1 gwei == 1e12 wei",
+                " 1 ether == 1e18 wei  "
+            ]
+        },
+        {
+            "title": "Solidity 描述函数的可见性有哪些关键词：",
+            "options": [
+                "private",
+                "internal",
+                "public",
+                "protected",
+                "external"
+            ]
+        },
+        {
+            "title": "关于合约构造函数描述正确的是：",
+            "options": [
+                "构造函数可以缺省，即可以不写，使用默认构造函数",
+                "构造函数仅在部署时执行",
+                "构造函数是 ABI 的一部分",
+                "构造函数 可以为 internal 的函数，此时部署时不会执行。"
+            ]
+        },
+        {
+            "title": "有函数定义：\n```\nfunction f() public view returns (uint x) { \n    x = msg.value;\n}\n```\n\n则：",
+            "options": [
+                "这个函数无法编译通过  ",
+                "此函数返回传入函数的wei 数量",
+                "函数永远返回0"
+            ]
+        },
+        {
+            "title": "函数修改器 modifier 通常用来约束一个函数，例如进行某种检查， 阅读如下代码:\n\n```\ncontract Test {\n    uint public a = 10;\n\n    modifier mf1(uint b) {\n       require(b > 10);\n       _;\n       a = b + 1 ;\n    }\n\n    function test1() mf1(20) public {\n       a = 1;\n    }\n}\n```\n\n\n运行 test1 后， a 的值为：",
+            "options": [
+                "10",
+                "21",
+                "20",
+                "1"
+            ]
+        },
+        {
+            "title": "合约中若有代码 `event Deposit(address indexed user, uint value);` ，下述描述正确的是 :",
+            "options": [
+                "该语句将报错，因为事件需要有实现。",
+                "该语句正确，其定义了一个事件。",
+                "可以使用 `emit Deposit(msg.sender, 10);` 触发事件。",
+                "若有事件触发，可以在合约中获取到事件。",
+                " 触发事件后，需要在链下获取事件。"
+            ]
+        },
+        {
+            "title": "`require` 通常用于错误检查， 以下代码在运行 `test` 函数后， 结果正确的是:\n\n```\ncontract Test {\n    uint public a = 10;\n    uint public b = 0;\n\n    function test() public returns (uint) {\n        a += 5;\n        require(a < 10, \"invalid num\");\n        b += 1;\n    }\n}\n```",
+            "options": [
+                "运行test会回退（revert）， 因此 a,b 结果不变，即 a = 10， b = 0; ",
+                " 成功运行，结果为 a = 15， b = 1",
+                " 成功运行， 结果为 a = 15， b = 0"
+            ]
+        },
+        {
+            "title": "以下关于合约继承代码，语法正确的是：",
+            "options": [
+                "contract A override B { }",
+                "contract A is B { }",
+                "contract A virtual B { }",
+                "contract A has B { }"
+            ]
+        },
+        {
+            "title": "有以下接口定义：\n\n```\ninterface ITest1 {\n  function test(uint i) external returns (uint);\n}\n\ninterface ITest2 {  \n  function test(uint i) external returns (uint) {}\n}\n\ninterface ITest3 {\n  function test(uint i) public returns (uint);\n}\n\ninterface ITest4 {\n  Uint external a;\n  function test(uint i) external returns (uint);\n}\n```\n\n正确的是：",
+            "options": [
+                "ITest1",
+                "ITest2",
+                "ITest3",
+                "ITest4"
+            ]
+        },
+        {
+            "title": "以下关于 virtual 关键字描述正确的是：",
+            "options": [
+                "用 virtual 修饰函数表示函数可以被重写",
+                "用 virtual 修饰函数表示函数可以不用实现",
+                "用 virtual 修饰函数， 是虚函数不可以读写状态 ",
+                "合约中有用 virtual 修饰函数，则合约不可以被部署"
+            ]
+        },
+        {
+            "title": "以下关于 msg.sender 的说法正确的是：\n",
+            "options": [
+                "表示交易发起者的地址， 只能是用户地址（EOA 地址）",
+                "表示当前外部调用者的地址， 若在 A 合约中调用 B 合约的函数b，则在 函数b 中， msg.sender 为 A 合约地址",
+                "在函数调用中，若想变更调用者的地址， 可以对msg.sender 赋值进行修改"
+            ]
+        },
+        {
+            "title": "要把合约部署到链上， 哪些条件时必要的？",
+            "options": [
+                "部署账号需要有足够的 ETH 作为手续费",
+                "需要连接上区块链网络（可通过 PRC 或钱包链接）",
+                "需要获取网络的节点的许可",
+                "有合约代码或字节码 "
+            ]
+        },
+        {
+            "title": "创建合约有哪几种方法：",
+            "options": [
+                "向零地址发起一笔包含创建合约字节码的交易",
+                "在合约里使用 new 关键字创建合约。",
+                "使用 create 关键字创建合约。",
+                "使用 create2 关键字创建合约。"
+            ]
+        },
+        {
+            "title": "关于 receive 及 fallback 函数描述正确的是？",
+            "options": [
+                "receive 和 fallback 函数和普通函数没有区别，用户可以直接调用",
+                "当用户向一个合约地址转以太币时，若合约有receive 函数，则receive会被调用",
+                "当用户调用一个合约地址下不存在的函数时，receive 函数会被调用。",
+                "当用户调用一个合约地址下不存在的函数时，若有 fallback 函数，则fallback会被调用， 若没有 fallback 函数则出错"
+            ]
+        },
+        {
+            "title": "以下 buy 函数需要接收以太币（ether）\n```\nfuction buy(uint tokenAmount) public ___ {\n    ...\n}\n\n```\n\n在下划线处应该填入什么关键字？",
+            "options": [
+                "payable"
+            ]
+        }
+    ]
+}

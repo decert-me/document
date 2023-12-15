@@ -1,0 +1,144 @@
+{
+    "title": "Foundry 框架合约开发测试",
+    "description": " Foundry 是一个 Solidity 智能合约开发工具链。本挑战用来测试对 Foundry 开发框架的了解，主要涉及的内容有编译、测试、部署、以及如何进行代码开源验证。\n挑战包含约 16 道选择题，可能有一个或多个答案，请仔细答题。",
+    "questions": [
+        {
+            "title": "关于 Foundry 开发框架，以下描述正确的是：",
+            "options": [
+                "Foundry 是一个智能合约开发工具。",
+                "Foundry 由三个不同的命令行工具（CLI）组成，包括forge，cast，和anvil。",
+                "帮助 Solidity 开发者更加高效地开发和测试智能合约。",
+                "帮助 Move 开发者更加高效地开发和测试智能合约。"
+            ]
+        },
+        {
+            "title": "创建一个新的 Foundry 项目，以下描述正确的是：",
+            "options": [
+                "使用 `forge init hello_foundry` 初始化一个新项目。",
+                "使用 `forge create hello_foundry` 初始化一个新项目。",
+                "Foundry 项目可以与 Hardhat 一起工作。",
+                "使用 forge 命令初始化的项目包含默认模板。"
+            ]
+        },
+        {
+            "title": "通常在新创建的 Foundry 项目包含哪些文件或文件夹：",
+            "options": [
+                "src: 智能合约文件目录。",
+                "scripts ：部署脚本目录。",
+                "test：智能合约测试用例文件夹。",
+                "lib：依赖库。",
+                "foundry.toml: 配置文件。"
+            ]
+        },
+        {
+            "title": "关于 `foundry.toml` 配置文件的作用描述正确的是:",
+            "options": [
+                "在 foundry.toml 可以在同一 profile 中配置多个 solidity 编译器版本。",
+                "在 foundry.toml 可以在不同 profile 中配置不同 solidity 编译器版本。",
+                "运行 forge 时，可以使用 FOUNDRY_PROFILE 环境变量指定要使用的配置文件。",
+                "在 foundry.toml 可以配置不同链的RPC端点。"
+            ]
+        },
+        {
+            "title": "关于 Foundry 的依赖项，说法正确的是",
+            "options": [
+                "使用 forge install 安装一个或多个依赖。",
+                "安装依赖项时，不能指定依赖项版本。",
+                "要更新依赖项时，使用 forge update 命令。",
+                "要删除一个或多个依赖项，使用 forge-remove 命令。"
+            ]
+        },
+        {
+            "title": "进行合约测试的主要目的是：",
+            "options": [
+                "增加以太坊网络的吞吐量。",
+                "优化以太坊智能合约的编译过程。",
+                "验证智能合约是否符合预期的行为。",
+                "加速以太坊区块的确认时间。"
+            ]
+        },
+        {
+            "title": "Foundry 使用哪种编程语言编写智能合约测试？",
+            "options": ["JavaScript", "Vyper", "Move", "Solidity"]
+        },
+        {
+            "title": "关于 Foundry 工程中测试说法正确的是",
+            "options": [
+                "可以使用 forge test 命令运行测试。",
+                "可以使用作弊码（Cheatcodes） 操纵区块链的状态。",
+                "测试函数必须以 test 为前缀。",
+                "为每个测试创建 Gas 使用快照，可以使用 forge-snapshot 命令。"
+            ]
+        },
+        {
+            "title": "关于 Foundry 的作弊码（Cheatcodes） 下列说法正确的是：",
+            "options": [
+                "Forge 标准库 不包含作弊码功能，需要另外导入作弊码库",
+                "使用 roll(uint256) 函数设置区块时间",
+                "使用 prank(address) 函数设置下一次调用的 msg.sender。",
+                "使用 sign(uint256 privateKey, bytes32 digest) 函数对digest进行签名。"
+            ]
+        },
+        {
+            "title": "在 Foundry 工程中关于调试智能合约以下的正确的是：",
+            "options": [
+                "可以在Solidity 中引入 \"hardhat/console.sol\" 调用 console.log() 打印一些变量的值",
+                "可以在Solidity 中引入 \"forge-std/console.sol\" 调用 console.log() 打印一些变量的值",
+                "默认的日志级别能够显示 console.log() 打印的结果",
+                "可以使用-v标志增加日志级别，显示更详细的日志"
+            ]
+        },
+        {
+            "title": "在 Foundry 工程中关于编译智能合约说法正确的是？",
+            "options": [
+                "通过执行 forge build 完成构建",
+                "通过执行 forge compile 完成构建",
+                "在编译前，Foundry 会判断是否存在符合要求的编译器，如果没有则会连网下载编译器。",
+                "编译成功后，会生成合约的 ABI 与 字节码。"
+            ]
+        },
+        {
+            "title": "Foundry 部署智能合约过程中，以下描述正确的是？",
+            "options": [
+                "使用 forge deploy 命令部署智能合约",
+                "使用 forge create 命令部署智能合约",
+                "使用 -private-key <RAW_PRIVATE_KEY> 选项使用提供的私钥部署",
+                "使用 -rpc-url 选项设置RPC端点"
+            ]
+        },
+        {
+            "title": "如何在 Foundry 中连接不同的以太坊网络？",
+            "options": [
+                "Foundry 会自动判断所处的以太坊网络，自动连接。",
+                "使用 -rpc-url 选项设置 RPC 端点",
+                "不能在 foundry.toml 中配置RPC 端点，只能通过命令行传入。"
+            ]
+        },
+        {
+            "title": "如何使用 Foundry 在 Etherscan 进行合约源码验证，操作正确的是:",
+            "options": [
+                "在部署智能合约过程中，可以添加 -verify 参数实现部署后验证合约。",
+                "使用 forge verify-contract 命令验证智能合约",
+                "使用 --chain chain_name 参数设置链的名称",
+                "使用 -etherscan-api-key 参数设置 Etherscan API 密钥"
+            ]
+        },
+        {
+            "title": "在使用anvil Fork时，是否可以实时修改以太坊链上区块链的状态？",
+            "options": [
+                "是的，可以实时修改",
+                "不可以，只能用于静态快照",
+                "只能修改合约状态，不能修改其他数据",
+                "只能模拟当前区块之前的状态"
+            ]
+        },
+        {
+            "title": "关于 anvil 命令以下描述正确的是",
+            "options": [
+                "anvil 可以创建一个本地测试网",
+                "anvil Fork 主网的命令是：anvil --fork-url rpc_url ",
+                "fork 主网后，能够发送模拟交易并模拟合约调用"
+            ]
+        }
+    ]
+}

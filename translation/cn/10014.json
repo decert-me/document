@@ -1,0 +1,38 @@
+{
+    "title": "gas 优化",
+    "description": "编写Solidity 代码时，如何做到消耗更少的 gas ，同时实现相同的业务逻辑。",
+    "questions": [
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\n\ncontract A {\n uint256 public number;\n\n function doSomething() public {\n uint256 _number = number;\n require(_number < 10);\n number = _number + 1;\n }\n}\n\ncontract B {\n uint256 public number;\n\n function doSomething() public {\n require(number < 10);\n number = number + 1;\n }\n}\n```\n\n合约 A 和 B 的 `doSomething()`函数实现同样的功能，谁更省 gas ？\n",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "pragma solidity ^0.8.0;\n\n```\ncontract A {\n address owner;\n\n constructor() {\n owner = msg.sender;\n }\n}\n```\n\n```\ncontract B {\n address owner;\n\n constructor() payable {\n owner = msg.sender;\n }\n}\n```\n\n部署 A 和 B 合约，谁更省 gas ？\n",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\ncontract GasSkills {\n constructor() {}\n \n function mint(uint256 amount) internal pure {\n uint totalSupply = 0;\n totalSupply += amount;\n }\n\n function mint_184E17(uint256 amount) internal pure {\n uint totalSupply = 0;\n totalSupply += amount;\n }\n}\n```\n\n函数 `mint` 和 `mint_184E17` 实现同样的功能，谁更省 gas ？",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\ncontract GasSkills {\n constructor() {}\n\n function A(uint x) internal view calGas {\n require(x > 99);\n }\n\n function B(uint x) internal view calGas {\n require(x >= 100);\n }\n}\n```\n\n函数 A 和 B 实现同样的功能，谁更省 gas ？",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\ncontract A {\n uint128 a = 1;\n uint256 b = 2;\n uint128 c = 3;\n\n constructor() {}\n}\n\ncontract B {\n uint128 a = 1;\n uint128 c = 3;\n uint256 b = 2;\n\n constructor() {}\n}\n```\n\n部署 A 和 B 合约，谁更省 gas ？",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\ncontract A {\n uint256 private constant _NOT_ENTERED = 0;\n uint256 private constant _ENTERED = 1;\n uint256 private _status = _NOT_ENTERED;\n\n constructor() {}\n\n function doSomething() external {\n require(_status != _ENTERED, \"ReentrancyGuard: reentrant call\");\n\n _status = _ENTERED;\n\n // do something\n\n _status = _NOT_ENTERED;\n }\n}\n\ncontract B {\n uint256 private constant _NOT_ENTERED = 1;\n uint256 private constant _ENTERED = 2;\n uint256 private _status = _NOT_ENTERED;\n\n constructor() {}\n\n function doSomething() external {\n require(_status != _ENTERED, \"ReentrancyGuard: reentrant call\");\n\n _status = _ENTERED;\n\n // do something\n\n _status = _NOT_ENTERED;\n }\n}\n\n```\n\nA 和 B 合约的 `doSomething()` 函数都实现了防重入机制，谁更省 gas ？",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\ncontract A {\n uint256 constant TOTLA_SUPPLY = 10000;\n\n function getSupply() external view returns (uint256) {\n return TOTLA_SUPPLY;\n }\n}\n\ncontract B {\n uint256 TOTLA_SUPPLY = 10000;\n\n function getSupply() external pure returns (uint256) {\n return TOTLA_SUPPLY;\n }\n}\n\n```\n\n部署 A 和 B 合约，谁更省 gas ？\n",
+            "options": ["A", "B", "无差别"]
+        },
+        {
+            "title": "```\npragma solidity ^0.8.0;\n\ncontract A {\n uint counter;\n\n function loop() public {\n for (uint i; i < 10; i++) {\n counter++;\n }\n }\n}\n\ncontract B {\n uint counter;\n\n function loop() public {\n uint i;\n\n do {\n counter++;\n ++i;\n } while (i < 10);\n }\n}\n```\n\n合约 A 和 B 的`loop()` 函数分别使用 for/do...while 循环实现相同的逻辑，谁更省 gas？",
+            "options": ["A", "B", "无差别"]
+        }
+    ]
+}

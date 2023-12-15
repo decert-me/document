@@ -1,0 +1,90 @@
+{
+    "title": "Golang 以太坊开发测试",
+    "description": "以太坊官方实现 Go-ethereum ，也被简称为Geth，是最流行的以太坊客户端。\n使用Golang开发应用程序时，Geth提供了读写区块链的一切功能。\n本挑战用来测试对 Golang 以太坊开发基础知识的了解。\n挑战包含约 11 道选择题，可能有一个或多个答案，请仔细答题。",
+    "questions": [
+        {
+            "title": "Golang 以太坊开发一般有哪些库?",
+            "options": ["go-ethereum", "go-solidity-sha3", "foundry", "hardhat"]
+        },
+        {
+            "title": "go-solidity-sha3 库有什么功能？",
+            "options": [
+                "生成以太坊账户",
+                "运行 Solidity 程序",
+                "以太坊智能合约交互",
+                "生成 Keccak256 签名"
+            ]
+        },
+        {
+            "title": "go-ethereum 是什么？",
+            "options": [
+                "一个 JavaScript 库",
+                "一个 Python 框架",
+                "一个 Golang 实现的以太坊客户端",
+                "一个 Java 开发工具"
+            ]
+        },
+        {
+            "title": "go-ethereum 是官方以太坊实现，它使用哪种编程语言开发？",
+            "options": ["C++", "Java", "Python", "Golang"]
+        },
+        {
+            "title": "使用 go-ethereum 连接到以太坊，下列操作正确的是",
+            "options": [
+                " client, err := ethclient.Dial(\"https://cloudflare-eth.com\")",
+                "client, err := ethclient.Dial(\"/home/user/.ethereum/geth.ipc\")",
+                "client, err := ethclient.Dial(\"wss://cloudflare-eth.com/ws\")",
+                "client, err := ethclient.Dial(\"grpc://cloudflare-eth.com/grpc\")"
+            ]
+        },
+        {
+            "title": "go-ethereum 中的 “Whisper” 是什么？",
+            "options": [
+                "以太坊虚拟机",
+                "以太坊网络协议",
+                "以太坊的 P2P 通信协议",
+                "以太坊的加密货币"
+            ]
+        },
+        {
+            "title": "以太坊中的签名是使用哪种加密算法实现的？",
+            "options": ["RSA", "MD5", "SHA-256", "ECDSA"]
+        },
+        {
+            "title": "使用 go-ethereum 查询一个账户在最新区块的以太坊余额，下列操作正确的是：",
+            "options": [
+                "balance, err := client.BalanceAt(context.Background(), account, 0)",
+                "balance, err := client.BalanceAt(context.Background(), account, nil)",
+                "balance, err := client.PendingBalanceAt(context.Background(), account, 0)",
+                "balance, err := client.PendingBalanceAt(context.Background(), account, nil)"
+            ]
+        },
+        {
+            "title": "使用 go-ethereum 获取当前以太坊网络上建议的 Gas 价格或建议的 Gas 小费上限，下列操作正确的是：",
+            "options": [
+                "gasPrice, err = client.SuggestGasPrice(context.Background())",
+                "gasPrice, err = client.GasPrice(context.Background())",
+                "gasPrice, err = client.SuggestGasTipCap(context.Background())",
+                "gasPrice, err = client.GasTipCap(context.Background())"
+            ]
+        },
+        {
+            "title": "以下哪个选项是go-ethereum中用于生成随机私钥的函数？",
+            "options": [
+                "crypto.GenerateKeyPair()",
+                "crypto.GenKeyPair()",
+                "crypto.GenerateKey()",
+                "crypto.GenKey()"
+            ]
+        },
+        {
+            "title": "使用abigen生成合约go文件，下面说法正确的是：",
+            "options": [
+                "生成后可以直接通过函数与智能合约交互",
+                "通过合约 ABI JSON 文件生成合约 go 文件 ",
+                "通过合约源码 sol 文件生成合约 go 文件",
+                "生成的go文件中会存在 ABI JSON 数据"
+            ]
+        }
+    ]
+}

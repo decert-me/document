@@ -1,0 +1,56 @@
+{
+    "title": "链上数据训练营 L2",
+    "description": "",
+    "questions": [
+        {
+            "title": "以下哪一项不属于区块链数据产品分层：",
+            "options": ["数据应用层", "数据平台层", "数据解析层", "智能合约层"]
+        },
+        {
+            "title": "下面哪些产品不属于数据应用层：",
+            "options": ["Nansen", "Dune", "Chainbase", "Defillama"]
+        },
+        {
+            "title": "下面哪些产品不属于数据平台层：",
+            "options": ["Nansen", "Dune", "Chainbase", "Flipside"]
+        },
+        {
+            "title": "下面哪张表可以用于解析合约事件：",
+            "options": ["transactions", "traces", "blocks", "logs"]
+        },
+        {
+            "title": "开始数据挖掘的第一步工作是什么：",
+            "options": [
+                "找到数据源",
+                "选择数据平台",
+                "定义目标数据",
+                "建立分析框架"
+            ]
+        },
+        {
+            "title": "下面哪一项不属于区块链数据分层：",
+            "options": ["原始数据", "解析数据", "抽象数据", "合约数据"]
+        },
+        {
+            "title": "下面哪一项不属于主流的数据查询方式：",
+            "options": ["API 查询", "Sql 查询", "Graphql 查询", "AI 查询"]
+        },
+        {
+            "title": "大多数平台都有sql查询的超时限制，下面哪种行为无法优化查询速度：",
+            "options": [
+                "增加限制条件缩小数据范围",
+                "尝试使用主键进行索引",
+                "将数据下到本地",
+                "拆分成几个环节分开查询"
+            ]
+        },
+        {
+            "title": "当进行点查时，哪个平台的速度最快：",
+            "options": ["Dune", "Transpose", "Flipside", "Chainbase"]
+        },
+        {
+            "title": "当进行涉及统计的查询时，哪个平台的速度最快：",
+            "options": ["Dune", "Transpose", "Flipside", "Chainbase"]
+        }
+    ]
+}

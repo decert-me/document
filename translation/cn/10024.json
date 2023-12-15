@@ -1,0 +1,86 @@
+{
+    "title": "安全实战训练营挑战",
+    "description": "登链社区 和 BlockSec 联合推出的《区块链安全实战修炼营》课程配套挑战",
+    "questions": [
+        {
+            "title": "关于备份助记词/私钥，推荐的做法是",
+            "options": [
+                "截屏或拍照保存",
+                "使用即时通讯工具在不同设备之间传输",
+                "使用网盘存储",
+                "离线存储，并创建多个备份副本"
+            ]
+        },
+        {
+            "title": "针对区块链的主要攻击方式是：",
+            "options": [
+                "SQL 注入 ",
+                "51%攻击",
+                "全球拒绝服务攻击 ",
+                "密码破解 "
+            ]
+        },
+        {
+            "title": "关于区块链安全的理解，以下说法错误的是？",
+            "options": [
+                "由于区块链具有不可篡改的特性，因此区块链的所有应用都是安全的",
+                "在开发智能合约时，很重要的一点是考虑和预防可能出现的安全漏洞",
+                "作为用户，了解基本的区块链安全知识以防范钓鱼攻击和网络诈骗是非常必要的",
+                "区块链的密码学保护措施意味着所有的区块链交易都是匿名的"
+            ]
+        },
+        {
+            "title": "常见的合约漏洞包括哪些?",
+            "options": [
+                "重入攻击，即合约执行过程中被重新调用，导致重复执行关键操作",
+                "重放攻击，指攻击者在不同的上下文中重复使用相同的签名信息以达到欺骗目的",
+                "访问控制权限设置不当，使未授权的用户能够执行敏感操作",
+                "输入验证不当，导致输入数据没有正确验证，从而引发非预期的行为或漏洞"
+            ]
+        },
+        {
+            "title": "代理合约有哪些安全漏洞或风险?",
+            "options": [
+                "实现合约逻辑被恶意更改",
+                "消耗更多 gas",
+                "变量声明的顺序不一致，导致错误读取存储数据",
+                "未正确初始化"
+            ]
+        },
+        {
+            "title": "闪电贷攻击的关键因素是什么？",
+            "options": [
+                "在一个交易中同时借贷和还贷",
+                "利用网络延迟进行攻击",
+                "利用合约漏洞",
+                "以上都是"
+            ]
+        },
+        {
+            "title": "以下哪些是借贷协议潜在安全风险?",
+            "options": ["智能合约漏洞", "价格操纵", "闪电贷攻击", "流动性风险"]
+        },
+        {
+            "title": "常见的跨链桥接安全漏洞和风险有哪些？",
+            "options": [
+                "合约漏洞",
+                "依赖单一的验证节点",
+                "验证者没有正确监听和处理数据",
+                "以上全部"
+            ]
+        },
+        {
+            "title": "调用 `case1` 函数，返回值为__\n\n```solidity\npragma solidity ^0.4.17;\ncontract Test {\n function Test() {}\n\n function case1() public view returns (uint8) {\n uint8 a = 255;\n uint8 b = 1;\n return a + b;\n }\n}\n```",
+            "options": ["0"]
+        },
+        {
+            "title": "智能合约生成随机数时，为什么不建议直接使用链上现有数据（区块时间、hash 等）？"
+        },
+        {
+            "title": "请指出以下合约存在哪些安全隐患\n\n ```solidity\n pragma solidity ^0.8.0;\n \n contract AccessControl{\n address public owner;\n mapping (address => uint256) public balances;\n \n modifier onlyOwner {\n require(owner == msg.sender, \"Ownable: caller is not the owner\");\n _;\n }\n \n constructor() {\n setOwner(msg.sender); \n }\n \n function setOwner(address _owner) public{\n owner=_owner;\n }\n \n function addBalance(address to, uint amount) public onlyOwner {\n balances[to] += amount;\n }\n }\n ```\n"
+        },
+        {
+            "title": "使用 Phalcon Fork 编写一个重入攻击的 demo，使用 Phalcon Fork 新建 fork，部署并且验证有漏洞合约以及发送攻击交易。提交包含有漏洞合约和攻击交易的 Phalcon Fork Scan URL（注意设置成公开可访问）。\n\n参考：https://docs.phalcon.xyz/phalcon-fork/tutorials/solidity-by-example-the-re-entrancy-attack"
+        }
+    ]
+}

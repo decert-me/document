@@ -1,0 +1,71 @@
+{
+    "title": "Solana 挑战赛",
+    "description": "",
+    "questions": [
+        {
+            "title": " 以下哪个命令可以获取测试币？",
+            "options": [
+                "solana airdrop 1",
+                "solana-keygen pubkey",
+                "solana address",
+                "solana balance"
+            ]
+        },
+        {
+            "title": "solana 合约入口是哪个宏（macro）？",
+            "options": ["entrypoint!", "main!", "metadata!", "没有"]
+        },
+        {
+            "title": "对 PDA 地址描述错误的是？\n",
+            "options": [
+                "有密钥",
+                "全称 Program Derived Address",
+                "是由程序控制的",
+                "没有密钥"
+            ]
+        },
+        {
+            "title": "Solana 有哪三种类型的账户地址？\n",
+            "options": [
+                "数据帐户地址，用来存储数据 ",
+                "程序帐户地址，用来存储可执行程序（又称智能合约）",
+                "原生账户地址，用于核心区块链功能，例如权益和投票的账户 ",
+                "HD 地址"
+            ]
+        },
+        {
+            "title": " solana 网络诞生在什么时间？\n",
+            "options": ["2020", "2009", "2015", "2023"]
+        },
+        {
+            "title": "solana 的 vm 是？",
+            "options": ["SVM", "wasm", "evm", " RISC-V"]
+        },
+        {
+            "title": "solana 原生代币最小单位以及换算比例是？",
+            "options": [
+                "1 SOL = 10^9 Lamport ",
+                " 1 SOL = 10^18 Lamport",
+                "1 SOL = 10^18 wei",
+                "1 SOL = 10^4 Larimer"
+            ]
+        },
+        {
+            "title": "solana 的共识机制是？",
+            "options": ["PoH", "PoW", "PoS", "PoA"]
+        },
+        {
+            "title": "solana 账号体系跟 ethereum 的主要区别是？\n",
+            "options": [
+                "solana 账户体系逻辑和存储分离 ",
+                " solana 生成密钥对使用的 Secp256k1 算法",
+                "solana 也有 2 种地址类型",
+                "solana 账号是 utxo 类型"
+            ]
+        },
+        {
+            "title": "目前主要用哪一种语言编写 solana 合约\n",
+            "options": ["Rust", "Solidity", "js", "golang"]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "title": "链上数据分析",
+    "description": "从零开始学习区块链数据分析，成为一名链上数据分析师",
+    "questions": [
+        {
+            "title": "以下哪个连接方式可以从两个表中提取匹配行的数据？",
+            "options": [
+                "Full Outer Join",
+                "Left Join",
+                "Right Join",
+                "Inner Join",
+                "以上都不是"
+            ]
+        },
+        {
+            "title": "以下哪项不是 SQL 中的聚合函数？",
+            "options": ["SUM", "AVG", "COUNT", "FIND"]
+        },
+        {
+            "title": "哪个关键字允许我们在数据表中找到唯一值？",
+            "options": ["DISTINCT", "UNIQUE", "FIND", "DIFF"]
+        },
+        {
+            "title": "哪条 SQL 语句用于从数据库中提取数据？",
+            "options": ["GET", "EXTRACT", "SELECT", "OPEN"]
+        },
+        {
+            "title": "使用 SQL，如何从名为“Persons”的表中选择名为“FirstName”的列？",
+            "options": [
+                "EXTRACT FirstName FROM Persons",
+                "SELECT Persons.FirstName",
+                "SELECT FirstName FROM Persons"
+            ]
+        },
+        {
+            "title": "使用 SQL，如何从名为“Persons”的表中选择所有记录，其中列“FirstName”的值为“Peter”？",
+            "options": [
+                "SELECT [all] FROM Persons WHERE FirstName='Peter'",
+                "SELECT * FROM Persons WHERE FirstName='Peter'",
+                "SELECT * FROM Persons WHERE FirstName<>'Peter'",
+                "SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'"
+            ]
+        },
+        {
+            "title": "如果列出的任何条件为真，则 OR 运算符会显示一条记录。 如果列出的所有条件都为真，则 AND 运算符显示一条记录。",
+            "options": ["正确", "错误"]
+        },
+        {
+            "title": "哪个 SQL 关键字用于对结果集进行排序？",
+            "options": ["ORDER BY", "SORT BY", "SORT", "ORDER"]
+        },
+        {
+            "title": "使用 SQL，如何返回“Persons”表中的记录数？",
+            "options": [
+                "SELECT COLUMNS(*) FROM Persons",
+                "SELECT COUNT(*) FROM Persons",
+                "SELECT LEN(*) FROM Persons",
+                "SELECT NO(*) FROM Persons"
+            ]
+        },
+        {
+            "title": "下面关于UNION的陈述中哪一个是正确的？",
+            "options": [
+                "在每个 SELECT 语句中，列的顺序不能相同",
+                "列必须具有类似的数据类型",
+                "在 UNION 中，每个 SELECT 语句不必具有相同的列号",
+                "UNION ALL 运算符默认选择不同的值"
+            ]
+        },
+        {
+            "title": "下面关于UNION的陈述中哪一个是正确的？",
+            "options": [
+                "UNION 比 UNION ALL 更快",
+                "UNION 和 UNION ALL 同时计算",
+                "UNION ALL 比普通 UNION 更快",
+                "以上都不是"
+            ]
+        },
+        {
+            "title": "分组求和相关的SQL关键字是哪个？",
+            "options": ["UNION", "LIMIT", "GROUP BY", "WHERE"]
+        },
+        {
+            "title": "以下关于CTE的描述错误的是哪个？",
+            "options": [
+                "CTE是指 Common Table Expression，即公用表表达式",
+                "可以在同一SQL语句中多次引用已定义的CTE",
+                "当多次用到相同的子查询时，使用CTE替代可以提高查询效率",
+                "CTE的性能比子查询差"
+            ]
+        },
+        {
+            "title": "当需要将不同类型的字段当作字符串连接到一起时，可以使用哪个函数？",
+            "options": ["UPPER", "CAST", "LOWER", "DATE"]
+        },
+        {
+            "title": "你需要基于一个数据集去关联另一个表以从中取出某个字段值，但某些情况下可能并不存在满足条件的数据。此时应该使用的关联类型是哪个？",
+            "options": ["INNER JOIN", "JOIN", "FULL JOIN", "LEFT JOIN"]
+        },
+        {
+            "title": "以下关于Dune 的数据表的描述中哪一项是正确的？",
+            "options": [
+                "erc20_ethereum.evt_Transfer 是魔法表",
+                "表名称包括“_evt_”的是事件日志表",
+                "表名称包括” _call_”的是方法调用表",
+                "事件日志表和方法调用表统称解析数据表",
+                "以上都对"
+            ]
+        },
+        {
+            "title": "以下关于Dune 魔法表（Spells）的描述中哪一项是错误的？",
+            "options": [
+                "任何人都可以参与构建和贡献魔法表",
+                "魔法表全部是有Dune核心团队创建的",
+                "魔法表是由Dune 核心团队和Dune 社区用户共同构建的",
+                "魔法表本质上可能是视图（View）也可能是表格（Table）"
+            ]
+        },
+        {
+            "title": "以下关于Dune的合约解析表描述正确的是？",
+            "options": [
+                "任何用户都可以提交智能合约解析",
+                "只有智能合约的部署者可以提交解析",
+                "只有Dune 的员工可以提交智能合约解析",
+                "只有付费会员用户才能提交智能合约解析"
+            ]
+        },
+        {
+            "title": "要查询用户在以太坊Ethereum链上的ETH Token准确余额，必须从哪个表统计计算？",
+            "options": [
+                "Transactions 表",
+                "Logs 表",
+                "Traces 表",
+                "Transactions 和 Traces 表",
+                "Logs 和Traces 表"
+            ]
+        },
+        {
+            "title": "如果某个智能合约没有被Dune解析，以下描述正确的是？",
+            "options": [
+                "无法在Dune上分析该智能合约的数据",
+                "可以从Logs表直接解析出合约方法调用数据",
+                "可以从Logs表直接解析出合约方法调用和事件日志数据",
+                "可以从Logs表直接解析出合约事件日志数据"
+            ]
+        }
+    ]
+}
