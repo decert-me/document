@@ -1,0 +1,103 @@
+{
+    "title": "MyFirstLayer2 Tutorial Questions",
+    "description": "",
+    "questions": [
+        {
+            "title": "What is the block time of Ethereum?",
+            "options": ["About 10 minutes", "About 12 seconds", "About 2 seconds"]
+        },
+        {
+            "title": "Which feature **does not belong to** the Blockchain Trilemma?",
+            "options": [
+                "Decentralization",
+                "Security",
+                "Scalability",
+                "Convenience"
+            ]
+        },
+        {
+            "title": "What was the earliest second-layer network technology?",
+            "options": ["State channels", "Rollup", "Plasma"]
+        },
+        {
+            "title": "What is the biggest risk and controversy of sidechain technology?",
+            "options": [
+                "Adopting the POS (Proof of Stake) consensus mechanism",
+                "Adopting the POA (Proof of Authority) consensus mechanism",
+                "Not inheriting the security of the main chain"
+            ]
+        },
+        {
+            "title": "The biggest problem plaguing Plasma technology is data availability",
+            "options": ["Yes", "No"]
+        },
+        {
+            "title": "Regarding the second-layer solution of Rollup, which of the following statements are correct?",
+            "options": [
+                "Rollup's second-layer solution increases decentralization",
+                "Rollup significantly relieves the computational burden of Layer 1, effectively achieving scalability",
+                "Rollup compresses transaction data, saving storage resources of Layer 1",
+                "Rollup uploads necessary key information to Layer 1, maximizing the inheritance of Layer 1's security"
+            ]
+        },
+        {
+            "title": "Taking OP-Rollup as an example, which methods can compress original transaction data?",
+            "options": [
+                "Using scientific notation to compress the transfer amount into 64-bit data and removing unnecessary 0s",
+                "Retaining all padded 0s to ensure data integrity",
+                "Setting up a green channel (Helper ID) for simplifying the sending behavior of common tokens",
+                "Removing Method IDs of common transactions, as they can be inferred from transaction content",
+                "Compressing the recipient's address"
+            ]
+        },
+        {
+            "title": "Regarding Optimistic Rollup, which of the following statements are correct?",
+            "options": [
+                "Optimistic Rollup assumes all participants are dishonest",
+                "It allows a small group of validator nodes to collect, order, and verify transactions",
+                "OP-Rollup regularly uploads the state root and compressed transaction data to the mainnet",
+                "OP-Rollup's exit window period typically requires a waiting period of 7 - 14 days"
+            ]
+        },
+        {
+            "title": "Regarding Zero-Knowledge Rollup (ZK-Rollup), which of the following statements are correct?",
+            "options": [
+                "ZK-Rollup periodically uploads state roots, compressed transaction data, and validity proofs to the mainnet",
+                "ZK-Rollup's security depends on smart contracts on Layer 1 to verify the validity of zero-knowledge proofs",
+                "By using zero-knowledge proofs, ZK-Rollup can ensure transaction security without revealing transaction details",
+                "ZK-Rollup's design relies on human challengers to ensure transaction security"
+            ]
+        },
+        {
+            "title": "When processing a large number of transactions on Layer 2, STARK has the advantage of faster generation and verification of zero-knowledge proofs compared to SNARK.",
+            "options": ["True", "False"]
+        },
+        {
+            "title": "Regarding the development roadmap of ZK-Rollup, which description most accurately reflects the main difference between ZK-VM and ZK-EVM?",
+            "options": [
+                "Both ZK-VM and ZK-EVM focus on achieving full compatibility with EVM",
+                "ZK-VM is specifically developed for zero-knowledge proof algorithms, while ZK-EVM focuses on maintaining full compatibility with EVM",
+                "ZK-EVM generates smaller proof sizes and has faster execution speeds",
+                "Both ZK-VM and ZK-EVM use the same account address system as Ethereum"
+            ]
+        },
+        {
+            "title": "Regarding Validium and Volition, which description most accurately reflects the main difference between these two solutions?",
+            "options": [
+                "Both Validium and Volition do not upload transaction data to the mainnet",
+                "Volition is an improved version of Validium, allowing users to choose whether their transaction data is available on the mainnet",
+                "Validium provides higher privacy, while Volition focuses on reducing transaction costs",
+                "Both Validium and Volition rely on user supervision to ensure transaction security"
+            ]
+        },
+        {
+            "title": "Regarding Ethereum's Deneb update, which description most accurately reflects its main purpose?",
+            "options": [
+                "The Deneb update directly increases the transaction processing speed of the Ethereum main chain",
+                "It introduces Blob transactions, allowing Layer 2 networks to store large amounts of data at a lower cost",
+                "The Deneb update completely solves the data availability issue of Layer 2",
+                "This update enables the Ethereum main chain to verify all transactions on Layer 2 networks"
+            ]
+        }
+    ]
+}

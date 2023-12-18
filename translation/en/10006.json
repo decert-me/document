@@ -1,0 +1,144 @@
+{
+    "title": "Foundry Framework Contract Development Test",
+    "description": "Foundry is a Solidity smart contract development toolchain. This challenge is used to test the understanding of the Foundry development framework, mainly involving compilation, testing, deployment, and how to perform open source verification of the code. The challenge contains about 16 multiple-choice questions, with one or more answers possible, so please answer carefully.",
+    "questions": [
+        {
+            "title": "Regarding the Foundry development framework, which of the following descriptions is correct:",
+            "options": [
+                "Foundry is a smart contract development tool.",
+                "Foundry consists of three different command-line tools (CLI), including forge, cast, and anvil.",
+                "It helps Solidity developers develop and test smart contracts more efficiently.",
+                "It helps Move developers develop and test smart contracts more efficiently."
+            ]
+        },
+        {
+            "title": "To create a new Foundry project, which of the following descriptions is correct:",
+            "options": [
+                "Initialize a new project using `forge init hello_foundry`.",
+                "Initialize a new project using `forge create hello_foundry`.",
+                "Foundry projects can work with Hardhat.",
+                "Projects initialized using the forge command contain default templates."
+            ]
+        },
+        {
+            "title": "What files or folders are usually included in a newly created Foundry project:",
+            "options": [
+                "src: directory for smart contract files.",
+                "scripts: directory for deployment scripts.",
+                "test: folder for smart contract test cases.",
+                "lib: dependency library.",
+                "foundry.toml: configuration file."
+            ]
+        },
+        {
+            "title": "The correct description of the purpose of the `foundry.toml` configuration file is:",
+            "options": [
+                "Multiple Solidity compiler versions can be configured in the same profile in foundry.toml.",
+                "Different Solidity compiler versions can be configured in different profiles in foundry.toml.",
+                "When running forge, the FOUNDRY_PROFILE environment variable can be used to specify the configuration file to use.",
+                "Different RPC endpoints for different chains can be configured in foundry.toml."
+            ]
+        },
+        {
+            "title": "Regarding the dependencies of Foundry, which statement is correct",
+            "options": [
+                "Use forge install to install one or more dependencies.",
+                "When installing dependencies, you cannot specify the version of the dependencies.",
+                "To update dependencies, use the forge update command.",
+                "To remove one or more dependencies, use the forge-remove command."
+            ]
+        },
+        {
+            "title": "The main purpose of contract testing is:",
+            "options": [
+                "Increase the throughput of the Ethereum network.",
+                "Optimize the compilation process of Ethereum smart contracts.",
+                "Verify if smart contracts behave as expected.",
+                "Accelerate the confirmation time of Ethereum blocks."
+            ]
+        },
+        {
+            "title": "What programming language does Foundry use to write smart contract tests?",
+            "options": ["JavaScript", "Vyper", "Move", "Solidity"]
+        },
+        {
+            "title": "Regarding the tests in the Foundry project, which statement is correct",
+            "options": [
+                "You can run tests using the forge test command.",
+                "You can manipulate the state of the blockchain using Cheatcodes.",
+                "Test functions must be prefixed with test.",
+                "To create Gas usage snapshots for each test, you can use the forge-snapshot command."
+            ]
+        },
+        {
+            "title": "Regarding the Cheatcodes in Foundry, which of the following statements is correct:",
+            "options": [
+                "The Forge standard library does not include Cheatcodes functionality and requires importing a separate Cheatcodes library.",
+                "Use the roll(uint256) function to set the block time.",
+                "Use the prank(address) function to set the msg.sender for the next call.",
+                "Use the sign(uint256 privateKey, bytes32 digest) function to sign the digest."
+            ]
+        },
+        {
+            "title": "Regarding debugging smart contracts in the Foundry project, which of the following is correct:",
+            "options": [
+                "You can use \"hardhat/console.sol\" in Solidity to call console.log() to print the values of some variables.",
+                "You can use \"forge-std/console.sol\" in Solidity to call console.log() to print the values of some variables.",
+                "The default log level can display the results printed by console.log().",
+                "You can use the -v flag to increase the log level and display more detailed logs."
+            ]
+        },
+        {
+            "title": "Regarding compiling smart contracts in the Foundry project, which statement is correct?",
+            "options": [
+                "Build is completed by executing forge build.",
+                "Build is completed by executing forge compile.",
+                "Before compiling, Foundry will check if there are suitable compilers available, and if not, it will download the compiler from the internet.",
+                "After successful compilation, the contract's ABI and bytecode will be generated."
+            ]
+        },
+        {
+            "title": "During the deployment of smart contracts in Foundry, which of the following descriptions is correct?",
+            "options": [
+                "Use the forge deploy command to deploy smart contracts.",
+                "Use the forge create command to deploy smart contracts.",
+                "Use the -private-key <RAW_PRIVATE_KEY> option to deploy with the provided private key.",
+                "Use the -rpc-url option to set the RPC endpoint."
+            ]
+        },
+        {
+            "title": "How to connect to different Ethereum networks in Foundry?",
+            "options": [
+                "Foundry will automatically determine the Ethereum network it is on and connect automatically.",
+                "Use the -rpc-url option to set the RPC endpoint.",
+                "Cannot configure RPC endpoints in foundry.toml, only through command line input."
+            ]
+        },
+        {
+            "title": "How to use Foundry to verify contract source code on Etherscan, which operation is correct:",
+            "options": [
+                "During the contract deployment process, you can add the -verify parameter to verify the contract after deployment.",
+                "Use the forge verify-contract command to verify smart contracts.",
+                "Use the --chain chain_name parameter to set the name of the chain.",
+                "Use the -etherscan-api-key parameter to set the Etherscan API key."
+            ]
+        },
+        {
+            "title": "When using anvil Fork, can the state of the blockchain on the Ethereum network be modified in real time?",
+            "options": [
+                "Yes, it can be modified in real time.",
+                "No, it can only be used for static snapshots.",
+                "It can only modify the contract state, not other data.",
+                "It can only simulate the state before the current block."
+            ]
+        },
+        {
+            "title": "Regarding the anvil command, which of the following descriptions is correct",
+            "options": [
+                "anvil can create a local test network.",
+                "The command to fork the main network with anvil is: anvil --fork-url rpc_url ",
+                "After forking the main network, it can send simulated transactions and simulate contract calls."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "title": "Solana Challenge",
+    "description": "",
+    "questions": [
+        {
+            "title": "Which command can be used to get test coins?",
+            "options": [
+                "solana airdrop 1",
+                "solana-keygen pubkey",
+                "solana address",
+                "solana balance"
+            ]
+        },
+        {
+            "title": "What is the entry macro for solana contracts?",
+            "options": ["entrypoint!", "main!", "metadata!", "None"]
+        },
+        {
+            "title": "Which statement describes the PDA address incorrectly?\n",
+            "options": [
+                "Has a key",
+                "Program Derived Address in full",
+                "Controlled by the program",
+                "No key"
+            ]
+        },
+        {
+            "title": "What are the three types of account addresses in Solana?\n",
+            "options": [
+                "Data account address, used to store data",
+                "Program account address, used to store executable programs (also known as smart contracts)",
+                "Native account address, used for core blockchain functions, such as accounts for stake and voting",
+                "HD address"
+            ]
+        },
+        {
+            "title": "When was the Solana network born?\n",
+            "options": ["2020", "2009", "2015", "2023"]
+        },
+        {
+            "title": "What is Solana's VM?",
+            "options": ["SVM", "wasm", "evm", " RISC-V"]
+        },
+        {
+            "title": "What is the smallest unit of Solana's native token and its conversion ratio?",
+            "options": [
+                "1 SOL = 10^9 Lamport",
+                " 1 SOL = 10^18 Lamport",
+                "1 SOL = 10^18 wei",
+                "1 SOL = 10^4 Larimer"
+            ]
+        },
+        {
+            "title": "What is Solana's consensus mechanism?",
+            "options": ["PoH", "PoW", "PoS", "PoA"]
+        },
+        {
+            "title": "What is the main difference between Solana's account system and Ethereum's?\n",
+            "options": [
+                "Solana's account system separates logic and storage",
+                "Solana generates key pairs using the Secp256k1 algorithm",
+                "Solana also has 2 address types",
+                "Solana accounts are of the utxo type"
+            ]
+        },
+        {
+            "title": "Which language is currently mainly used to write Solana contracts?\n",
+            "options": ["Rust", "Solidity", "js", "golang"]
+        }
+    ]
+}

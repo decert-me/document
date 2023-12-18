@@ -1,0 +1,81 @@
+{
+    "title": "On-chain Data Training Camp L6",
+    "description": "This course aims to test and deepen students' basic understanding of blockchain technology, the Ethereum platform, and smart contracts through a series of multiple-choice questions. The content will cover basic concepts of blockchain, data structures, core technologies and principles, as well as practical applications on Ethereum, such as how to query transactions through Ethereum's Remote Procedure Call (RPC), how to retrieve the balance of a specific address in a particular ERC-20 or ERC-721 token contract, and how to obtain metadata for specific tokens. In addition, this course will also delve into issues related to blockchain data, such as data immutability, data retrieval efficiency, and data scalability. Through this course, students will be better equipped to grasp the core concepts of blockchain and Ethereum technology, laying a solid foundation for future research and practical applications.",
+    "questions": [
+        {
+            "title": "What type of data is primarily stored in a data lake?",
+            "options": [
+                "Only structured data",
+                "Only unstructured data",
+                "Structured and unstructured data",
+                "Only semi-structured data"
+            ]
+        },
+        {
+            "title": "One key advantage of a data lake is?",
+            "options": [
+                "Supports only SQL queries",
+                "Data diversity and flexibility",
+                "Limited to small data volumes",
+                "High cost"
+            ]
+        },
+        {
+            "title": "Data lakes are best suited for handling what type of data scenarios?",
+            "options": [
+                "Highly normalized data",
+                "Small-scale structured data",
+                "Only text data",
+                "Diverse and large-scale data"
+            ]
+        },
+        {
+            "title": "Which of the following is not a commonly used open-source solution for data lakes?",
+            "options": ["Delta Lake", "Iceberg", "Hudi", "Hive"]
+        },
+        {
+            "title": "Which of the following is not a commonly used open-source solution for OLAP?",
+            "options": ["MySQL", "DorisDB", "Clickhouse", "Trino"]
+        },
+        {
+            "title": "Which of the following is not a commonly used open-source solution for OLTP?",
+            "options": ["MySQL", "PostgreSQL", "Hadoop", "TiDB"]
+        },
+        {
+            "title": "What is the main advantage of ELT over ETL?",
+            "options": [
+                "Faster data transformation speed",
+                "Lower storage costs",
+                "Reduced risk of data loss",
+                "More flexible data processing"
+            ]
+        },
+        {
+            "title": "What is the primary purpose of Change Data Capture (CDC) technology in data processing?",
+            "options": [
+                "Encrypting data in transit",
+                "Capturing and recording data changes in the data source",
+                "Reducing data storage space",
+                "Improving data query speed"
+            ]
+        },
+        {
+            "title": "What is blockchain reorganization?",
+            "options": [
+                "Replacing a portion of blocks in the blockchain",
+                "Changing the encryption algorithm of the blockchain",
+                "Updating the blockchain software version",
+                "Adding new nodes to the network"
+            ]
+        },
+        {
+            "title": "What consequences might a soft fork lead to?",
+            "options": [
+                "Complete split of the blockchain",
+                "Significant increase in transaction speed",
+                "All nodes immediately go offline",
+                "Brief network split"
+            ]
+        }
+    ]
+}

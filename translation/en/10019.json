@@ -1,0 +1,81 @@
+{
+    "title": "On-Chain Data Training Camp L5",
+    "description": "The purpose of this course is to test and deepen students' understanding of blockchain technology, the Ethereum platform, and smart contracts through a series of multiple-choice questions. The content will cover basic concepts of blockchain, data structures, core technologies and principles, as well as practical applications on Ethereum, such as how to query transactions through Ethereum's Remote Procedure Call (RPC), how to retrieve the balance of a specific address in a particular ERC-20 or ERC-721 token contract, and how to obtain metadata for specific tokens. In addition, this course will also delve into issues related to blockchain data, such as data immutability, data retrieval efficiency, and data scalability. Through this course, students will be able to better grasp the core concepts of blockchain and Ethereum technology, laying a solid foundation for future research and practical applications.",
+    "questions": [
+        {
+            "title": "What are the drawbacks of Uniswap v2?",
+            "options": ["Low capital utilization", "Low slippage", "Complex model", "Difficult to control price"]
+        },
+        {
+            "title": "Assuming the current price is 1ETH:280Dai, in a certain Uniswap v2 pool where there are 10 ETH and 2800 Dai, with a 0.3% fee. How many Dai can 1 ETH be exchanged for in this pool? Round the result and keep it as an integer.",
+            "options": ["254", "280", "255", "256"]
+        },
+        {
+            "title": "How to clean transfer event data from rawdata?",
+            "options": [
+                "source: logs table, filter condition: data, parse UDF parameters: abi, topic0, topic1, topic2, topic3, data",
+                "source: traces table, filter condition: token0, parse UDF parameters: abi, topic0, topic1, topic2, data",
+                "source: transactions table, filter condition: token0, parse UDF parameters: abi, topic0, topic1, topic2, topic3, data",
+                "source: logs table, filter condition: token0, parse UDF parameters: abi, topic0, topic1, topic2, topic3, data"
+            ]
+        },
+        {
+            "title": "Which data flow can be extracted from rawdata to obtain Uniswap v2 portfolio?",
+            "options": [
+                "logs→transfer, mint →balance + token_prices",
+                "traces→transfer, pool→balance + token_prices",
+                "logs→transfer, pool →balance + token_prices",
+                "logs→transfer, pool →token_prices"
+            ]
+        },
+        {
+            "title": "Regarding AMM, which statement is correct?",
+            "options": [
+                "Providing liquidity (mint operation) will change the spot price",
+                "Swap operation keeps the spot price unchanged",
+                "Removing liquidity (burn operation) keeps the spot price unchanged",
+                "Swap operation changes the liquidity"
+            ]
+        },
+        {
+            "title": "Which statement about Uniswap v3 is incorrect?",
+            "options": [
+                "Compared to Uniswap v2, Uniswap v3 has higher asset utilization",
+                "Uniswap v3 can use liquidity provision to place limit orders",
+                "When the price exceeds the tick range of the pool, LPs can earn fees in the pool",
+                "Uniswap v3 determines a pool with three values: tick upper, tick lower, fee"
+            ]
+        },
+        {
+            "title": "Which field can be used to calculate a user's ownership of Uniswap v3 assets?",
+            "options": [
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.liquidity",
+                "position.tickCurrent, pool.tick, position.liquidity, pool.liquidity, pool.price",
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.liquidity, pool.price",
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.price"
+            ]
+        },
+        {
+            "title": "Which is the correct sequence of on-chain method calls to obtain a user's portfolio?",
+            "options": [
+                "factory.pool→pool.slot, pool.liquidity→nonfungible position manager.balanceOf→nonfungible position manager.tokenOfOwnerByIndex→nonfungible position manager.positions→factory.pool",
+                "nonfungible position manager.balanceOf→nonfungible position manager.tokenOfOwnerByIndex→nonfungible position manager.positions→factory.pool→pool.slot, pool.liquidity",
+                "factory.pool→pool.slot, pool.liquidity→nonfungible position manager.tokenOfOwnerByIndex→nonfungible position manager.balanceOf→nonfungible position manager.positions→factory.pool→pool.slot, pool.liquidity",
+                "nonfungible position manager.balanceOf→nonfungible position manager.positions→nonfungible position manager.tokenOfOwnerByIndex→factory.pool→pool.slot, pool.liquidity"
+            ]
+        },
+        {
+            "title": "Which field in the Uniswap v3 mint event does not help us calculate the portfolio?",
+            "options": ["contractAddress", "amount", "owner", "ticklower"]
+        },
+        {
+            "title": "How can we obtain a user's address through the Uniswap v3 mint event?",
+            "options": [
+                "The owner field of the mint event",
+                "The sender field of the mint event",
+                "Associate the mint and transfer events, with the association condition being mint.contract_address=transfer.from",
+                "Associate the mint and transfer events, with the association condition being mint.contract_address=transfer.to"
+            ]
+        }
+    ]
+}

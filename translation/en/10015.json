@@ -1,0 +1,56 @@
+{
+    "title": "On-chain Data Training Camp L2",
+    "description": "",
+    "questions": [
+        {
+            "title": "Which of the following does not belong to the layered structure of blockchain data products:",
+            "options": ["Data Application Layer", "Data Platform Layer", "Data Parsing Layer", "Smart Contract Layer"]
+        },
+        {
+            "title": "Which of the following products does not belong to the Data Application Layer:",
+            "options": ["Nansen", "Dune", "Chainbase", "Defillama"]
+        },
+        {
+            "title": "Which of the following products does not belong to the Data Platform Layer:",
+            "options": ["Nansen", "Dune", "Chainbase", "Flipside"]
+        },
+        {
+            "title": "Which table can be used to parse contract events:",
+            "options": ["transactions", "traces", "blocks", "logs"]
+        },
+        {
+            "title": "What is the first step in data mining:",
+            "options": [
+                "Find the data source",
+                "Select the data platform",
+                "Define the target data",
+                "Establish an analysis framework"
+            ]
+        },
+        {
+            "title": "Which of the following does not belong to the layered structure of blockchain data:",
+            "options": ["Raw Data", "Parsed Data", "Abstract Data", "Contract Data"]
+        },
+        {
+            "title": "Which of the following is not a mainstream data query method:",
+            "options": ["API Query", "Sql Query", "Graphql Query", "AI Query"]
+        },
+        {
+            "title": "Most platforms have a timeout limit for sql queries, which behavior cannot optimize query speed:",
+            "options": [
+                "Adding limiting conditions to narrow the data range",
+                "Trying to use primary keys for indexing",
+                "Downloading the data locally",
+                "Splitting the query into several separate stages"
+            ]
+        },
+        {
+            "title": "Which platform has the fastest speed when performing point queries:",
+            "options": ["Dune", "Transpose", "Flipside", "Chainbase"]
+        },
+        {
+            "title": "Which platform has the fastest speed when performing statistical queries:",
+            "options": ["Dune", "Transpose", "Flipside", "Chainbase"]
+        }
+    ]
+}

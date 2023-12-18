@@ -1,0 +1,86 @@
+{
+    "title": "On-Chain Data Training Camp L4",
+    "description": "This course aims to test and deepen students' understanding of the basic concepts of blockchain technology, the Ethereum platform, and smart contracts through a series of multiple-choice questions. The content will cover basic concepts of blockchain, data structures, core technologies and principles, as well as practical applications on Ethereum, such as how to query transactions through Ethereum's Remote Procedure Call (RPC), how to retrieve the balance of a specific address in a particular ERC-20 or ERC-721 token contract, and how to obtain metadata for specific tokens. In addition, this course will also delve into issues related to blockchain data, such as data immutability, data retrieval efficiency, and data scalability. Through this course, students will be able to better grasp the core concepts of blockchain and Ethereum technology, laying a solid foundation for future research and practical applications.",
+    "questions": [
+        {
+            "title": "What is the main purpose of the 'assembly' keyword in Solidity?",
+            "options": [
+                "Improve the readability of contracts",
+                "Directly manipulate the bytecode of contracts",
+                "Implement multi-threading concurrency",
+                "Define custom data types"
+            ]
+        },
+        {
+            "title": "Can the 'fallback' function in Solidity accept parameters?",
+            "options": [
+                "Yes, it can accept any number of parameters",
+                "Yes, but it can only accept one parameter",
+                "No, it cannot accept parameters",
+                "It can only accept Ether and cannot accept other parameters"
+            ]
+        },
+        {
+            "title": "In Solidity, which modifier is used to indicate that only functions within the contract can call it?",
+            "options": ["external", "internal", "private", "restricted"]
+        },
+        {
+            "title": "What is the main purpose of the keccak256 function in Solidity?",
+            "options": [
+                "Calculate the hash value of a block",
+                "Encrypt messages",
+                "Calculate the hash value of a string",
+                "Declare events"
+            ]
+        },
+        {
+            "title": "In Ethereum, which unit represents the smallest unit of Ether?",
+            "options": ["Ether", "Finney", "Wei", "Gwei"]
+        },
+        {
+            "title": "What is the purpose of the 'mapping' keyword in Solidity?",
+            "options": [
+                "Create arrays",
+                "Define structures",
+                "Create mappings",
+                "Set the visibility of functions"
+            ]
+        },
+        {
+            "title": "In Solidity, what information does msg.value retrieve?",
+            "options": [
+                "Current block timestamp",
+                "Block difficulty value",
+                "Amount of Ether sent when the current function is called",
+                "Creator address of the contract"
+            ]
+        },
+        {
+            "title": "Which option describes the deployment process of a smart contract in Ethereum?",
+            "options": [
+                "Implemented through a hard fork",
+                "Completed through mining rewards",
+                "By executing the contract's initialization function",
+                "Through a call from an external account"
+            ]
+        },
+        {
+            "title": "What is the purpose of the 'selfdestruct' function in Solidity?",
+            "options": [
+                "Terminate the execution of the contract",
+                "Destroy Ether",
+                "Self-destruct the contract and send the balance to a specified address",
+                "Freeze the contract's state"
+            ]
+        },
+        {
+            "title": "In Ethereum, which concept is used to improve the mechanism of transaction execution order?",
+            "options": [
+                "Smart contract queuing",
+                "Gas price auction",
+                "Smart contract sorting algorithm",
+                "Mining pool allocation"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "title": "On-Chain Data Analysis",
+    "description": "Learn blockchain data analysis from scratch and become an on-chain data analyst",
+    "questions": [
+        {
+            "title": "Which connection method can be used to extract matching rows from two tables?",
+            "options": [
+                "Full Outer Join",
+                "Left Join",
+                "Right Join",
+                "Inner Join",
+                "None of the above"
+            ]
+        },
+        {
+            "title": "Which of the following is not an aggregation function in SQL?",
+            "options": ["SUM", "AVG", "COUNT", "FIND"]
+        },
+        {
+            "title": "Which keyword allows us to find unique values in a data table?",
+            "options": ["DISTINCT", "UNIQUE", "FIND", "DIFF"]
+        },
+        {
+            "title": "Which SQL statement is used to retrieve data from a database?",
+            "options": ["GET", "EXTRACT", "SELECT", "OPEN"]
+        },
+        {
+            "title": "Using SQL, how do you select the column 'FirstName' from the table named 'Persons'?",
+            "options": [
+                "EXTRACT FirstName FROM Persons",
+                "SELECT Persons.FirstName",
+                "SELECT FirstName FROM Persons"
+            ]
+        },
+        {
+            "title": "Using SQL, how do you select all records from the table 'Persons' where the value of the column 'FirstName' is 'Peter'?",
+            "options": [
+                "SELECT [all] FROM Persons WHERE FirstName='Peter'",
+                "SELECT * FROM Persons WHERE FirstName='Peter'",
+                "SELECT * FROM Persons WHERE FirstName<>'Peter'",
+                "SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'"
+            ]
+        },
+        {
+            "title": "The OR operator displays a record if any of the listed conditions is true. The AND operator displays a record if all of the listed conditions are true.",
+            "options": ["True", "False"]
+        },
+        {
+            "title": "Which SQL keyword is used to sort the result set?",
+            "options": ["ORDER BY", "SORT BY", "SORT", "ORDER"]
+        },
+        {
+            "title": "Using SQL, how do you return the number of records in the 'Persons' table?",
+            "options": [
+                "SELECT COLUMNS(*) FROM Persons",
+                "SELECT COUNT(*) FROM Persons",
+                "SELECT LEN(*) FROM Persons",
+                "SELECT NO(*) FROM Persons"
+            ]
+        },
+        {
+            "title": "Which of the following statements about UNION is correct?",
+            "options": [
+                "The order of columns cannot be the same in each SELECT statement",
+                "The columns must have similar data types",
+                "In UNION, each SELECT statement does not have to have the same number of columns",
+                "The UNION ALL operator selects distinct values by default"
+            ]
+        },
+        {
+            "title": "Which of the following statements about UNION is correct?",
+            "options": [
+                "UNION is faster than UNION ALL",
+                "UNION and UNION ALL are calculated simultaneously",
+                "UNION ALL is faster than regular UNION",
+                "None of the above"
+            ]
+        },
+        {
+            "title": "What is the SQL keyword related to grouping and summing?",
+            "options": ["UNION", "LIMIT", "GROUP BY", "WHERE"]
+        },
+        {
+            "title": "Which of the following is an incorrect description of CTE?",
+            "options": [
+                "CTE stands for Common Table Expression",
+                "Defined CTE can be referenced multiple times in the same SQL statement",
+                "Using CTE instead of multiple subqueries can improve query efficiency",
+                "CTE performs worse than subqueries"
+            ]
+        },
+        {
+            "title": "Which function can be used when you need to concatenate different types of fields as strings?",
+            "options": ["UPPER", "CAST", "LOWER", "DATE"]
+        },
+        {
+            "title": "When you need to associate one dataset with another table to retrieve a field value, but in some cases, there may not be data that meets the conditions. What type of join should be used in this case?",
+            "options": ["INNER JOIN", "JOIN", "FULL JOIN", "LEFT JOIN"]
+        },
+        {
+            "title": "Which statement about the data tables in Dune is correct?",
+            "options": [
+                "erc20_ethereum.evt_Transfer is a magic table",
+                "Tables with the name '_evt_' are event log tables",
+                "Tables with the name '_call_' are method call tables",
+                "Event log tables and method call tables are collectively referred to as parsed data tables",
+                "All of the above"
+            ]
+        },
+        {
+            "title": "Which statement about Dune's magic tables (Spells) is incorrect?",
+            "options": [
+                "Anyone can participate in building and contributing to magic tables",
+                "Magic tables are all created by the Dune core team",
+                "Magic tables are jointly built by the Dune core team and Dune community users",
+                "Magic tables may essentially be views or tables"
+            ]
+        },
+        {
+            "title": "Which statement about contract parsing tables in Dune is correct?",
+            "options": [
+                "Any user can submit smart contract parsing",
+                "Only the deployer of the smart contract can submit parsing",
+                "Only employees of Dune can submit smart contract parsing",
+                "Only paid member users can submit smart contract parsing"
+            ]
+        },
+        {
+            "title": "To accurately calculate the ETH token balance of a user on the Ethereum chain, which table must be used for statistical calculation?",
+            "options": [
+                "Transactions table",
+                "Logs table",
+                "Traces table",
+                "Transactions and Traces tables",
+                "Logs and Traces tables"
+            ]
+        },
+        {
+            "title": "If a smart contract has not been parsed by Dune, which statement is correct?",
+            "options": [
+                "The data of the smart contract cannot be analyzed on Dune",
+                "Contract method call data can be directly parsed from the Logs table",
+                "Contract method call and event log data can be directly parsed from the Logs table",
+                "Contract event log data can be directly parsed from the Logs table"
+            ]
+        }
+    ]
+}
