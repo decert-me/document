@@ -1,0 +1,266 @@
+{
+    "title": "Solidity Development Basics Test",
+    "description": "This challenge is used to test the understanding of the basic knowledge of Ethereum smart contract development, mainly involving basic development, Solidity syntax, and program understanding. The challenge contains about 30 multiple-choice questions, which may have one or more answers, so please answer carefully.",
+    "questions": [
+        {
+            "title": "Which of the following is **not** a feature of the Remix online IDE:",
+            "options": [
+                "Code completion prompt",
+                "Code compilation and deployment",
+                "Compiler version selection",
+                "View account transaction history"
+            ]
+        },
+        {
+            "title": "MetaMask wallet can connect to the following networks:",
+            "options": [
+                "Binance Chain",
+                "Ethereum",
+                "Polygon Chain",
+                "Tron (Wave Field)",
+                "Cosmos"
+            ]
+        },
+        {
+            "title": "Which of the following statements about Solidity language is correct:",
+            "options": [
+                "When Solidity defines variables, it is similar to JavaScript syntax and does not need to specify the data type of the variable",
+                "Solidity is a statically typed language, so when defining variables, the variable type must be specified",
+                "Solidity is a high-level programming language that supports inheritance features, but the inherited 'parent' contract needs to be deployed first."
+            ]
+        },
+        {
+            "title": "Which of the following statements about Solidity syntax is correct:",
+            "options": [
+                "Solidity uses the library keyword to define a library",
+                "Solidity uses the contract keyword to define a contract",
+                "Solidity uses the class keyword to define a class",
+                "Solidity uses the struct keyword to define a structure"
+            ]
+        },
+        {
+            "title": "The meaning of the statement `pragma solidity ^0.8.0;` is correctly described as:",
+            "options": [
+                "Used to specify which version of the compiler to compile the code",
+                "Requires the use of a compiler version >= 0.8.0 but < 0.9",
+                "Functionally equivalent to the statement pragma solidity >=0.8.0 <0.9.0;"
+            ]
+        },
+        {
+            "title": "In the contract, if the `uint public total;` state variable is defined, then:",
+            "options": [
+                "The maximum value of total is 2^256 - 1",
+                "The maximum value of total is 2^256",
+                "The minimum value of total is 0",
+                "The default value of total is 0",
+                "The minimum value of total is -2^256"
+            ]
+        },
+        {
+            "title": "When defining an integer with uint, you can add a numerical value to specify the space occupied by the variable, such as: uint8. Which keyword is **not valid** as a data type:",
+            "options": [
+                "uint256",
+                "uint24",
+                "uint12",
+                "uint32"
+            ]
+        },
+        {
+            "title": "Regarding the use of uint, which of the following code is correct:",
+            "options": [
+                "int8 a = -1;",
+                "uint8 x = 120 + 360;",
+                "uint y = 120 / 1.51;",
+                "uint z = 2 ** 8;"
+            ]
+        },
+        {
+            "title": "The meaning of address(this).balance is:",
+            "options": [
+                "Get how much ether my account holds",
+                "Get how much ether the current contract holds"
+            ]
+        },
+        {
+            "title": "If a contract with the address `h` is deployed on the chain, and its contract code is:\n\n```\n contract Hello {\n    function sayHi() public {\n    }\n} \n```\nThen:",
+            "options": [
+                "Users can transfer ether to address h",
+                "You can declare the contract type Hello c = Hello(h), and call c.sayHi();",
+                "The contract h will always exist on the chain and cannot be destroyed"
+            ]
+        },
+        {
+            "title": "Complex types in Solidity need to define the location of the data. Which of the following descriptions about the data location is correct:",
+            "options": [
+                "Solidity has 3 keywords representing locations: memory (memory), storage (storage), calldata (call data)",
+                "calldata can only store immutable data",
+                "Data in memory only exists during the function call",
+                "If two variables with different data locations are assigned, a data copy will be made."
+            ]
+        },
+        {
+            "title": "In a function, an array is declared as `uint[] memory c = new uint[](7);`, then the following statements are correct:",
+            "options": [
+                "uint l =  c.length;",
+                "c.push(10);",
+                "uint x = c.pop();",
+                "c[7] = 10;"
+            ]
+        },
+        {
+            "title": "A mapping is a key-value storage structure. If defined as: `mapping(address => uint) public balances;` representing the balance held by the address, then:",
+            "options": [
+                "Using balances.length; can obtain the number of addresses",
+                "To get the balance of address 0, you can use: balances[address(0)]",
+                "balances[msg.sender] = 10 represents updating the balance of the calling address",
+                "balances[address(this)] represents getting the balance held by the contract"
+            ]
+        },
+        {
+            "title": "There are 3 struct definitions as follows:\n```\nstruct CustomType1 {\n    bool myBool;\n    uint myInt;\n}\n\nstruct CustomType2 {\n   string myString,\n    uint myInt\n}\n\n\nstruct CustomType3 {\n    mapping(string=>CustomType3) indexs;\n    uint myInt;\n}\n```\n\nWhich struct definitions are **incorrect**:",
+            "options": [
+                "CustomType1",
+                "CustomType2",
+                "CustomType3"
+            ]
+        },
+        {
+            "title": "The following statements about the use of the address type are correct:",
+            "options": [
+                "address a =  address(1);",
+                "if (address(2) > address(1)) {            }",
+                "payable(a).transfer(1)"
+            ]
+        },
+        {
+            "title": "The correct currency unit conversion is:",
+            "options": [
+                "1 gwei == 1e9 wei",
+                "1 gwei == 1e12 wei",
+                "1 ether == 1e18 wei"
+            ]
+        },
+        {
+            "title": "Solidity describes the visibility of functions with which keywords:",
+            "options": [
+                "private",
+                "internal",
+                "public",
+                "protected",
+                "external"
+            ]
+        },
+        {
+            "title": "The correct description of the contract constructor is:",
+            "options": [
+                "The constructor can be omitted, that is, it can be not written, and the default constructor is used",
+                "The constructor is only executed during deployment",
+                "The constructor is part of the ABI",
+                "The constructor can be an internal function, in which case it will not be executed during deployment."
+            ]
+        },
+        {
+            "title": "There is a function definition:\n```\nfunction f() public view returns (uint x) { \n    x = msg.value;\n}\n```\nThen:",
+            "options": [
+                "This function cannot be compiled",
+                "This function returns the amount of wei passed to the function",
+                "The function always returns 0"
+            ]
+        },
+        {
+            "title": "Function modifier is usually used to constrain a function, such as performing some checks. Read the following code:\n\n```\ncontract Test {\n    uint public a = 10;\n\n    modifier mf1(uint b) {\n       require(b > 10);\n       _;\n       a = b + 1 ;\n    }\n\n    function test1() mf1(20) public {\n       a = 1;\n    }\n}\n```\n\nAfter running test1, the value of a is:",
+            "options": [
+                "10",
+                "21",
+                "20",
+                "1"
+            ]
+        },
+        {
+            "title": "If the code `event Deposit(address indexed user, uint value);` is present in the contract, the correct statements are:",
+            "options": [
+                "The statement will cause an error because the event needs to be implemented.",
+                "The statement is correct, it defines an event.",
+                "You can trigger the event using `emit Deposit(msg.sender, 10);`.",
+                "If an event is triggered, it can be obtained in the contract.",
+                "After triggering the event, the event needs to be obtained off-chain."
+            ]
+        },
+        {
+            "title": "The following code, after running the `test` function, the correct results are:",
+            "options": [
+                "Running test will revert, so the results for a and b will remain unchanged, i.e., a = 10, b = 0;",
+                "Runs successfully, resulting in a = 15, b = 1",
+                "Runs successfully, resulting in a = 15, b = 0"
+            ]
+        },
+        {
+            "title": "The following syntax for contract inheritance is correct:",
+            "options": [
+                "contract A override B { }",
+                "contract A is B { }",
+                "contract A virtual B { }",
+                "contract A has B { }"
+            ]
+        },
+        {
+            "title": "There are the following interface definitions:\n\n```\ninterface ITest1 {\n  function test(uint i) external returns (uint);\n}\n\ninterface ITest2 {  \n  function test(uint i) external returns (uint) {}\n}\n\ninterface ITest3 {\n  function test(uint i) public returns (uint);\n}\n\ninterface ITest4 {\n  Uint external a;\n  function test(uint i) external returns (uint);\n}\n```\n\nThe correct ones are:",
+            "options": [
+                "ITest1",
+                "ITest2",
+                "ITest3",
+                "ITest4"
+            ]
+        },
+        {
+            "title": "The following statements about the virtual keyword are correct:",
+            "options": [
+                "Using virtual to modify a function means the function can be overridden",
+                "Using virtual to modify a function means the function does not need to be implemented",
+                "Using virtual to modify a function, the function is a virtual function and cannot read or write state",
+                "If a function in a contract is modified by virtual, the contract cannot be deployed"
+            ]
+        },
+        {
+            "title": "The following statements about msg.sender are correct:\n",
+            "options": [
+                "Represents the address of the transaction initiator, which can only be a user address (EOA address)",
+                "Represents the address of the current external caller. If function b in contract A calls function b in contract B, then in function b, msg.sender is the address of contract A",
+                "In a function call, if you want to change the caller's address, you can modify msg.sender by assignment"
+            ]
+        },
+        {
+            "title": "What are the necessary conditions for deploying a contract on the chain?",
+            "options": [
+                "The deploying account needs to have enough ETH as fees",
+                "Need to connect to the blockchain network (can be done through RPC or wallet connection)",
+                "Need permission from the network's nodes",
+                "Have contract code or bytecode"
+            ]
+        },
+        {
+            "title": "What are the methods for creating a contract:",
+            "options": [
+                "Send a transaction containing the contract creation bytecode to the zero address",
+                "Create a contract using the new keyword within a contract.",
+                "Create a contract using the create keyword.",
+                "Create a contract using the create2 keyword."
+            ]
+        },
+        {
+            "title": "The correct descriptions of the receive and fallback functions are?",
+            "options": [
+                "The receive and fallback functions are no different from regular functions, and users can call them directly",
+                "When a user sends ether to a contract address, if the contract has a receive function, receive will be called",
+                "When a user calls a non-existent function at a contract address, the receive function will be called.",
+                "When a user calls a non-existent function at a contract address, if there is a fallback function, fallback will be called; if there is no fallback function, an error will occur"
+            ]
+        },
+        {
+            "title": "The following buy function needs to receive ether:\n```\nfuction buy(uint tokenAmount) public ___ {\n    ...\n}\n\n```\n\nWhat keyword should be filled in the blank?",
+            "options": [
+                "payable"
+            ]
+        }
+    ]
+}

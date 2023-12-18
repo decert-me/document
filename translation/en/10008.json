@@ -1,0 +1,74 @@
+{
+    "title": "ERC-20 ",
+    "description": "ERC-20 is one of the most important smart contract standards on Ethereum. It has become the technical standard for all smart contracts implementing fungible tokens (tokens) on the Ethereum blockchain.\nERC-20 standard functions include: transferring tokens from one account to another; obtaining the current token balance of an account; obtaining the total token supply; approving a certain amount of tokens in the account for use by a third-party account.",
+    "questions": [
+        {
+            "title": "In the ERC-20 standard, which function is used to query token balance?",
+            "options": ["balance", "balanceOf", "amount"]
+        },
+        {
+            "title": "In the ERC-20 standard, which function is used to query the token symbol?",
+            "options": ["icon", "name", "symbol", "figure"]
+        },
+        {
+            "title": "In the ERC-20 standard, which function is used to execute token transfers?",
+            "options": ["send", "transfer", "approve", "mint"]
+        },
+        {
+            "title": "In the ERC-20 standard, which function is used to query the number of decimal places for the token symbol?",
+            "options": ["decimals", "decimal", "digits", "digit"]
+        },
+        {
+            "title": "In the ERC-20 standard, which function is used to query the total token supply?",
+            "options": ["totalSupply", "supply", "totalAmount", "amount"]
+        },
+        {
+            "title": "Can the total issuance of ERC-20 standard be dynamically adjusted?",
+            "options": [
+                "Yes, it can be dynamically adjusted",
+                "No, the total issuance is fixed",
+                "Depends on the contract implementation"
+            ]
+        },
+        {
+            "title": "In the ERC-20 standard, what type of event does a token transfer trigger?",
+            "options": ["Approve", "Send", "Mint", "Transfer"]
+        },
+        {
+            "title": "In the ERC-20 standard, what is the purpose of the approve function?",
+            "options": [
+                "Query the authorized token amount",
+                "Execute token transfers",
+                "Authorize a third party to transfer tokens from one's account"
+            ]
+        },
+        {
+            "title": "Which statement about the approve function is correct?",
+            "options": [
+                "Can only authorize one address",
+                "Can authorize multiple addresses",
+                "The same address can only be authorized once",
+                "The same address can be authorized multiple times"
+            ]
+        },
+        {
+            "title": "In the ERC-20 standard, what is the purpose of the transferFrom function?",
+            "options": [
+                "Transfer tokens from one's account",
+                "Authorize a third party to transfer tokens from one's account"
+            ]
+        },
+        {
+            "title": "Is authorization required when executing a transfer using the transferFrom function?",
+            "options": ["Yes, authorization is required first", "No, authorization is not required", "Depends on the contract implementation"]
+        },
+        {
+            "title": "Which statement about the allowance function is correct?",
+            "options": [
+                "Query the token balance of an account",
+                "Query the token authorization amount between accounts",
+                "Authorization must be done first"
+            ]
+        }
+    ]
+}

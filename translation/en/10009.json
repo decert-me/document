@@ -1,0 +1,90 @@
+{
+    "title": "Golang Ethereum Development Test",
+    "description": "Go-ethereum, also known as Geth, is the official implementation of Ethereum in Golang and is the most popular Ethereum client.\nWhen developing applications using Golang, Geth provides all the functionality to read and write to the blockchain.\nThis challenge is designed to test your understanding of the basics of Golang Ethereum development.\nThe challenge consists of about 11 multiple-choice questions, with one or more possible answers. Please answer carefully.",
+    "questions": [
+        {
+            "title": "What are the common libraries for Golang Ethereum development?",
+            "options": ["go-ethereum", "go-solidity-sha3", "foundry", "hardhat"]
+        },
+        {
+            "title": "What is the functionality of the go-solidity-sha3 library?",
+            "options": [
+                "Generate Ethereum accounts",
+                "Run Solidity programs",
+                "Interact with Ethereum smart contracts",
+                "Generate Keccak256 signatures"
+            ]
+        },
+        {
+            "title": "What is go-ethereum?",
+            "options": [
+                "A JavaScript library",
+                "A Python framework",
+                "An Ethereum client implemented in Golang",
+                "A Java development tool"
+            ]
+        },
+        {
+            "title": "Go-ethereum is the official Ethereum implementation, developed in which programming language?",
+            "options": ["C++", "Java", "Python", "Golang"]
+        },
+        {
+            "title": "When connecting to Ethereum using go-ethereum, which of the following operations is correct?",
+            "options": [
+                "client, err := ethclient.Dial(\"https://cloudflare-eth.com\")",
+                "client, err := ethclient.Dial(\"/home/user/.ethereum/geth.ipc\")",
+                "client, err := ethclient.Dial(\"wss://cloudflare-eth.com/ws\")",
+                "client, err := ethclient.Dial(\"grpc://cloudflare-eth.com/grpc\")"
+            ]
+        },
+        {
+            "title": "What is 'Whisper' in go-ethereum?",
+            "options": [
+                "Ethereum virtual machine",
+                "Ethereum network protocol",
+                "Ethereum's P2P communication protocol",
+                "Ethereum's cryptocurrency"
+            ]
+        },
+        {
+            "title": "Which encryption algorithm is used for signatures in Ethereum?",
+            "options": ["RSA", "MD5", "SHA-256", "ECDSA"]
+        },
+        {
+            "title": "To query the Ethereum balance of an account in the latest block using go-ethereum, which of the following operations is correct?",
+            "options": [
+                "balance, err := client.BalanceAt(context.Background(), account, 0)",
+                "balance, err := client.BalanceAt(context.Background(), account, nil)",
+                "balance, err := client.PendingBalanceAt(context.Background(), account, 0)",
+                "balance, err := client.PendingBalanceAt(context.Background(), account, nil)"
+            ]
+        },
+        {
+            "title": "To get the suggested gas price or the suggested gas fee cap on the current Ethereum network using go-ethereum, which of the following operations is correct?",
+            "options": [
+                "gasPrice, err = client.SuggestGasPrice(context.Background())",
+                "gasPrice, err = client.GasPrice(context.Background())",
+                "gasPrice, err = client.SuggestGasTipCap(context.Background())",
+                "gasPrice, err = client.GasTipCap(context.Background())"
+            ]
+        },
+        {
+            "title": "Which option is the function in go-ethereum used to generate a random private key?",
+            "options": [
+                "crypto.GenerateKeyPair()",
+                "crypto.GenKeyPair()",
+                "crypto.GenerateKey()",
+                "crypto.GenKey()"
+            ]
+        },
+        {
+            "title": "When using abigen to generate a contract go file, which statement is correct?",
+            "options": [
+                "The generated file can directly interact with the smart contract through functions",
+                "Generate the contract go file from the contract ABI JSON file",
+                "Generate the contract go file from the contract source code sol file",
+                "The generated go file will contain ABI JSON data"
+            ]
+        }
+    ]
+}

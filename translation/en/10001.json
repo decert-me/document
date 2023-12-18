@@ -1,0 +1,213 @@
+{
+    "title": "Ethereum Basic Technology Test",
+    "description": "This challenge is used to test your understanding of Ethereum-related technical knowledge, including Ethereum consensus, address wallets, browsers, transactions, DEFI, EVM compatible chains, and other knowledge.\n The challenge contains about 30 multiple-choice questions, there may be one or more answers, please answer carefully.",
+    "questions": [
+        {
+            "title": "Who proposed Ethereum?",
+            "options": [
+                "Satoshi Nakamoto",
+                "Vitalik Buterin",
+                "Nick Szabo"
+            ]
+        },
+        {
+            "title": "What do you think Ethereum can be?",
+            "options": ["A digital currency", "A blockchain platform", "A social media platform"]
+        },
+        {
+            "title": "What is the native token of the Ethereum blockchain?",
+            "options": ["BTC", "ETH", "LTC"]
+        },
+        {
+            "title": "What programming language can be used to write smart contracts on Ethereum?",
+            "options": ["Java", "Python", "Solidity"]
+        },
+        {
+            "title": "What is the block time of Ethereum?",
+            "options": ["About 12 seconds", "About 1 minute", "About 10 minutes"]
+        },
+        {
+            "title": "Which of the following descriptions of Ethereum's features is correct?",
+            "options": [
+                "Can store any type of data",
+                "Transaction speed is very fast (millisecond level)",
+                "Can execute smart contract code",
+                "Is an open computing platform"
+            ]
+        },
+        {
+            "title": "Which currencies can be traded on the Ethereum network?",
+            "options": [
+                "Renminbi in a bank account",
+                "Fiat currency USD",
+                "Ether",
+                "Digital currencies USDC/USDT"
+            ]
+        },
+        {
+            "title": "Which of the following is one of the main advantages of Ethereum?",
+            "options": ["High security", "Very fast transaction confirmation speed", "High degree of decentralization"]
+        },
+        {
+            "title": "What can be the application scenarios based on Ethereum?",
+            "options": [
+                "DAO decentralized organization",
+                "NFT or blockchain games",
+                "Decentralized social",
+                "DEFI decentralized finance"
+            ]
+        },
+        {
+            "title": "Which one is a decentralized application based on Ethereum?",
+            "options": ["Facebook", "Twitter", "Uniswap"]
+        },
+        {
+            "title": "What is the most commonly used blockchain browser on the Ethereum network?",
+            "options": ["Coinbase", "Chrome", "MetaMask", "EtherScan"]
+        },
+        {
+            "title": "Which of the following Ethereum wallets is a physical device?",
+            "options": ["Hardware wallet", "Multisig wallet", "Software wallet"]
+        },
+        {
+            "title": "What is the abbreviation for the Ethereum Virtual Machine (EVM)?",
+            "options": ["EVM", "JVM", "CLR"]
+        },
+        {
+            "title": "Which **is not** an Ethereum wallet?",
+            "options": ["Binance", "MetaMask", "imToken"]
+        },
+        {
+            "title": "What consensus mechanism is currently used in Ethereum?",
+            "options": ["POS", "POW", "POA"]
+        },
+        {
+            "title": "Which of the following are Ethereum's layer 2 scaling solutions?",
+            "options": [
+                "Lightning Network",
+                "Zk Rollup",
+                "Optimistic Rollup"
+            ]
+        },
+        {
+            "title": "What is the correct address format on Ethereum?",
+            "options": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x997fd71a4cf5d214009619808176b947aec122890a7fcee02e78e329596c94ba",
+                "1A4BHoT2sXFuHsyL6bnTcD1m6AP9C5uyT1",
+                "TEEuMMSc6zPJD36gfjBAR2GmqT6Tu1Rcut"
+            ]
+        },
+        {
+            "title": "Which of the following practices are **not recommended** for Ethereum wallet security?",
+            "options": [
+                "Use a strong password",
+                "Hand-copy the private key or mnemonic phrase regularly",
+                "Use screenshots or notepad software to save the mnemonic phrase",
+                "Send the private key to a friend using social software"
+            ]
+        },
+        {
+            "title": "The correct description of the difference between ETH and USDC on Ethereum is?",
+            "options": [
+                "ETH is the native coin on the chain",
+                "USDC is an ERC20 token, a smart contract coin",
+                "USDC is a stablecoin pegged to the US dollar",
+                "The value of ETH fluctuates with demand"
+            ]
+        },
+        {
+            "title": "The token of NFT (non-fungible token) we often talk about refers to tokens that meet which standards?",
+            "options": ["ERC-20", "ERC-721", "ERC-1155", "ERC-777"]
+        },
+        {
+            "title": "In the Ethereum network, every transaction requires a certain amount of Gas fee. Which of the following **will not** affect the Gas fee of a transaction?",
+            "options": [
+                "Transaction data size",
+                "Transaction execution logic complexity",
+                "Gas price setting",
+                "Transaction value"
+            ]
+        },
+        {
+            "title": "When you send a transaction on the Ethereum network, you need to set the Gas price. Which Gas price setting strategy is **best**?",
+            "options": [
+                "Set a price far higher than the current market Gas price to be packaged faster",
+                "Set a price far lower than the current market Gas price to save Gas fees",
+                "Choose an appropriate price based on the urgency of the transaction and the current market Gas price",
+                "Set the Gas price to the lowest as long as the transaction can be packaged"
+            ]
+        },
+        {
+            "title": "The correct description of the Ethereum account model is?",
+            "options": [
+                "The account contains ETH balance",
+                "The account does not contain ETH balance",
+                "The account contains the transaction sequence number (nonce) sent from that address",
+                "The account contains the balance of held tokens"
+            ]
+        },
+        {
+            "title": "The correct description of Ethereum transaction fees (Gas) is?",
+            "options": [
+                "All transaction fees are collected by miners",
+                "Only a part of the fee is the miner's income",
+                "Some fees are charged by the project party",
+                "Only ETH can be used to pay for Gas"
+            ]
+        },
+        {
+            "title": "The correct descriptions of the contract address are?",
+            "options": [
+                "Can be viewed on the blockchain browser, and if there is associated code, it is a contract address",
+                "There is no difference in format between the contract address and the ordinary user address",
+                "If you accidentally transfer tokens to a contract address, it may not be possible to withdraw them",
+                "Contract addresses cannot hold assets, only user addresses can hold assets"
+            ]
+        },
+        {
+            "title": "The correct description of Ethereum smart contracts is?",
+            "options": [
+                "Smart contracts are programs running on the chain",
+                "The word 'smart' reflects its ability to automatically run according to rules, such as setting to run automatically after 1 month",
+                "Smart contracts are not really smart, programs with a large amount of computation cannot run as smart contracts on the chain",
+                "Any program can run as long as enough Gas is provided",
+                "Smart contract code can only be run by triggering transactions from external accounts"
+            ]
+        },
+        {
+            "title": "The correct descriptions of the differences between decentralized applications (DApps) and traditional centralized Apps are?",
+            "options": [
+                "Logging in with a wallet account is a decentralized application, logging in with an email or phone number is a centralized application",
+                "It is possible that the difference between decentralized applications and centralized applications may not be visible on the front end",
+                "The key difference lies in the backend, the backend data of centralized apps is stored on centralized servers, while the core data of decentralized applications is stored on the chain",
+                "Operations in centralized applications can usually be executed immediately, while operations in decentralized applications usually need to wait for consensus across the network to be truly executed"
+            ]
+        },
+        {
+            "title": "The correct descriptions of the features of EVM compatible chains such as BSC and Polygon are?",
+            "options": [
+                "EVM compatible chains have the same security as Ethereum",
+                "EVM compatible chains have the same address format and use the same developer tools as Ethereum",
+                "Most smart contract codes can be deployed directly on various EVM compatible chains without modification"
+            ]
+        },
+        {
+            "title": "The correct descriptions of the deployment of contracts and accounts on EVM compatible chains such as BSC and Polygon are?",
+            "options": [
+                "The same private key has the same address on the compatible chain",
+                "The same private key may or may not have the same address on the compatible chain",
+                "The same contract code deployed on the compatible chain has the same address",
+                "The same contract code deployed on the compatible chain may or may not have the same address"
+            ]
+        },
+        {
+            "title": "The correct descriptions of the interaction between EVM compatible chains are?",
+            "options": [
+                "Because EVM compatible chains have compatible contract codes, they can directly call each other",
+                "Each EVM compatible chain is an independent blockchain, and their interaction usually requires the use of cross-chain bridges",
+                "Because each EVM compatible chain has independent consensus, they cannot interact"
+            ]
+        }
+    ]
+}

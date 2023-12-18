@@ -1,0 +1,164 @@
+{
+    "title": "Hardhat Development Framework Usage Test",
+    "description": "Hardhat is a popular smart contract development framework. This challenge is designed to test your understanding of using Hardhat, including how to compile, test, deploy, and verify code open source.\n\nThe challenge consists of 18 multiple-choice questions. By completing this challenge, you can receive a raccoon NFT wearing a Hardhat.",
+    "questions": [
+        {
+            "title": "Hardhat is an open-source framework for Ethereum smart contract development. Its main uses include:",
+            "options": [
+                "Providing a scalable, configurable, and easy-to-use development environment and toolset for Solidity developers.",
+                "Helping Solidity developers develop and test smart contracts more efficiently.",
+                "Helping Move developers develop and test smart contracts more efficiently."
+            ]
+        },
+        {
+            "title": "To create a new Hardhat project, the correct description is:",
+            "options": [
+                "Hardhat is built on Node.js, so you need to have Node.js environment installed.",
+                "You need to install hardhat through the Node.js package manager, for example: `npm install hardhat`.",
+                "Run hardhat in the terminal through the package runner (e.g. \"npx hardhat\"), and then follow the instructions to create a new Hardhat project.",
+                "You can use the `hardhat create` command to create a project."
+            ]
+        },
+        {
+            "title": "What files or folders are usually included in a newly created Hardhat project:",
+            "options": [
+                "`contracts`: directory for smart contract files.",
+                "`scripts`: directory for deployment scripts.",
+                "`test`: folder for smart contract test cases.",
+                "`hardhat.config.js`: configuration file for configuring the network and compilation options connected by hardhat.",
+                "`deployment`: saves the deployed contract addresses and ABI information."
+            ]
+        },
+        {
+            "title": "The correct practice for developing smart contracts in a Hardhat project is:",
+            "options": [
+                "Write smart contracts in Solidity and place them in the contracts directory.",
+                "Write smart contract files in JavaScript and place them in the contracts directory.",
+                "Develop smart contracts using your favorite code editor + Solidity plugin.",
+                "Develop smart contracts using your favorite code editor + JavaScript plugin."
+            ]
+        },
+        {
+            "title": "The correct description of `hardhat.config.js` is:",
+            "options": [
+                "Multiple blockchain networks can be configured in hardhat.config.js.",
+                "Multiple accounts can be configured for deploying and testing contracts in hardhat.config.js.",
+                "Multiple Solidity compiler versions can be configured in hardhat.config.js.",
+                "Multiple different contracts can be configured in hardhat.config.js."
+            ]
+        },
+        {
+            "title": "Regarding compiling smart contracts in a Hardhat project, the following statement is correct:",
+            "options": [
+                "Run the command \"npx hardhat compile\" in the terminal to compile smart contracts.",
+                "Run the command \"npx hardhat build\" in the terminal to compile smart contracts.",
+                "Before compiling, hardhat will check if all required compilers are available. If not, it will download the compiler from the internet.",
+                "After successful compilation, the contract's ABI and bytecode will be generated."
+            ]
+        },
+        {
+            "title": "The following are correct about debugging smart contracts in a Hardhat project:",
+            "options": [
+                "In conjunction with Hardhat node, you can use \"hardhat/console.sol\" in Solidity to call console.log() to print the values of some variables.",
+                "Set breakpoints in the code editor, run it at that code location, and hardhat will automatically display the relevant variable values at that location.",
+                "In the test script, you can use the debugger keyword to set breakpoints for contract debugging."
+            ]
+        },
+        {
+            "title": "How to use the Hardhat local environment for testing?",
+            "options": [
+                "Write test scripts, then run the command \"npx hardhat test\" in the terminal for local testing.",
+                "Use the command \"npm run test <test_script_name>\" to run a specific test.",
+                "When executing npm run test, you can specify `--network <network-name>` to specify which network to run the test on.",
+                "Hardhat framework will automatically run the tests without the need for manual execution."
+            ]
+        },
+        {
+            "title": "How to connect to different Ethereum networks in Hardhat?",
+            "options": [
+                "Configure the IP address and port of the network's node in hardhat.config.js.",
+                "Hardhat itself is an Ethereum node and does not need to connect to the network separately.",
+                "Configure the RPC URL of service providers such as Infura in hardhat.config.js."
+            ]
+        },
+        {
+            "title": "How to deploy smart contracts using Hardhat?",
+            "options": [
+                "Write deployment scripts, then run the command \"npx hardhat run script_name\" to deploy smart contracts.",
+                "In the deployment script, the deployment order needs to be specified, such as 1_deploy.js, so that when running \"npx hardhat run deploy\", the contracts are deployed in order.",
+                "When executing the deployment script, you can specify `--network <network-name>` to specify which network to deploy to."
+            ]
+        },
+        {
+            "title": "In Hardhat testing scripts, the correct way to use multiple accounts for testing is:",
+            "options": [
+                "You need to configure the mnemonic or multiple account private keys in the corresponding network in the hardhat.config.js file.",
+                "When using the Hardhat node network, it will default to providing multiple available accounts.",
+                "In the test script, you can use const [acc1, acc2] = await ethers.getSigners(); to obtain multiple addresses.",
+                "Hardhat does not support using multiple accounts for testing."
+            ]
+        },
+        {
+            "title": "When developing a project in Hardhat, the recommended practice for writing your own ERC20 Token contract is:",
+            "options": [
+                "In the smart contract, import OpenZeppelin's ERC20 contract and inherit the ERC20 contract.",
+                "Use the hardhat-erc20 plugin to create the ERC20 contract without writing the code yourself.",
+                "Test the ERC20 contract before deploying it, and then deploy it.",
+                "Because the hardhat-erc20 plugin is used to deploy the contract, testing is not required."
+            ]
+        },
+        {
+            "title": "The correct description of contract source code verification is:",
+            "options": [
+                "Open-sourcing contract source code is important because after open-sourcing, users can determine whether to interact with the contract based on the contract logic without trusting the contract developer.",
+                "Source code verification compares the bytecode compiled from the contract source code with the bytecode created when the contract is created.",
+                "Since the compiler version and optimization options will affect the output bytecode, when verifying contract source code, it needs to be consistent with the compiler version and optimization options used for deploying the contract."
+            ]
+        },
+        {
+            "title": "Regarding how to verify contract source code on Etherscan using Hardhat, the correct operation is:",
+            "options": [
+                "In Hardhat, you can use the hardhat-etherscan or hardhat-verify plugin for source code verification.",
+                "The hardhat-etherscan plugin only supports code verification on the Ethereum mainnet, not on testnets or Polygon or BNB Chain networks.",
+                "When using hardhat-etherscan for contract source code verification, you need to obtain an API key on the etherscan website.",
+                "Use the command: `npx hardhat verify <deployed-address> --network <network-name>` to perform source code verification.",
+                "Use the command: `npx hardhat upload <contract-name> --network <network-name>` to perform source code verification."
+            ]
+        },
+        {
+            "title": "How to use plugins in Hardhat?",
+            "options": [
+                "You need to install the plugin first using the Node.js package management tool.",
+                "You need to import the plugin in the hardhat.config.js file.",
+                "Use the command `npx hardhat plugin install` in the command line to install the plugin."
+            ]
+        },
+        {
+            "title": "The following statements are correct about Hardhat tasks:",
+            "options": [
+                "Using npx hardhat, you can view all available tasks.",
+                "During compilation and deployment, it actually calls the built-in tasks of Hardhat.",
+                "You can add your own tasks as needed.",
+                "Use `npx hardhat task-name` to execute tasks."
+            ]
+        },
+        {
+            "title": "The correct description of the Hardhat fork feature is?",
+            "options": [
+                "The command to fork the mainnet is: `npx hardhat node —fork rpc_url`.",
+                "Forking the mainnet can generate a local environment that simulates the mainnet state for contract testing.",
+                "Forking the mainnet requires connecting to an archive node, not a full node.",
+                "Forking the mainnet requires connecting to a full node, not an archive node."
+            ]
+        },
+        {
+            "title": "When using Hardhat for project development, which of the following are recommended security practices:",
+            "options": [
+                "Directly configure private keys or mnemonics in the hardhat.config.js file.",
+                "Configure private keys or mnemonics in files not tracked by the code management tool (e.g. .env files).",
+                "It is best for each project to use a separate wallet account for deploying contracts to avoid affecting other projects in case of account leakage.",
+                "Configure API KEY in files not tracked by the code management tool (e.g. .env files)."
+            ]
+        }
+    ]
+}

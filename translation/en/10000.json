@@ -1,0 +1,173 @@
+{
+    "title": "Blockchain Technology General Challenge",
+    "description": "This challenge is used to test your understanding of Bitcoin and blockchain technology. The content involves understanding of proof of work, wallets, browsers, transactions, etc.\n The challenge contains about 20 multiple-choice questions, there may be one or more answers, please answer carefully.",
+    "questions": [
+        {
+            "title": "Who proposed Bitcoin?",
+            "options": [
+                "中本聪（Satoshi Nakamoto）",
+                "Vitalik Buterin",
+                "Nick Szabo"
+            ]
+        },
+        {
+            "title": "Bitcoin is not just a digital currency, what else can it be?",
+            "options": [
+                "Decentralized peer-to-peer network",
+                "A set of rules for validating transactions and issuing currency",
+                "A public transaction ledger",
+                "A circulating currency recognized by the laws of various countries"
+            ]
+        },
+        {
+            "title": "What is the block time of Bitcoin?",
+            "options": ["About 10 minutes", "About 1 minute", "About 10 minutes"]
+        },
+        {
+            "title": "What technologies does Bitcoin use?",
+            "options": ["Elliptic curve cryptography", "Hash algorithm", "MySQL database"]
+        },
+        {
+            "title": "Which description of Bitcoin issuance is correct?",
+            "options": [
+                "Bitcoin is issued with block rewards",
+                "The block reward is halved approximately every 4 years",
+                "The issuance of 21 million coins is hard-coded in the Bitcoin client",
+                "The issuance of 21 million is an approximate value calculated according to the issuance rules"
+            ]
+        },
+        {
+            "title": "Which description of Bitcoin value (or price) is correct?",
+            "options": [
+                "Determined by the Bitcoin core development team",
+                "Viewing the transaction records on the Bitcoin chain can obtain the latest price",
+                "The value of Bitcoin is determined by the market or consensus. The more buyers, the higher the price"
+            ]
+        },
+        {
+            "title": "Which description of a hard fork is correct?",
+            "options": [
+                "A hard fork will always produce a new chain",
+                "A hard fork may produce a new chain",
+                "A hard fork is also a way of network upgrade",
+                "If blocks cannot be verified after a hard fork, the client should be upgraded promptly"
+            ]
+        },
+        {
+            "title": "What are the main sources of income for Bitcoin miners?",
+            "options": ["Block rewards", "Transaction fees", "Token airdrop rewards"]
+        },
+        {
+            "title": "If Alice needs to send 0.1 BTC to Bob, which of the following statements is correct?",
+            "options": [
+                "Alice needs to know Bob's Bitcoin address",
+                "Alice needs to know Bob's private key",
+                "Alice needs to sign the transaction",
+                "Bob needs to sign the transaction"
+            ]
+        },
+        {
+            "title": "Blockchain technology can be applied to which of the following scenarios?",
+            "options": [
+                "Preventing data tampering",
+                "Preventing the dissemination of false information",
+                "Transparent information disclosure",
+                "Exchange, lending, and other financial services"
+            ]
+        },
+        {
+            "title": "In your opinion, the **less suitable** application scenarios for Bitcoin and Ethereum public chain technology are:",
+            "options": [
+                "Applications with extremely high performance requirements",
+                "Cross-border payments",
+                "Need for massive data storage and computation"
+            ]
+        },
+        {
+            "title": "Blockchain is usually classified into which 3 types of chains based on the degree of openness?",
+            "options": [
+                "Development chain",
+                "Public blockchain (public chain)",
+                "Private blockchain (private chain)",
+                "Consortium blockchain"
+            ]
+        },
+        {
+            "title": "Which **two** technologies make blockchain technology tamper-proof?",
+            "options": [
+                "Data storage and verification are completed by distributed nodes",
+                "Blocks are linked by HASH",
+                "POW proof of work"
+            ]
+        },
+        {
+            "title": "What information does a Bitcoin block usually contain?",
+            "options": [
+                "Timestamp",
+                "Hash value of the previous block",
+                "Transaction data",
+                "IP address of the transactor"
+            ]
+        },
+        {
+            "title": "What is the relationship between Bitcoin private key, public key, and address?",
+            "options": [
+                "The public key can be derived from the private key",
+                "The address is derived from the public key",
+                "The public key can be derived from the address"
+            ]
+        },
+        {
+            "title": "Which description of the Bitcoin UTXO model is correct?",
+            "options": [
+                "UTXO refers to unspent transaction outputs",
+                "UTXO refers to spent transaction outputs",
+                "UTXO contains the balance of all addresses"
+            ]
+        },
+        {
+            "title": "Which description of the consensus mechanism is correct?",
+            "options": [
+                "The consensus mechanism is the method for reaching consensus in a distributed network",
+                "POS consensus mechanism usually has a specified block time",
+                "POW consensus mechanism usually has a specified block difficulty",
+                "The consensus mechanism usually has a specified block reward"
+            ]
+        },
+        {
+            "title": "Which statement about Proof of Work (POW) is correct?",
+            "options": [
+                "Work refers to solving mathematical problems (calculating Hash)",
+                "If you have 51% of the computing power, you can attack the network",
+                "POW actually requires miners to provide a large amount of computing power as collateral to prevent Sybil attacks",
+                "If two miners complete the proof of work at the same time, the chain will temporarily fork"
+            ]
+        },
+        {
+            "title": "How to store private keys or mnemonic phrases, the following practices are **not recommended**?",
+            "options": [
+                "Save on a connected computer using a notepad software or screenshot",
+                "Save on an online cloud drive",
+                "When sharing is needed, send it to friends using social software",
+                "Write with a pen on a piece of paper and put it in a safe deposit box"
+            ]
+        },
+        {
+            "title": "Which description of a wallet is correct?",
+            "options": [
+                "A wallet is an asset management tool because assets exist in wallet software",
+                "A wallet is a private key management and signing tool, and does not actually manage assets, but visualizes assets more",
+                "MetaMask can initiate Bitcoin transfer transactions"
+            ]
+        },
+        {
+            "title": "Which description of a blockchain browser is correct?",
+            "options": [
+                "The blockchain browser is a visual window for on-chain data",
+                "Miners can hide certain transactions in a block and not display them on the blockchain browser",
+                "The blockchain browser can query the IP address of the initiator of the transaction",
+                "The blockchain browser can query transaction amount, payee, timestamp, and other information"
+            ]
+        }
+    ]
+}

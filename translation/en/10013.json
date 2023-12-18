@@ -1,0 +1,86 @@
+{
+    "title": "Blockchain Data Fundamentals",
+    "description": "The purpose of this topic is to test and deepen students' basic understanding of blockchain technology, the Ethereum platform, and smart contracts through a series of multiple-choice questions.\nContent will cover basic concepts of blockchain, data structures, core technologies and principles, as well as practical applications on Ethereum, such as how to query transactions through Ethereum's Remote Procedure Call (RPC), how to retrieve the balance of a specific address in a particular ERC-20 or ERC-721 token contract, and how to obtain metadata for specific tokens. In addition, this topic will also delve into issues related to blockchain data, such as data immutability, data retrieval efficiency, and data scalability.\nThrough this topic, students will be able to better grasp the core concepts of blockchain and Ethereum technology, laying a solid foundation for future research and practical applications.",
+    "questions": [
+        {
+            "title": "What is the main design purpose of blockchain?\n",
+            "options": [
+                "Data retrieval and querying",
+                "Data immutability and transparency",
+                "Data compression and storage optimization",
+                "Data visualization and reporting"
+            ]
+        },
+        {
+            "title": "Why might nodes on the blockchain be inefficient in data retrieval?\n",
+            "options": [
+                "Because nodes need to verify each transaction",
+                "Because the data is linearly stored, not index-optimized",
+                "Because nodes do not support SQL queries",
+                "Because nodes use slow storage hardware"
+            ]
+        },
+        {
+            "title": "What is a Merkle tree on the blockchain?\n",
+            "options": [
+                "A data structure used to record transaction history",
+                "An algorithm used for cryptography",
+                "A data structure used to verify the integrity of transaction data",
+                "A database query language"
+            ]
+        },
+        {
+            "title": "Which technology can improve the scalability of blockchain?\n",
+            "options": [
+                "PoW (Proof of Work)",
+                "Lightning Network",
+                "Merkle Tree",
+                "Digital Signature"
+            ]
+        },
+        {
+            "title": "In blockchain applications, what technology is commonly used to ensure data immutability?\n",
+            "options": ["Database index", "Transaction hash", "API call", "Asynchronous communication"]
+        },
+        {
+            "title": "When you want to query multiple related transactions from a blockchain application, what data structure are you most likely to use?\n",
+            "options": ["Graph", "Array", "Hash table", "Linked list"]
+        },
+        {
+            "title": "In blockchain-based data analysis applications, what technology can help track fund flows?\n",
+            "options": [
+                "Transaction aggregation",
+                "Data visualization",
+                "Distributed file system",
+                "Interactive query"
+            ]
+        },
+        {
+            "title": "To retrieve logs within a specific block range on Ethereum, which RPC method should you use?\n",
+            "options": [
+                "eth_getTransactionByHash",
+                "eth_getBlockByNumber",
+                " eth_getLogs",
+                "eth_call"
+            ]
+        },
+        {
+            "title": "If you want to use Ethereum RPC to query the balance of a specific address in a particular ERC-20 token contract, what should you do?\n",
+            "options": [
+                "Directly use the eth_balanceOf method and provide the address and token contract address.",
+                "Use the eth_getBalance method and only provide the address to be queried.",
+                "Use the eth_call method to send a call to the ERC-20 contract, including the signature of the balanceOf function and the address to be queried.",
+                "Use eth_getTransactionCount and provide the address and token contract address."
+            ]
+        },
+        {
+            "title": "To obtain metadata for ERC-721 tokens, which method might you use?\n",
+            "options": [
+                "balanceOf(address _owner)",
+                "tokenMetadata(uint256 _tokenId)",
+                " tokenURI(uint256 _tokenId)",
+                "allowance(address _owner, address _spender)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "title": "Security Combat Training Camp Challenge",
+    "description": "The course challenge of the 'Blockchain Security Combat Training Camp' jointly launched by the Chain Community and BlockSec",
+    "questions": [
+        {
+            "title": "Regarding the backup mnemonic phrase/private key, the recommended practice is",
+            "options": [
+                "Take a screenshot or photo for storage",
+                "Use instant messaging tools to transfer between different devices",
+                "Use cloud storage",
+                "Offline storage, and create multiple backup copies"
+            ]
+        },
+        {
+            "title": "The main attack method for blockchain is:",
+            "options": [
+                "SQL injection",
+                "51% attack",
+                "Global Denial of Service (DDoS) attack",
+                "Password cracking"
+            ]
+        },
+        {
+            "title": "Regarding the understanding of blockchain security, which of the following statements is incorrect?",
+            "options": [
+                "Due to the tamper-resistant nature of blockchain, all blockchain applications are secure",
+                "When developing smart contracts, it is important to consider and prevent potential security vulnerabilities",
+                "As a user, it is very necessary to understand basic blockchain security knowledge to prevent phishing attacks and online fraud",
+                "The cryptographic protection measures of blockchain mean that all blockchain transactions are anonymous"
+            ]
+        },
+        {
+            "title": "What are the common contract vulnerabilities?",
+            "options": [
+                "Reentrancy attack, where the contract is re-invoked during execution, leading to the repeated execution of critical operations",
+                "Replay attack, where the attacker repeatedly uses the same signature information in different contexts to deceive",
+                "Improper access control settings, allowing unauthorized users to execute sensitive operations",
+                "Improper input validation, leading to incorrect validation of input data, resulting in unexpected behavior or vulnerabilities"
+            ]
+        },
+        {
+            "title": "What are the security vulnerabilities or risks of proxy contracts?",
+            "options": [
+                "Malicious modification of contract logic",
+                "Consuming more gas",
+                "Inconsistent order of variable declarations, leading to erroneous reading of stored data",
+                "Improper initialization"
+            ]
+        },
+        {
+            "title": "What are the key factors of a flash loan attack?",
+            "options": [
+                "Borrowing and repaying in a single transaction",
+                "Exploiting network delays for attacks",
+                "Exploiting contract vulnerabilities",
+                "All of the above"
+            ]
+        },
+        {
+            "title": "Which of the following are potential security risks of lending protocols?",
+            "options": ["Smart contract vulnerabilities", "Price manipulation", "Flash loan attacks", "Liquidity risk"]
+        },
+        {
+            "title": "What are the common cross-chain bridge security vulnerabilities and risks?",
+            "options": [
+                "Contract vulnerabilities",
+                "Relying on a single validation node",
+                "Validators not correctly listening to and processing data",
+                "All of the above"
+            ]
+        },
+        {
+            "title": "Calling the `case1` function, the return value is__\n\n```solidity\npragma solidity ^0.4.17;\ncontract Test {\n function Test() {}\n\n function case1() public view returns (uint8) {\n uint8 a = 255;\n uint8 b = 1;\n return a + b;\n }\n}\n```",
+            "options": ["0"]
+        },
+        {
+            "title": "Why is it not advisable to directly use existing on-chain data (block time, hash, etc.) when generating random numbers in smart contracts?"
+        },
+        {
+            "title": "Please point out the security vulnerabilities in the following contract\n\n ```solidity\n pragma solidity ^0.8.0;\n \n contract AccessControl{\n address public owner;\n mapping (address => uint256) public balances;\n \n modifier onlyOwner {\n require(owner == msg.sender, \"Ownable: caller is not the owner\");\n _;\n }\n \n constructor() {\n setOwner(msg.sender); \n }\n \n function setOwner(address _owner) public{\n owner=_owner;\n }\n \n function addBalance(address to, uint amount) public onlyOwner {\n balances[to] += amount;\n }\n }\n ```\n"
+        },
+        {
+            "title": "Using Phalcon Fork, write a demo of a reentrancy attack, create a new fork using Phalcon Fork, deploy and verify the vulnerable contract, and send the attack transaction. Submit the Phalcon Fork Scan URL containing the vulnerable contract and attack transaction (make sure it is publicly accessible).\n\nReference: https://docs.phalcon.xyz/phalcon-fork/tutorials/solidity-by-example-the-re-entrancy-attack"
+        }
+    ]
+}

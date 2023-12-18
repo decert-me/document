@@ -1,0 +1,91 @@
+{
+    "title": "On-chain Data Training Camp L3",
+    "description": "",
+    "questions": [
+        {
+            "title": "What are the main advantages of DApp compared to traditional applications?",
+            "options": [
+                "Faster data processing speed",
+                "Decentralization and tamper-resistant data",
+                "Lower operating costs",
+                "Stronger network connection stability"
+            ]
+        },
+        {
+            "title": "What is the function of ABI?",
+            "options": [
+                "Provides an interface for cryptocurrency wallets",
+                "Defines the interface between smart contracts and the external world",
+                "Stores transaction data on the blockchain",
+                "Optimizes the consensus mechanism of the blockchain"
+            ]
+        },
+        {
+            "title": "Which of the following is not a part of smart contract components?",
+            "options": ["Functions", "Events", "External API calls", "State variables"]
+        },
+        {
+            "title": "What is the difference between .call and .send in smart contracts? ",
+            "options": [
+                ".call can call external functions, .send can only send Ether",
+                ".call is used to create new contracts, .send is used to call functions",
+                ".call can only read data, .send can modify state",
+                ".call sends plaintext messages between contracts, .send sends encrypted messages"
+            ]
+        },
+        {
+            "title": "Why is it necessary to manage gas when writing smart contracts? ",
+            "options": [
+                "To avoid network congestion",
+                "Limit the size of the contract",
+                "Prevent infinite loops and optimize computational costs",
+                "Accelerate transaction confirmation time"
+            ]
+        },
+        {
+            "title": "What is the principle of ipfs? \n",
+            "options": [
+                "Centralized file storage system",
+                "Cryptocurrency based on blockchain",
+                "Distributed Web storage protocol",
+                "Programming language for smart contracts"
+            ]
+        },
+        {
+            "title": "What is JSON-RPC mainly used for in Ethereum? ",
+            "options": [
+                "Executing smart contracts",
+                "Protocol for communication between nodes",
+                "Mining new cryptocurrencies",
+                "Creating a new blockchain network"
+            ]
+        },
+        {
+            "title": "What type of dataset does the data produced by Subgraph belong to?",
+            "options": [
+                "Encrypted database files",
+                "Backup copies of the blockchain",
+                "Indexed blockchain data",
+                "Randomly generated test data"
+            ]
+        },
+        {
+            "title": "In The Graph, what information does Subgraph Manifest contain? \n",
+            "options": [
+                "User transaction records",
+                "Definitions of data sources, entities, and mappings",
+                "Node reward mechanisms",
+                "Current prices of all cryptocurrencies"
+            ]
+        },
+        {
+            "title": "Which is not a necessary step for deploying a Subgraph? \n",
+            "options": [
+                "Writing mapping scripts",
+                "Setting gas prices",
+                "Defining GraphQL schema",
+                "Creating Subgraph Manifest"
+            ]
+        }
+    ]
+}
