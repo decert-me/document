@@ -60,7 +60,7 @@
             "title": "What are the two main components of this proposal?",
             "options": [
                 "An unlicensed registry for deploying bound token accounts",
-                "Standard interface for implementing token binding accounts",
+                "Standard interface for token binding account implementation",
                 "ERC-721 extension interface"
             ]
         },

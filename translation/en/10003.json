@@ -25,12 +25,12 @@
                 "`contracts`: directory for smart contract files.",
                 "`scripts`: directory for deployment scripts.",
                 "`test`: folder for smart contract test cases.",
-                "`hardhat.config.js`: configuration file for configuring the network and compilation options connected by hardhat.",
+                "`hardhat.config.js`: configuration file for configuring the network and compilation options for hardhat.",
                 "`deployment`: saves the deployed contract addresses and ABI information."
             ]
         },
         {
-            "title": "The correct practice for developing smart contracts in a Hardhat project is:",
+            "title": "When developing smart contracts in a Hardhat project, which of the following practices is correct:",
             "options": [
                 "Write smart contracts in Solidity and place them in the contracts directory.",
                 "Write smart contract files in JavaScript and place them in the contracts directory.",

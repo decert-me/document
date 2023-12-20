@@ -1,6 +1,6 @@
 {
     "title": "Foundry Framework Contract Development Test",
-    "description": "Foundry is a Solidity smart contract development toolchain. This challenge is used to test the understanding of the Foundry development framework, mainly involving compilation, testing, deployment, and how to perform open source verification of the code. The challenge contains about 16 multiple-choice questions, with one or more answers possible, so please answer carefully.",
+    "description": "Foundry is a Solidity smart contract development toolchain. This challenge is used to test the understanding of the Foundry development framework, mainly involving compilation, testing, deployment, and how to perform open source verification of the code. The challenge contains about 16 multiple-choice questions, with one or more answers possible. Please answer carefully.",
     "questions": [
         {
             "title": "Regarding the Foundry development framework, which of the following descriptions is correct:",
@@ -111,7 +111,7 @@
             "options": [
                 "Foundry will automatically determine the Ethereum network it is on and connect automatically.",
                 "Use the -rpc-url option to set the RPC endpoint.",
-                "Cannot configure RPC endpoints in foundry.toml, only through command line input."
+                "Cannot configure the RPC endpoints in foundry.toml, it can only be passed through the command line."
             ]
         },
         {
@@ -135,7 +135,7 @@
         {
             "title": "Regarding the anvil command, which of the following descriptions is correct",
             "options": [
-                "anvil can create a local test network.",
+                "Anvil can create a local test network.",
                 "The command to fork the main network with anvil is: anvil --fork-url rpc_url ",
                 "After forking the main network, it can send simulated transactions and simulate contract calls."
             ]

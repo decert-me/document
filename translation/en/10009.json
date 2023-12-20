@@ -7,7 +7,7 @@
             "options": ["go-ethereum", "go-solidity-sha3", "foundry", "hardhat"]
         },
         {
-            "title": "What is the functionality of the go-solidity-sha3 library?",
+            "title": "What is the function of the go-solidity-sha3 library?",
             "options": [
                 "Generate Ethereum accounts",
                 "Run Solidity programs",
@@ -78,7 +78,7 @@
             ]
         },
         {
-            "title": "When using abigen to generate a contract go file, which statement is correct?",
+            "title": "When using abigen to generate a contract go file, which  of the following statements is correct?",
             "options": [
                 "The generated file can directly interact with the smart contract through functions",
                 "Generate the contract go file from the contract ABI JSON file",

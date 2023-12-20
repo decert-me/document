@@ -23,10 +23,10 @@
             "options": ["totalSupply", "supply", "totalAmount", "amount"]
         },
         {
-            "title": "Can the total issuance of ERC-20 standard be dynamically adjusted?",
+            "title": "Can the total supply of ERC-20 standard be dynamically adjusted?",
             "options": [
                 "Yes, it can be dynamically adjusted",
-                "No, the total issuance is fixed",
+                "No, the total supply is fixed",
                 "Depends on the contract implementation"
             ]
         },

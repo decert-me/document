@@ -1,6 +1,6 @@
 {
     "title": "Golang Basic Knowledge Test",
-    "description": "Golang is a statically typed programming language with high performance, concurrency, and concise syntax.\nThis challenge is used to test the understanding of basic knowledge of Golang.\nThe challenge contains about 16 multiple-choice questions, which may have one or more answers. Please answer carefully.",
+    "description": "Golang is a statically typed programming language with high performance, high concurrency, and concise syntax.\nThis challenge is used to test the understanding of basic knowledge of Golang.\nThe challenge contains about 16 multiple-choice questions, which may have one or more answers. Please answer carefully.",
     "questions": [
         {
             "title": "What are the main features of the Go language?",
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "title": "In the Go language, which function can remove an element from a slice at a specified position?",
+            "title": "In the Go language, which function can be used to remove an element from a slice at a specified position?",
             "options": [
                 "remove(s, index)",
                 "delete(s, index)",
@@ -72,7 +72,7 @@
             ]
         },
         {
-            "title": "The reference types in golang include",
+            "title": "The reference types in Golang include",
             "options": ["slice", "map", "channel", "interface"]
         },
         {
