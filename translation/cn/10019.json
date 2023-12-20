@@ -7,7 +7,7 @@
             "options": ["资金利用率低", "滑点低", "模型复杂", "难控制价格"]
         },
         {
-            "title": "假设当前价格1ETH:280Dai，某个 uniswap v2 pool 中 ETH 是10个，Dai 是2800个,fee 为0.3%。那么在这个 pool 中1ETH 可换回多少个 Dai 呢？计算结果四舍五入，保留整数\n",
+            "title": "假设当前价格 1ETH:280Dai，某个 uniswap v2 pool 中 ETH 是10个，Dai 是2800个,fee 为0.3%。那么在这个 pool 中 1 ETH 可换回多少个 Dai 呢？计算结果四舍五入，保留整数\n",
             "options": ["254", "280", "255", "256"]
         },
         {
@@ -22,10 +22,10 @@
         {
             "title": "以下哪个数据流可以从 rawdata 洗出 uniswap v2 portfolio？",
             "options": [
-                "logs→transfer,mint →balance + token_prices",
-                "traces→transfer,pool→balance + token_prices",
-                "logs→transfer,pool →balance + token_prices",
-                "logs→transfer,pool →token_prices"
+                "logs→transfer, mint→balance + token_prices",
+                "traces→transfer, pool→balance + token_prices",
+                "logs→transfer, pool→balance + token_prices",
+                "logs→transfer, pool→token_prices"
             ]
         },
         {
@@ -49,10 +49,10 @@
         {
             "title": "使用什么字段可以计算出用户拥有的 uniswap v3资产？",
             "options": [
-                "position.tickUpper,position.tickLower,pool.tick,position.liquidity,pool.liquidity",
-                "position.tickCurrent,pool.tick,position.liquidity,pool.liquidity,pool.price",
-                "position.tickUpper,position.tickLower,pool.tick,position.liquidity,pool.liquidity,pool.price",
-                "position.tickUpper,position.tickLower,pool.tick,position.liquidity,pool.price"
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.liquidity",
+                "position.tickCurrent, pool.tick, position.liquidity, pool.liquidity, pool.price",
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.liquidity, pool.price",
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.price"
             ]
         },
         {

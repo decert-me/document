@@ -69,7 +69,7 @@
             "options": [
                 "直接使用 eth_balanceOf 方法并提供地址和令牌合约地址。",
                 "使用 eth_getBalance 方法并仅提供要查询的地址。",
-                "使用 eth_call 方法，向 ERC-20 合约发送一个调用，包括 balanceOf 函数的签名和要查 询的地址。",
+                "使用 eth_call 方法，向 ERC-20 合约发送一个调用，包括 balanceOf 函数的签名和要查询的地址。",
                 "使用 eth_getTransactionCount 并提供地址和令牌合约地址。"
             ]
         },
@@ -78,7 +78,7 @@
             "options": [
                 "balanceOf(address _owner)",
                 "tokenMetadata(uint256 _tokenId)",
-                " tokenURI(uint256 _tokenId)",
+                "tokenURI(uint256 _tokenId)",
                 "allowance(address _owner, address _spender)"
             ]
         }
