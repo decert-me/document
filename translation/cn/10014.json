@@ -1,6 +1,6 @@
 {
     "title": "gas 优化",
-    "description": "编写Solidity 代码时，如何做到消耗更少的 gas ，同时实现相同的业务逻辑。",
+    "description": "编写 Solidity 代码时，如何做到消耗更少的 gas ，同时实现相同的业务逻辑。",
     "questions": [
         {
             "title": "```\npragma solidity ^0.8.0;\n\n\ncontract A {\n uint256 public number;\n\n function doSomething() public {\n uint256 _number = number;\n require(_number < 10);\n number = _number + 1;\n }\n}\n\ncontract B {\n uint256 public number;\n\n function doSomething() public {\n require(number < 10);\n number = number + 1;\n }\n}\n```\n\n合约 A 和 B 的 `doSomething()`函数实现同样的功能，谁更省 gas ？\n",

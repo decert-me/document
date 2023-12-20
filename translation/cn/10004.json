@@ -59,7 +59,7 @@
             ]
         },
         {
-            "title": "下面关于UNION的陈述中哪一个是正确的？",
+            "title": "下面关于 UNION 的陈述中哪一个是正确的？",
             "options": [
                 "在每个 SELECT 语句中，列的顺序不能相同",
                 "列必须具有类似的数据类型",
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "title": "下面关于UNION的陈述中哪一个是正确的？",
+            "title": "下面关于 UNION 的陈述中哪一个是正确的？",
             "options": [
                 "UNION 比 UNION ALL 更快",
                 "UNION 和 UNION ALL 同时计算",
@@ -77,16 +77,16 @@
             ]
         },
         {
-            "title": "分组求和相关的SQL关键字是哪个？",
+            "title": "分组求和相关的 SQL 关键字是哪个？",
             "options": ["UNION", "LIMIT", "GROUP BY", "WHERE"]
         },
         {
-            "title": "以下关于CTE的描述错误的是哪个？",
+            "title": "以下关于 CTE 的描述错误的是哪个？",
             "options": [
-                "CTE是指 Common Table Expression，即公用表表达式",
-                "可以在同一SQL语句中多次引用已定义的CTE",
-                "当多次用到相同的子查询时，使用CTE替代可以提高查询效率",
-                "CTE的性能比子查询差"
+                "CTE 是指 Common Table Expression，即公用表表达式",
+                "可以在同一 SQL 语句中多次引用已定义的 CTE",
+                "当多次用到相同的子查询时，使用 CTE 替代可以提高查询效率",
+                "CTE 的性能比子查询差"
             ]
         },
         {
@@ -98,7 +98,7 @@
             "options": ["INNER JOIN", "JOIN", "FULL JOIN", "LEFT JOIN"]
         },
         {
-            "title": "以下关于Dune 的数据表的描述中哪一项是正确的？",
+            "title": "以下关于 Dune 的数据表的描述中哪一项是正确的？",
             "options": [
                 "erc20_ethereum.evt_Transfer 是魔法表",
                 "表名称包括“_evt_”的是事件日志表",
@@ -108,40 +108,40 @@
             ]
         },
         {
-            "title": "以下关于Dune 魔法表（Spells）的描述中哪一项是错误的？",
+            "title": "以下关于 Dune 魔法表（Spells）的描述中哪一项是错误的？",
             "options": [
                 "任何人都可以参与构建和贡献魔法表",
-                "魔法表全部是有Dune核心团队创建的",
-                "魔法表是由Dune 核心团队和Dune 社区用户共同构建的",
+                "魔法表全部是有 Dune 核心团队创建的",
+                "魔法表是由 Dune 核心团队和 Dune 社区用户共同构建的",
                 "魔法表本质上可能是视图（View）也可能是表格（Table）"
             ]
         },
         {
-            "title": "以下关于Dune的合约解析表描述正确的是？",
+            "title": "以下关于 Dune 的合约解析表描述正确的是？",
             "options": [
                 "任何用户都可以提交智能合约解析",
                 "只有智能合约的部署者可以提交解析",
-                "只有Dune 的员工可以提交智能合约解析",
+                "只有 Dune 的员工可以提交智能合约解析",
                 "只有付费会员用户才能提交智能合约解析"
             ]
         },
         {
-            "title": "要查询用户在以太坊Ethereum链上的ETH Token准确余额，必须从哪个表统计计算？",
+            "title": "要查询用户在以太坊 Ethereum 链上的 ETH Token 准确余额，必须从哪个表统计计算？",
             "options": [
                 "Transactions 表",
                 "Logs 表",
                 "Traces 表",
                 "Transactions 和 Traces 表",
-                "Logs 和Traces 表"
+                "Logs 和 Traces 表"
             ]
         },
         {
-            "title": "如果某个智能合约没有被Dune解析，以下描述正确的是？",
+            "title": "如果某个智能合约没有被 Dune 解析，以下描述正确的是？",
             "options": [
-                "无法在Dune上分析该智能合约的数据",
-                "可以从Logs表直接解析出合约方法调用数据",
-                "可以从Logs表直接解析出合约方法调用和事件日志数据",
-                "可以从Logs表直接解析出合约事件日志数据"
+                "无法在 Dune 上分析该智能合约的数据",
+                "可以从 Logs 表直接解析出合约方法调用数据",
+                "可以从 Logs 表直接解析出合约方法调用和事件日志数据",
+                "可以从 Logs 表直接解析出合约事件日志数据"
             ]
         }
     ]

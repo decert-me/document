@@ -6,7 +6,7 @@
             "title": "关于 Foundry 开发框架，以下描述正确的是：",
             "options": [
                 "Foundry 是一个智能合约开发工具。",
-                "Foundry 由三个不同的命令行工具（CLI）组成，包括forge，cast，和anvil。",
+                "Foundry 由三个不同的命令行工具（CLI）组成，包括 forge，cast，和 anvil。",
                 "帮助 Solidity 开发者更加高效地开发和测试智能合约。",
                 "帮助 Move 开发者更加高效地开发和测试智能合约。"
             ]
@@ -36,7 +36,7 @@
                 "在 foundry.toml 可以在同一 profile 中配置多个 solidity 编译器版本。",
                 "在 foundry.toml 可以在不同 profile 中配置不同 solidity 编译器版本。",
                 "运行 forge 时，可以使用 FOUNDRY_PROFILE 环境变量指定要使用的配置文件。",
-                "在 foundry.toml 可以配置不同链的RPC端点。"
+                "在 foundry.toml 可以配置不同链的 RPC 端点。"
             ]
         },
         {
@@ -76,16 +76,16 @@
                 "Forge 标准库 不包含作弊码功能，需要另外导入作弊码库",
                 "使用 roll(uint256) 函数设置区块时间",
                 "使用 prank(address) 函数设置下一次调用的 msg.sender。",
-                "使用 sign(uint256 privateKey, bytes32 digest) 函数对digest进行签名。"
+                "使用 sign(uint256 privateKey, bytes32 digest) 函数对 digest 进行签名。"
             ]
         },
         {
             "title": "在 Foundry 工程中关于调试智能合约以下的正确的是：",
             "options": [
-                "可以在Solidity 中引入 \"hardhat/console.sol\" 调用 console.log() 打印一些变量的值",
-                "可以在Solidity 中引入 \"forge-std/console.sol\" 调用 console.log() 打印一些变量的值",
+                "可以在 Solidity 中引入 \"hardhat/console.sol\" 调用 console.log() 打印一些变量的值",
+                "可以在 Solidity 中引入 \"forge-std/console.sol\" 调用 console.log() 打印一些变量的值",
                 "默认的日志级别能够显示 console.log() 打印的结果",
-                "可以使用-v标志增加日志级别，显示更详细的日志"
+                "可以使用 -v 标志增加日志级别，显示更详细的日志"
             ]
         },
         {
@@ -103,7 +103,7 @@
                 "使用 forge deploy 命令部署智能合约",
                 "使用 forge create 命令部署智能合约",
                 "使用 -private-key <RAW_PRIVATE_KEY> 选项使用提供的私钥部署",
-                "使用 -rpc-url 选项设置RPC端点"
+                "使用 -rpc-url 选项设置 RPC 端点"
             ]
         },
         {
@@ -111,7 +111,7 @@
             "options": [
                 "Foundry 会自动判断所处的以太坊网络，自动连接。",
                 "使用 -rpc-url 选项设置 RPC 端点",
-                "不能在 foundry.toml 中配置RPC 端点，只能通过命令行传入。"
+                "不能在 foundry.toml 中配置 RPC 端点，只能通过命令行传入。"
             ]
         },
         {
@@ -124,7 +124,7 @@
             ]
         },
         {
-            "title": "在使用anvil Fork时，是否可以实时修改以太坊链上区块链的状态？",
+            "title": "在使用 anvil Fork 时，是否可以实时修改以太坊链上区块链的状态？",
             "options": [
                 "是的，可以实时修改",
                 "不可以，只能用于静态快照",

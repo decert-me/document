@@ -1,6 +1,6 @@
 {
     "title": "Golang 以太坊开发测试",
-    "description": "以太坊官方实现 Go-ethereum ，也被简称为Geth，是最流行的以太坊客户端。\n使用Golang开发应用程序时，Geth提供了读写区块链的一切功能。\n本挑战用来测试对 Golang 以太坊开发基础知识的了解。\n挑战包含约 11 道选择题，可能有一个或多个答案，请仔细答题。",
+    "description": "以太坊官方实现 Go-ethereum ，也被简称为 Geth，是最流行的以太坊客户端。\n使用 Golang 开发应用程序时，Geth 提供了读写区块链的一切功能。\n本挑战用来测试对 Golang 以太坊开发基础知识的了解。\n挑战包含约 11 道选择题，可能有一个或多个答案，请仔细答题。",
     "questions": [
         {
             "title": "Golang 以太坊开发一般有哪些库?",
@@ -69,7 +69,7 @@
             ]
         },
         {
-            "title": "以下哪个选项是go-ethereum中用于生成随机私钥的函数？",
+            "title": "以下哪个选项是 go-ethereum 中用于生成随机私钥的函数？",
             "options": [
                 "crypto.GenerateKeyPair()",
                 "crypto.GenKeyPair()",
@@ -78,12 +78,12 @@
             ]
         },
         {
-            "title": "使用abigen生成合约go文件，下面说法正确的是：",
+            "title": "使用 abigen 生成合约 go 文件，下面说法正确的是：",
             "options": [
                 "生成后可以直接通过函数与智能合约交互",
                 "通过合约 ABI JSON 文件生成合约 go 文件 ",
                 "通过合约源码 sol 文件生成合约 go 文件",
-                "生成的go文件中会存在 ABI JSON 数据"
+                "生成的 go 文件中会存在 ABI JSON 数据"
             ]
         }
     ]
