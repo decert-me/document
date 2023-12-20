@@ -3,7 +3,7 @@
     "description": "本挑战用来测试以太坊智能合约开发基础知识的了解，主要涉及的内容有开发基础、Solidity 语法及程序的理解。\n挑战包含约 30 道选择题，可能有一个或多个答案，请仔细答题。",
     "questions": [
         {
-            "title": "以下哪一项**不是** Remix 在线IDE的功能：",
+            "title": "以下哪一项**不是** Remix 在线 IDE 的功能：",
             "options": [
                 "代码补全提示",
                 "代码编译及部署",
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "title": "以下关于uint 的使用 ，以下代码正确的是:",
+            "title": "以下关于 uint 的使用 ，以下代码正确的是:",
             "options": [
                 "int8 a = -1;",
                 "uint8 x = 120 + 360;",
@@ -163,7 +163,7 @@
             "title": "有函数定义：\n```\nfunction f() public view returns (uint x) { \n    x = msg.value;\n}\n```\n\n则：",
             "options": [
                 "这个函数无法编译通过  ",
-                "此函数返回传入函数的wei 数量",
+                "此函数返回传入函数的 wei 数量",
                 "函数永远返回0"
             ]
         },
@@ -189,7 +189,7 @@
         {
             "title": "`require` 通常用于错误检查， 以下代码在运行 `test` 函数后， 结果正确的是:\n\n```\ncontract Test {\n    uint public a = 10;\n    uint public b = 0;\n\n    function test() public returns (uint) {\n        a += 5;\n        require(a < 10, \"invalid num\");\n        b += 1;\n    }\n}\n```",
             "options": [
-                "运行test会回退（revert）， 因此 a,b 结果不变，即 a = 10， b = 0; ",
+                "运行 test 会回退（revert）， 因此 a,b 结果不变，即 a = 10， b = 0; ",
                 " 成功运行，结果为 a = 15， b = 1",
                 " 成功运行， 结果为 a = 15， b = 0"
             ]
@@ -225,8 +225,8 @@
             "title": "以下关于 msg.sender 的说法正确的是：\n",
             "options": [
                 "表示交易发起者的地址， 只能是用户地址（EOA 地址）",
-                "表示当前外部调用者的地址， 若在 A 合约中调用 B 合约的函数b，则在 函数b 中， msg.sender 为 A 合约地址",
-                "在函数调用中，若想变更调用者的地址， 可以对msg.sender 赋值进行修改"
+                "表示当前外部调用者的地址， 若在 A 合约中调用 B 合约的函数 b，则在 函数 b 中， msg.sender 为 A 合约地址",
+                "在函数调用中，若想变更调用者的地址， 可以对 msg.sender 赋值进行修改"
             ]
         },
         {
@@ -251,9 +251,9 @@
             "title": "关于 receive 及 fallback 函数描述正确的是？",
             "options": [
                 "receive 和 fallback 函数和普通函数没有区别，用户可以直接调用",
-                "当用户向一个合约地址转以太币时，若合约有receive 函数，则receive会被调用",
+                "当用户向一个合约地址转以太币时，若合约有 receive 函数，则 receive 会被调用",
                 "当用户调用一个合约地址下不存在的函数时，receive 函数会被调用。",
-                "当用户调用一个合约地址下不存在的函数时，若有 fallback 函数，则fallback会被调用， 若没有 fallback 函数则出错"
+                "当用户调用一个合约地址下不存在的函数时，若有 fallback 函数，则 fallback 会被调用， 若没有 fallback 函数则出错"
             ]
         },
         {

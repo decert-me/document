@@ -54,13 +54,13 @@
             "title": "关于 Optimistic Rollup，以下哪些陈述是正确的？",
             "options": [
                 "Optimistic Rollup 假设所有参与者都是不诚实的",
-                " 它允许一小批验证者节点对交易进行收集、排序、验证",
-                " OP-Rollup 定期向主网上传状态根和压缩后的全部交易数据",
+                "它允许一小批验证者节点对交易进行收集、排序、验证",
+                "OP-Rollup 定期向主网上传状态根和压缩后的全部交易数据",
                 "OP-Rollup 的退出窗口期通常需要 7 - 14 天的等待期"
             ]
         },
         {
-            "title": "关于 Zero-Knowledge Rollup (ZK-Rollup)，以下哪些陈述是正确的？\n\n\n",
+            "title": "关于 Zero-Knowledge Rollup (ZK-Rollup)，以下哪些陈述是正确的？",
             "options": [
                 "ZK-Rollup 会周期性地向主网上传状态根、压缩交易数据和有效性证明",
                 "ZK-Rollup 的安全性依赖于 Layer 1 上的智能合约来验证零知识证明的有效性",
@@ -69,7 +69,7 @@
             ]
         },
         {
-            "title": "STARK 在处理 Layer 2 上的大量交易时，与 SNARK 相比，拥有生成和验证零知识证明的速度更快的优势。\n",
+            "title": "STARK 在处理 Layer 2 上的大量交易时，与 SNARK 相比，拥有生成和验证零知识证明的速度更快的优势。",
             "options": ["正确", "错误"]
         },
         {
@@ -82,7 +82,7 @@
             ]
         },
         {
-            "title": "关于 Validium 和 Volition，以下哪个描述最准确地反映了这两种方案的主要区别？\n",
+            "title": "关于 Validium 和 Volition，以下哪个描述最准确地反映了这两种方案的主要区别？",
             "options": [
                 "Validium 和 Volition 都不上传交易数据到主网",
                 "Volition 是 Validium 的改进版本，允许用户选择其交易数据是否在主网可用",
@@ -91,7 +91,7 @@
             ]
         },
         {
-            "title": "关于以太坊的 Deneb 更新，以下哪项描述最准确地反映了它的主要作用？\n",
+            "title": "关于以太坊的 Deneb 更新，以下哪项描述最准确地反映了它的主要作用？",
             "options": [
                 "Deneb 更新直接提高了以太坊主链的交易处理速度",
                 "它引入了 Blob 交易，允许 Layer 2 网络以较低成本存储大量数据",

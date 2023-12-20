@@ -1,21 +1,21 @@
 {
     "title": "Hardhat 开发框架使用测试",
-    "description": "Hardhat 是流行的智能合约开发框架，本挑战用来测试你对 Hardhat 的使用了解程度，内容涉及到如何使用 Hardhat 来编译、测试、部署、以及如何进行代码开源验证。\n\n挑战一共包含 18 道选择题， 完成此挑战，你可以收获一枚戴Hardhat小黄帽的小浣熊 NFT 。",
+    "description": "Hardhat 是流行的智能合约开发框架，本挑战用来测试你对 Hardhat 的使用了解程度，内容涉及到如何使用 Hardhat 来编译、测试、部署、以及如何进行代码开源验证。\n\n挑战一共包含 18 道选择题， 完成此挑战，你可以收获一枚戴 Hardhat 小黄帽的小浣熊 NFT 。",
     "questions": [
         {
             "title": "Hardhat 是一个用于以太坊智能合约开发的开源框架。它的主要用途包含有：",
             "options": [
-                "为Solidity开发者提供一个可扩展、可配置和易于使用的开发环境和工具集 。",
-                "帮助Solidity开发者更加高效地开发和测试智能合约。",
+                "为 Solidity 开发者提供一个可扩展、可配置和易于使用的开发环境和工具集 。",
+                "帮助 Solidity 开发者更加高效地开发和测试智能合约。",
                 "帮助 Move 开发者更加高效地开发和测试智能合约。"
             ]
         },
         {
             "title": "如何创建一个新的 Hardhat 项目，以下描述正确的是：",
             "options": [
-                "Hardhat 构建在Node.js之上，因此需要安装好 Node.js 环境。",
+                "Hardhat 构建在 Node.js 之上，因此需要安装好 Node.js 环境。",
                 "需要通过 Node.js 包管理工具安装 hardhat, 例如：`npm install hardhat`。",
-                "在终端中通过包运行器运行hardhat（ 如：\"npx hardhat\" ）， 再根据指引操作就可以一个新的Hardhat项目。",
+                "在终端中通过包运行器运行 hardhat（ 如：\"npx hardhat\" ）， 再根据指引操作就可以一个新的 Hardhat 项目。",
                 "可以使用 `hardhat create` 命令创建一个工程。"
             ]
         },
@@ -25,8 +25,8 @@
                 "`contracts`：智能合约文件目录。",
                 "`scripts` ：部署脚本目录。",
                 "`test`：智能合约测试用例文件夹。",
-                "`hardhat.config.js`：配置文件，配置hardhat连接的网络及编译选项等。",
-                "`deployment` ： 保存部署后的合约地址及ABI 等信息。"
+                "`hardhat.config.js`：配置文件，配置 hardhat 连接的网络及编译选项等。",
+                "`deployment` ： 保存部署后的合约地址及 ABI 等信息。"
             ]
         },
         {
@@ -41,9 +41,9 @@
         {
             "title": "关于 `hardhat.config.js` 的作用描述正确的是:",
             "options": [
-                "在hardhat.config.js可以配置多个区块链网络。",
-                "在hardhat.config.js可以配置多个账号用于部署和测试合约。",
-                "在hardhat.config.js可以配置多个solidity 编译器版本。",
+                "在 hardhat.config.js 可以配置多个区块链网络。",
+                "在 hardhat.config.js 可以配置多个账号用于部署和测试合约。",
+                "在 hardhat.config.js 可以配置多个 solidity 编译器版本。",
                 "在 hardhat.config.js 可以配置测试多个不同的合约。"
             ]
         },
@@ -59,7 +59,7 @@
         {
             "title": "在 Hardhat 工程中关于调试智能合约以下的正确的是：",
             "options": [
-                "配合 Hardhat node ， 可以在Solidity 中引入 \"hardhat/console.sol\" 调用 console.log() 打印一些变量的值",
+                "配合 Hardhat node ， 可以在 Solidity 中引入 \"hardhat/console.sol\" 调用 console.log() 打印一些变量的值",
                 "在代码编辑器中，设置断点，在运行在该代码处，hardhat 会自动显示该处相关变量的值。",
                 "在测试脚本中可以使用 debugger 关键字来给合约设置断点进行调试。"
             ]
@@ -69,7 +69,7 @@
             "options": [
                 "通过编写测试脚本，然后终端运行 \"npx hardhat test\" 命令来进行本地测试。",
                 "使用 \"npm run test <test_script_name>\"命令来运行某个特定的测试。",
-                "执行npm run test 时，可以指定 `--network <network-name>` 指定在哪一个网络上执行测试。",
+                "执行 npm run test 时，可以指定 `--network <network-name>` 指定在哪一个网络上执行测试。",
                 "Hardhat 框架会自动运行测试，不需要手动执行。"
             ]
         },
@@ -78,7 +78,7 @@
             "options": [
                 "在 hardhat.config.js 配置网络的节点的 IP 地址和端口号。",
                 "Hardhat 本身是一个以太坊节点，不需要额外连接网络。",
-                "在hardhat.config.js配置 Infura 等节点服务商的 RPC URL。"
+                "在 hardhat.config.js 配置 Infura 等节点服务商的 RPC URL。"
             ]
         },
         {
@@ -101,10 +101,10 @@
         {
             "title": "在 Hardhat 工程中，编写一个自己的 ERC20 Token 合约，推荐的做法是：",
             "options": [
-                "在智能合约中引入 OpenZeppelin 的 ERC20 合约，并继承ERC20合约。",
+                "在智能合约中引入 OpenZeppelin 的 ERC20 合约，并继承 ERC20 合约。",
                 "使用 hardhat-erc20 插件来创建 ERC20 合约，不用自己编写代码。",
-                "在部署合约之前，先对ERC20合约测试之后，再部署。",
-                "因为使用hardhat-erc20 插件来部署合约，因此不需要测试。"
+                "在部署合约之前，先对 ERC20 合约测试之后，再部署。",
+                "因为使用 hardhat-erc20 插件来部署合约，因此不需要测试。"
             ]
         },
         {
@@ -118,7 +118,7 @@
         {
             "title": "关于如何使用 Hardhat 在 Etherscan 进行合约源码验证，操作正确的是:",
             "options": [
-                "在 Hardhat 中，可以使用 hardhat-etherscan 或 hardhat-verify插件来进行源码验证。",
+                "在 Hardhat 中，可以使用 hardhat-etherscan 或 hardhat-verify 插件来进行源码验证。",
                 "hardhat-etherscan 插件仅支持以太坊主网的代码验证，不支持测试网或 Polygon 、BNB Chain 网络。",
                 "在使用 hardhat-etherscan 进行合约源码验证时， 需要在 etherscan 网站获取一个 API key 。",
                 "使用命令： `npx hardhat verify <deployed-address> --network <network-name>` 来执行源码验证。",
@@ -157,7 +157,7 @@
                 "在 hardhat.config.js 文件中直接配置私钥或助记词。",
                 "在代码管理工具不跟踪的文件（如 .env 文件）中配置私钥或助记词。",
                 "每个项目最好能使用独立的钱包账号来部署合约，避免账号泄露时影响到其他项目。",
-                "在代码管理工具不跟踪的文件（如 .env 文件）中配置API KEY。"
+                "在代码管理工具不跟踪的文件（如 .env 文件）中配置 API KEY。"
             ]
         }
     ]

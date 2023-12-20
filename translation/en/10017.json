@@ -25,7 +25,7 @@
             "options": ["Functions", "Events", "External API calls", "State variables"]
         },
         {
-            "title": "What is the difference between .call and .send in smart contracts? ",
+            "title": "What is the difference between .call and .send in smart contracts?",
             "options": [
                 ".call can call external functions, .send can only send Ether",
                 ".call is used to create new contracts, .send is used to call functions",
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "title": "Why is it necessary to manage gas when writing smart contracts? ",
+            "title": "Why is it necessary to manage gas when writing smart contracts?",
             "options": [
                 "To avoid network congestion",
                 "Limit the size of the contract",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "title": "What is the principle of ipfs? \n",
+            "title": "What is the principle of ipfs?",
             "options": [
                 "Centralized file storage system",
                 "Cryptocurrency based on blockchain",
@@ -52,7 +52,7 @@
             ]
         },
         {
-            "title": "What is JSON-RPC mainly used for in Ethereum? ",
+            "title": "What is JSON-RPC mainly used for in Ethereum?",
             "options": [
                 "Executing smart contracts",
                 "Protocol for communication between nodes",
@@ -70,7 +70,7 @@
             ]
         },
         {
-            "title": "In The Graph, what information does Subgraph Manifest contain? \n",
+            "title": "In The Graph, what information does Subgraph Manifest contain?",
             "options": [
                 "User transaction records",
                 "Definitions of data sources, entities, and mappings",
@@ -79,7 +79,7 @@
             ]
         },
         {
-            "title": "Which is not a necessary step for deploying a Subgraph? \n",
+            "title": "Which is not a necessary step for deploying a Subgraph?",
             "options": [
                 "Writing mapping scripts",
                 "Setting gas prices",

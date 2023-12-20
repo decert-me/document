@@ -1,6 +1,6 @@
 {
     "title": "Blockchain Data Fundamentals",
-    "description": "The purpose of this topic is to test and deepen students' basic understanding of blockchain technology, the Ethereum platform, and smart contracts through a series of multiple-choice questions.\nContent will cover basic concepts of blockchain, data structures, core technologies and principles, as well as practical applications on Ethereum, such as how to query transactions through Ethereum's Remote Procedure Call (RPC), how to retrieve the balance of a specific address in a particular ERC-20 or ERC-721 token contract, and how to obtain metadata for specific tokens. In addition, this topic will also delve into issues related to blockchain data, such as data immutability, data retrieval efficiency, and data scalability.\nThrough this topic, students will be able to better grasp the core concepts of blockchain and Ethereum technology, laying a solid foundation for future research and practical applications.",
+    "description": "The purpose of this topic is to test and deepen students' basic understanding of blockchain technology, the Ethereum platform, and smart contracts.\nContent will cover basic concepts of blockchain, data structures, core technologies and principles, as well as practical applications on Ethereum, such as how to query transactions through Ethereum's Remote Procedure Call (RPC), how to retrieve the balance of a specific address in a particular ERC-20 or ERC-721 token contract, and how to obtain metadata for specific tokens. In addition, this topic will also delve into issues related to blockchain data, such as data immutability, data retrieval efficiency, and data scalability.\nThrough this topic, students will be able to better grasp the core concepts of blockchain and Ethereum technology, laying a solid foundation for future research and practical applications.",
     "questions": [
         {
             "title": "What is the main design purpose of blockchain?\n",
@@ -78,7 +78,7 @@
             "options": [
                 "balanceOf(address _owner)",
                 "tokenMetadata(uint256 _tokenId)",
-                " tokenURI(uint256 _tokenId)",
+                "tokenURI(uint256 _tokenId)",
                 "allowance(address _owner, address _spender)"
             ]
         }

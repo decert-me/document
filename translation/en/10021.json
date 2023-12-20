@@ -32,9 +32,9 @@
             "options": ["Yes", "No"]
         },
         {
-            "title": "Regarding the second-layer solution of Rollup, which of the following statements are correct?",
+            "title": "Regarding the Layer2 solution of Rollup, which of the following statements are correct?",
             "options": [
-                "Rollup's second-layer solution increases decentralization",
+                "Rollup's Layer2 solution increases decentralization",
                 "Rollup significantly relieves the computational burden of Layer 1, effectively achieving scalability",
                 "Rollup compresses transaction data, saving storage resources of Layer 1",
                 "Rollup uploads necessary key information to Layer 1, maximizing the inheritance of Layer 1's security"

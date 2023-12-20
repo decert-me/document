@@ -1,31 +1,31 @@
 {
     "title": "链上数据训练营 L5",
-    "description": "本课题旨在通过一系列选择题来测试和加深学生对区块链技术、以太坊平台和智能合约的基础理解。\n内容将涉及区块链的基本概念、数据结构、核心技术和原理，以及在以太坊上的实际应用，如如何通过以太坊的远程过程调用(RPC)来查询交易、如何获取某个地址在特定ERC-20或ERC-721令牌合约中的余额，以及如何获取特定代币的元数据等。此外，本课题还会深入探讨与区块链数据相关的问题，如数据的不可篡改性、数据检索的效率、以及数据的可扩展性等。\n通过这个课题，学生将能够更好地掌握区块链和以太坊技术的核心概念，为未来的研究和实际应用打下坚实的基础。",
+    "description": "本课题旨在通过一系列选择题来测试和加深学生对区块链技术、以太坊平台和智能合约的基础理解。\n内容将涉及区块链的基本概念、数据结构、核心技术和原理，以及在以太坊上的实际应用，如如何通过以太坊的远程过程调用(RPC)来查询交易、如何获取某个地址在特定 ERC-20 或 ERC-721令牌合约中的余额，以及如何获取特定代币的元数据等。此外，本课题还会深入探讨与区块链数据相关的问题，如数据的不可篡改性、数据检索的效率、以及数据的可扩展性等。\n通过这个课题，学生将能够更好地掌握区块链和以太坊技术的核心概念，为未来的研究和实际应用打下坚实的基础。",
     "questions": [
         {
             "title": "Uniswap v2 的缺点是什么",
             "options": ["资金利用率低", "滑点低", "模型复杂", "难控制价格"]
         },
         {
-            "title": "假设当前价格1ETH:280Dai，某个 uniswap v2 pool中 ETH 是10个，Dai 是2800个,fee 为0.3%。那么在这个 pool 中1ETH 可换回多少个 Dai 呢？计算结果四舍五入，保留整数\n",
+            "title": "假设当前价格 1ETH:280Dai，某个 uniswap v2 pool 中 ETH 是10个，Dai 是2800个,fee 为0.3%。那么在这个 pool 中 1 ETH 可换回多少个 Dai 呢？计算结果四舍五入，保留整数\n",
             "options": ["254", "280", "255", "256"]
         },
         {
             "title": "怎么从 rawdata 清洗出 transfer 事件数据集？",
             "options": [
-                "source：logs表，过滤条件：data，解析UDF参数：abi,topic0,topic1,topic2,topic3,data",
-                "source：traces表，过滤条件：token0，解析UDF参数：abi,topic0,topic1,topic2,data",
-                "source：transactions表，过滤条件：token0，解析UDF参数：abi,topic0,topic1,topic2,topic3,data",
-                "source：logs表，过滤条件：token0，解析UDF参数：abi,topic0,topic1,topic2,topic3,data"
+                "source：logs 表，过滤条件：data，解析 UDF 参数：abi,topic0,topic1,topic2,topic3,data",
+                "source：traces 表，过滤条件：token0，解析 UDF 参数：abi,topic0,topic1,topic2,data",
+                "source：transactions 表，过滤条件：token0，解析 UDF 参数：abi,topic0,topic1,topic2,topic3,data",
+                "source：logs 表，过滤条件：token0，解析 UDF 参数：abi,topic0,topic1,topic2,topic3,data"
             ]
         },
         {
             "title": "以下哪个数据流可以从 rawdata 洗出 uniswap v2 portfolio？",
             "options": [
-                "logs→transfer,mint →balance + token_prices",
-                "traces→transfer,pool→balance + token_prices",
-                "logs→transfer,pool →balance + token_prices",
-                "logs→transfer,pool →token_prices"
+                "logs→transfer, mint→balance + token_prices",
+                "traces→transfer, pool→balance + token_prices",
+                "logs→transfer, pool→balance + token_prices",
+                "logs→transfer, pool→token_prices"
             ]
         },
         {
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "title": "关于Uniswap v3，以下哪个说法错误？",
+            "title": "关于 Uniswap v3，以下哪个说法错误？",
             "options": [
                 "相对于 uniswap v2，uniswap v3 的资产利用率更高",
                 "uniswap v3 可使用提供流动性发布限价单",
@@ -49,10 +49,10 @@
         {
             "title": "使用什么字段可以计算出用户拥有的 uniswap v3资产？",
             "options": [
-                "position.tickUpper,position.tickLower,pool.tick,position.liquidity,pool.liquidity",
-                "position.tickCurrent,pool.tick,position.liquidity,pool.liquidity,pool.price",
-                "position.tickUpper,position.tickLower,pool.tick,position.liquidity,pool.liquidity,pool.price",
-                "position.tickUpper,position.tickLower,pool.tick,position.liquidity,pool.price"
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.liquidity",
+                "position.tickCurrent, pool.tick, position.liquidity, pool.liquidity, pool.price",
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.liquidity, pool.price",
+                "position.tickUpper, position.tickLower, pool.tick, position.liquidity, pool.price"
             ]
         },
         {

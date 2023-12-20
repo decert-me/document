@@ -1,11 +1,11 @@
 {
     "title": "Blockchain Technology General Challenge",
-    "description": "This challenge is used to test your understanding of Bitcoin and blockchain technology. The content involves understanding of proof of work, wallets, browsers, transactions, etc.\n The challenge contains about 20 multiple-choice questions, there may be one or more answers, please answer carefully.",
+    "description": "This challenge is used to test your understanding of Bitcoin and blockchain technology. The content involves understanding of proof of work, wallets, browsers, transactions, etc.\n The challenge contains about 20 choice questions, there may be one or more answers, please answer carefully.",
     "questions": [
         {
             "title": "Who proposed Bitcoin?",
             "options": [
-                "中本聪（Satoshi Nakamoto）",
+                "Satoshi Nakamoto",
                 "Vitalik Buterin",
                 "Nick Szabo"
             ]
@@ -39,7 +39,7 @@
         {
             "title": "Which description of Bitcoin value (or price) is correct?",
             "options": [
-                "Determined by the Bitcoin core development team",
+                "Determined by the Bitcoin Core development team",
                 "Viewing the transaction records on the Bitcoin chain can obtain the latest price",
                 "The value of Bitcoin is determined by the market or consensus. The more buyers, the higher the price"
             ]
@@ -87,8 +87,8 @@
             "title": "Blockchain is usually classified into which 3 types of chains based on the degree of openness?",
             "options": [
                 "Development chain",
-                "Public blockchain (public chain)",
-                "Private blockchain (private chain)",
+                "Public blockchain",
+                "Private blockchain",
                 "Consortium blockchain"
             ]
         },
@@ -122,7 +122,7 @@
             "options": [
                 "UTXO refers to unspent transaction outputs",
                 "UTXO refers to spent transaction outputs",
-                "UTXO contains the balance of all addresses"
+                "UTXO contains the balance of address"
             ]
         },
         {
@@ -156,7 +156,7 @@
             "title": "Which description of a wallet is correct?",
             "options": [
                 "A wallet is an asset management tool because assets exist in wallet software",
-                "A wallet is a private key management and signing tool, and does not actually manage assets, but visualizes assets more",
+                "A wallet is a private key management and signing tool, and does not actually manage assets, but visualizes assets",
                 "MetaMask can initiate Bitcoin transfer transactions"
             ]
         },
