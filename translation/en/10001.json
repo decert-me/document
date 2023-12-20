@@ -1,6 +1,6 @@
 {
     "title": "Ethereum Basic Technology Test",
-    "description": "This challenge is used to test your understanding of Ethereum-related technical knowledge, including Ethereum consensus, address wallets, browsers, transactions, DEFI, EVM compatible chains, and other knowledge.\n The challenge contains about 30 multiple-choice questions, there may be one or more answers, please answer carefully.",
+    "description": "This challenge is used to test your understanding of Ethereum-related technical knowledge, including Ethereum consensus, address wallets, browsers, transactions, DEFI, EVM compatible chains, and other knowledge.\n The challenge contains about 30 choice questions, there may be one or more answers, please answer carefully.",
     "questions": [
         {
             "title": "Who proposed Ethereum?",
