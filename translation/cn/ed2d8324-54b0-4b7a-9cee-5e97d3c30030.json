@@ -1,0 +1,19 @@
+{
+  "title": "模拟实现最小的区块链原理",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "用自己熟悉的语言模拟实现最小的区块链， 包含两个功能：\n1. POW 证明出块，难度为 4 个 0 开头  \n2.  每个区块包含`previous_hash`  让区块串联起来。\n\n如下是一个参考区块结构：\n\n```json\nblock = {\n'index': 1,\n'timestamp': 1506057125,\n'transactions': [\n    { 'sender': \"xxx\", \n    'recipient': \"xxx\", \n    'amount': 5, } ], \n'proof': 324984774000,\n'previous_hash': \"xxxx\"\n}\n```\n\n请**提交完成的 github 代码仓库链接**， 在 Readme 中包含运行说明及运行日志或截图。\n"
+    }
+  ],
+  "startTime": "2024-02-19T03:46:37.733Z",
+  "description": "通过实践理解区块链的工作量证明及链式结构。",
+  "estimateTime": 14400,
+  "passingScore": 70
+}

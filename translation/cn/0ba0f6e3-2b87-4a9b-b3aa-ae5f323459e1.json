@@ -1,0 +1,32 @@
+{
+  "title": "利用ABI逆向解码交易数据",
+  "answers": "N1Y8HjAlPCAWF2cLVVYUBwESVkVZCkdzb0xhQBtvfwgDZFJ9O1ALHGEpcFRxdgsJd0kCc2BedmpwDlMJfHZ6A14ycA9ifncgUUltWwIFXlNDU00GEjk=",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "fill_blank",
+      "score": 5,
+      "title": "这笔交易数据对应的合约方法是什么？回答格式如“abc(bool,bool,bool)”",
+      "options": ["transfer(address,uint256)"]
+    },
+    {
+      "type": "fill_blank",
+      "score": 3,
+      "title": "这笔交易对应的方法调用的第一个参数值是多少？回答格式比如“12345”，“hi”,\"0x123456...1234\"\n",
+      "options": ["0x5494befe3CE72A2CA0001fE0Ed0C55B42F8c358f"]
+    },
+    {
+      "type": "fill_blank",
+      "score": 2,
+      "title": "这笔交易对应的方法调用的第二个参数值是多少？回答格式比如“12345”，“hi”,\"0x123456...1234\"\n",
+      "options": ["137811276"]
+    }
+  ],
+  "startTime": "2024-02-29T04:20:41.547Z",
+  "description": "当合约部署者没有上传合约源代码时，我们是否能逆向分析合约的方法信息呢？通过学习ABI相关知识，你可以结合公共数据来尝试逆向解析出一笔交易的执行意图！请解析这笔交易数据所表达的意图： 0xa9059cbb0000000000000000000000005494befe3ce72a2ca0001fe0ed0c55b42f8c358f000000000000000000000000000000000000000000000000000000000836d54c",
+  "estimateTime": 600,
+  "passingScore": 6
+}

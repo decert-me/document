@@ -1,0 +1,25 @@
+{
+  "title": "使用Solidity内联汇编修改合约Owner地址",
+  "answers": "N1Z6Tn0lOiofOA==",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "fill_blank",
+      "score": 2,
+      "title": "请填写下方合约中 owner 状态变量的存储插槽位置 slot 值：\n\n```solidity\n\n\ncontract MyWallet { \n    public string name;\n    private mapping (address => bool) approved;\n    public address owner;\n\n    modifier auth {\n        require (msg.sender == owner, \"Not authorized\");\n        _;\n    }\n\n    constructor(string _name) {\n        name = _name;\n        owner = msg.sender;\n    } \n\n    function transferOwernship(address _addr) auth {\n        require(_addr!=address(0), \"New owner is the zero address\");\n        require(owner != _addr, \"New owner is the same as the old owner\");\n        owner = _addr;\n    }\n}\n```",
+      "options": ["2"]
+    },
+    {
+      "type": "open_quest",
+      "score": 8,
+      "title": "重新修改 MyWallet 合约的 transferOwernship 和 auth 逻辑，使用内联汇编方式来 set和get `owner` 地址。\n\n```solidity\n\n\ncontract MyWallet { \n    public string name;\n    private mapping (address => bool) approved;\n    public address owner;\n\n    modifier auth {\n        require (msg.sender == owner, \"Not authorized\");\n        _;\n    }\n\n    constructor(string _name) {\n        name = _name;\n        owner = msg.sender;\n    } \n\n    function transferOwernship(address _addr) auth {\n        require(_addr!=address(0), \"New owner is the zero address\");\n        require(owner != _addr, \"New owner is the same as the old owner\");\n        owner = _addr;\n    }\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T10:39:49.53Z",
+  "description": "尽管Solidity设计得足够高级，能够简化智能合约的开发过程，但在某些情况下，直接使用汇编语言编写代码片段可能更为高效或必要。Solidity内嵌的汇编（Inline Assembly）提供了这种可能性，它允许开发者在Solidity代码中直接写入更低级别的EVM（以太坊虚拟机）指令。完成本次挑战，可以掌握汇编的初级用法、从底层搞清楚合约数据存储和读写原理。",
+  "estimateTime": 3600,
+  "passingScore": 6
+}

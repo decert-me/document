@@ -1,0 +1,19 @@
+{
+  "title": "实现一个简单的多签合约",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "实现⼀个简单的多签合约钱包，合约包含的功能：\n1.  创建多签钱包时，确定所有的多签持有⼈和签名门槛\n2.  多签持有⼈可提交提案\n3.  其他多签⼈确认提案（使⽤交易的⽅式确认即可）\n4.  达到多签⻔槛、任何⼈都可以执⾏交易\n\n提交的代码或 github 链接。"
+    }
+  ],
+  "startTime": "2024-03-12T12:12:41.036Z",
+  "description": "通过挑战理解合约钱包，多签的实现方式，理解底层 Call 调用。",
+  "estimateTime": 3600,
+  "passingScore": 85
+}

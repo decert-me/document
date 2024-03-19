@@ -1,0 +1,19 @@
+{
+  "title": "模拟闪电兑换套利",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "在测试网上部署两个自己的 ERC20 合约 MyToken ，再部署两个 Uniswap，并创建两个Uniswap V2 流动池（称为 PoolA  和 PoolB），让PoolA  和 PoolB 形成价差，创造套利条件。\n\n编写合约执行闪电兑换，可参考 V2 的ExampleFlashSwap。\n提示：你需要在 UniswapV2Call中，用从PoolA 收到的 TokenA 在PoolB 兑换为 TokenB 并还回到 uniswapV2 Pair 中。\n\n解题要求：\n1. 贴出你的代码库链接\n2. 上传执行闪电兑换的日志，能够反应出闪电兑换成功执行。"
+    }
+  ],
+  "startTime": "2024-03-01T13:17:18.343Z",
+  "description": "通过本挑战可以理解闪电贷及闪电兑换的原理 及 如何使用 Uniswap 执行闪电兑换。",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

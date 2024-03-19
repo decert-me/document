@@ -1,0 +1,19 @@
+{
+  "title": "用最小代理实现 ERC20 铸币工厂",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "在以太坊上⽤ ERC20 模拟铭⽂铸造，编写一个可以通过最⼩代理来创建ERC20 的⼯⼚合约，⼯⼚合约包含两个方法：\n\n• `deployInscription(string name, string symbol, uint totalSupply, uint perMint)`, ⽤户调⽤该⽅法创建 ERC20 合约\n\n• `mintInscription(address tokenAddr)`: 每次调用发行创建时确定的 `perMint` 数量的 token。 \n\n请回复代码或代码库链接。"
+    }
+  ],
+  "startTime": "2024-02-28T08:46:59.356Z",
+  "description": "理解最小代理如何节省 Gas， 用最小代理实现铸币工厂， 用于“公平”发行 ERC20 。  ",
+  "estimateTime": 1800,
+  "passingScore": 90
+}

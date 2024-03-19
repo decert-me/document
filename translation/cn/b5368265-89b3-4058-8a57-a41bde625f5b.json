@@ -1,0 +1,19 @@
+{
+  "title": "安全挑战：Hack Vault",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Fork 代码库：\nhttps://github.com/OpenSpace100/openspace_ctf\n\n阅读代码  `Vault.sol` 及测试用例，在测试用例中 `testExploit` 函数添加一些代码，设法取出预先部署的 Vault 合约内的所有资金。\n以便运行 `forge test` 可以通过所有测试。\n\n可以在 `Vault.t.sol` 中添加代码，或加入新合约，但不要修改已有代码。\n\n请提交你 fork 后的代码库链接。 \n\n"
+    }
+  ],
+  "startTime": "2024-02-22T02:30:24.236Z",
+  "description": "本挑战考察重入攻击、ABI 编码、delegatecall 的理解。\n\n",
+  "estimateTime": 3600,
+  "passingScore": 80
+}

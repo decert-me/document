@@ -1,0 +1,24 @@
+{
+  "title": "通过JS利用Web3Modal连接到MetaMask",
+  "answers": "Nxo9AD1nITMfCRI=",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 70,
+      "title": "使用JS和HTML，在一个网页中提供一个 【Connect Wallet】按钮，点击可以请求 MetaMask 钱包，获得授权后，在网页中显示授权访问的钱包地址。\n\n要求使用 web3modal SDK实现，给出代码或者 github 源代码链接。"
+    },
+    {
+      "type": "open_quest",
+      "score": 30,
+      "title": "使用JS和HTML，在一个网页中提供一个 【Connect Wallet】按钮，点击可以请求 MetaMask 钱包，获得授权后，在网页中显示授权访问的钱包地址。 要求使用 web3modal SDK实现，并部署在 https://vercel.com/ 中给出对应的访问链接！\n"
+    }
+  ],
+  "startTime": "2024-03-11T13:56:48.305Z",
+  "description": "Web3Modal SDK允许您轻松地将您的Web3 dapp与钱包连接。它为dapps提供了一个简单直观的界面，用于请求签名交易和与区块链上的智能合约进行交互等操作。",
+  "estimateTime": 1800,
+  "passingScore": 60
+}

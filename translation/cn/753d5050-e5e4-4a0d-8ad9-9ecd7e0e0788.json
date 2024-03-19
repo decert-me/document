@@ -1,0 +1,19 @@
+{
+  "title": " 用 Solidity 实现一个链表",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "编写一个 Bank 存款合约，实现功能：\n\n1. 可以通过 Metamask 等钱包直接给 Bank 合约地址存款\n2. 在 Bank 合约里记录了每个地址的存款金额\n3. 用可迭代的链表保存存款金额的前 10 名用户\n\n\n请提交你的 github 仓库地址。\n"
+    }
+  ],
+  "startTime": "2024-03-11T10:58:44.629Z",
+  "description": "理解如何使用链表来优化维护有序数组的 Gas 问题。",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

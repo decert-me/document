@@ -1,0 +1,19 @@
+{
+  "title": "基于第三方服务实现合约自动化调用",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "先实现一个 Bank 合约， 用户可以通过 `deposit()` 存款， 然后使用 ChainLink Automation 、Gelato 或 OpenZepplin Defender Action 实现一个自动化任务， 自动化任务实现：当 Bank 合约的存款超过 x (可自定义数量)时， 转移一半的存款到指定的地址（如 Owner）。\n\n请贴出你的代码 github 链接以及在第三方的执行工具中的执行链接。 "
+    }
+  ],
+  "startTime": "2024-03-13T02:13:17.148Z",
+  "description": "实现周期任务/定时任务/条件任务，是一个非常常见的场景，自己开发后端服务可能存在单点故障、热钱包安全问题，本挑战借助第三方服务（如：ChainLink Automation , Gelato, OpenZepplin Defender Action）实现合约自动化调用。",
+  "estimateTime": 3600,
+  "passingScore": 85
+}

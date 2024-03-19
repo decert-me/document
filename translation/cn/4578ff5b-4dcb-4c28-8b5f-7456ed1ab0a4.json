@@ -1,0 +1,19 @@
+{
+  "title": "使用Foundry编写Solidity单元测试",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "给Bank合约的 DepositETH 方法编写测试，检查事件输出是否符合预期，检查 balanceOf 余额更新是否符合预期。\n\n```solidity\ncontract Bank {\n    mapping(address => uint) public balanceOf;\n\n    event Deposit(address indexed user, uint amount);\n\n    function depositETH() external payable {\n        require(msg.value > 0, \"Deposit amount must be greater than 0\");\n        balanceOf[user] += amount;\n        emit Deposit(user, amount);\n    }\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-11T13:13:09.179Z",
+  "description": "使用Foundry编写Solidity单元测试是一种高效的方式来确保你的智能合约代码的健壯性和正确性。Foundry是一个由Solidity开发者社区广泛使用的智能合约开发和测试框架，它提供了一套强大的工具来编译、测试和部署Ethereum智能合约。",
+  "estimateTime": 1800,
+  "passingScore": 6
+}

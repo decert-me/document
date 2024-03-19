@@ -1,0 +1,24 @@
+{
+  "title": "Solidity 实现用Token 购买 NFT ",
+  "answers": "Nxo9AD1nITMfCRI=",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "用 ERC721 标准发行一个自己 NFT 合约，并用图片铸造几个 NFT ， 请把图片和 Meta Json数据上传到去中心的存储服务中，请贴出在 OpenSea 的 NFT 链接。"
+    },
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "编写一个简单的 NFT市场合约，使用自己的发行的 Token 来买卖 NFT， 函数的方法有：\n1. `list()` : 实现上架功能，NFT 持有者可以设定一个价格（需要多少个 Token 购买该 NFT）并上架 NFT 到 NFT 市场。\n2. `buyNFT()` : 实现购买 NFT 功能，用户转入所定价的 token 数量，获得对应的 NFT。\n\n请在回答贴出你的代码或者 github 链接。"
+    }
+  ],
+  "startTime": "2024-02-27T10:57:19.253Z",
+  "description": "该挑战用来实现 NFT 合约并发行，掌握去中心化存储（如 IPFS）的使用，同时理解 Token 与 NFT 的买卖。",
+  "estimateTime": 7200,
+  "passingScore": 160
+}

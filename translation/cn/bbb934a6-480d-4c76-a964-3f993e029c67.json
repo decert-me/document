@@ -1,0 +1,19 @@
+{
+  "title": "用Solidity从Uniswap中兑换ETH",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "编写 MyDex 合约，任何人都可以通过 `sellETH` 方法出售ETH兑换成 USDT，也可以通过 `buyETH` 将 USDT 兑换成 ETH。\n需要提交 MyDex 合约源代码，下方是MyDex接口规范。\n\n```solidity\ninterface IDex {\n\n    /**\n     * @dev 卖出ETH，兑换成 buyToken\n     *      msg.value 为出售的ETH数量\n     * @param buyToken 兑换的目标代币地址\n     * @param minBuyAmount 要求最低兑换到的 buyToken 数量\n     */\n    function sellETH(address buyToken,uint256 minBuyAmount) external payable  \n\n    /**\n     * @dev 买入ETH，用 sellToken 兑换\n     * @param sellToken 出售的代币地址\n     * @param sellAmount 出售的代币数量\n     * @param minBuyAmount 要求最低兑换到的ETH数量\n     */\n    function buyETH(address sellToken,uint256 sellAmount,uint256 minBuyAmount) external   \n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T09:51:17.165Z",
+  "description": "Uniswap V2是一个在以太坊区块链上运行的去中心化交易所（DEX），是Uniswap协议的第二版。Uniswap V2在其前身的基础上引入了多项改进和新功能，进一步加强了其作为去中心化金融（DeFi），通过学习UniswapV2 AMM原理，可以应对工作中的95%的Dex交互需求。",
+  "estimateTime": 14400,
+  "passingScore": 6
+}

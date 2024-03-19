@@ -1,0 +1,19 @@
+{
+  "title": "为Fair Launch 提供流动性",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "1. 创建一个铭⽂铸造⼯⼚，实现在支付一定费用参与铸币的功能，可参考[最小代理实现 ERC20 铸币工厂](https://decert.me/quests/75782f22-edb8-4e82-9b68-0a4f46fcaadd) 进行迭代。\n\n2. 用户铸币的费用一半费用（ETH）和 获得的一半的铭⽂ Token 组合加入到 DEX 中作为流动性，该流动性不可撤离， 所有流动性收益归项目方。\n\n3. 项目方提取流动性所产生的收益。\n\n4. 需要在前端列出所有可铸币的 Token，用户从前端参与铸币(需要后端配合索引事件的数据)。 \n\n请回复代码库链接。\n"
+    }
+  ],
+  "startTime": "2024-02-28T10:50:39.108Z",
+  "description": "这是一个 DApp，完成本挑战需要 AMM DEX 运行机制、并再次基础上定制自己的需求。同时了解前后端如何交互。",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

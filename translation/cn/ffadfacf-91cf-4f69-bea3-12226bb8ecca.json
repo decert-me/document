@@ -1,0 +1,19 @@
+{
+  "title": "创建和部署第一个智能合约",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "使用 Remix 创建一个 Counter 合约并部署到**任意以太坊测试网**: \nCounter 合约具有\n1. 一个状态变量 counter\n2. `get()`方法: 获取 counter 的值\n3. `add(x)` 方法:  给变量加上 x 。\n\n请在回答框内提交调用 `add(x)` 的交易 Hash 的区块链浏览器的 URL。  "
+    }
+  ],
+  "startTime": "2024-02-19T06:55:12.662Z",
+  "description": "该挑战用来理解账号与 Gas，以及编写、编译、部署合约的全过程。\n同时掌握Remix 、钱包、区块链浏览器简单使用",
+  "estimateTime": 600,
+  "passingScore": 80
+}

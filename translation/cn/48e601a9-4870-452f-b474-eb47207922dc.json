@@ -1,0 +1,19 @@
+{
+  "title": "从Oracle(ChainLink)读取ETH价格",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "部署MyETHOracle合约到Polygon网络中并开源代码，MyETHOracle 对外提供 ethUSDPrice 方法返回从ChainLink中查询到的ETH的USD价格和最后更新时间。\n\n```\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyETHOracle {\n    \n    /**\n     * @dev 获取ETH对USD的价格\n     * @return price1e8 价格乘以1e8\n     * @return lastUpdate 价格最后更新时间\n     */\n    function ethUSDPrice() external returns (uint256 price1e8,uint256 lastUpdate){\n       // 从 ChainLink 获取价格\n\n    }\n\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T07:37:09.729Z",
+  "description": "ChainLink是一个去中心化的预言机网络，旨在成为区块链与现实世界数据之间的桥梁。ChainLink 提供的链上DataFeed服务是一个关键功能，它允许任意智能合约安全地读取以太坊（ETH）的价格，以及其他各种加密货币和传统资产的实时数据。这种服务是通过ChainLink的去中心化预言机网络实现的，网络中的节点从不同的数据源收集价格信息，然后通过聚合合约将这些数据处理和汇总，以提供一个准确、可信的平均价格。",
+  "estimateTime": 3600,
+  "passingScore": 6
+}

@@ -1,0 +1,24 @@
+{
+  "title": "创建Dune交易数据面板",
+  "answers": "Nxo9AD1nITMfCRI=",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 6,
+      "title": "在 Dune 中编写 Query 来查询统计Ethereum 钱包0xae2fc483527b8ef99eb5d9b44875f005ba1fae13 每日交易笔数和每日消费的交易手续费Gas。\n需要提交公开的 Dune Query 链接，Query 查询数据集字段分别是:\n\n1. workday: 交易日期\n2. txs:  该地址在本workday的交易笔数\n3. fees: 该地址在本workday支付的交易手续费"
+    },
+    {
+      "type": "open_quest",
+      "score": 6,
+      "title": "将题目1中得到的Query数据，制作成一个可视化图表，在图表中展示每日交易笔数的折线图。需要提交公开的 Dashbord 链接。"
+    }
+  ],
+  "startTime": "2024-03-09T10:11:48.597Z",
+  "description": "Dune Analytics 是一个知名的区块链数据分析平台，它为用户提供了一种简便的方式来创建和共享以太坊区块链数据的可视化分析。通过Dune Analytics，用户可以查询、分析和展示区块链交易数据和DeFi（去中心化金融）项目的使用情况，使其成为研究者、分析师、投资者和项目开发者等各类用户洞察以太坊生态系统的有力工具。完成本次挑战，搞定 Dune 数据可视化分析！",
+  "estimateTime": 14400,
+  "passingScore": 6
+}

@@ -1,0 +1,19 @@
+{
+  "title": "用 Solidity 编写 BigBank 智能合约",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "编写一个 BigBank 合约， 它继承自[该挑战](https://decert.me/quests/c43324bc-0220-4e81-b533-668fa644c1c3) 的 Bank 合约，并实现功能：\n\n1. 要求存款金额 `>0.001 ether`（用modifier权限控制） \n2. BigBank 合约支持转移管理员\n3. 同时编写一个 Ownable 合约，把 BigBank 的管理员转移给Ownable 合约， 实现只有Ownable 可以调用 BigBank 的 withdraw().\n4. 编写 withdraw() 方法，仅管理员可以通过该方法提取资金。\n5. 用数组记录存款金额的前 3 名用户\n\n请提交完成项目代码或 github 仓库地址。"
+    }
+  ],
+  "startTime": "2024-02-19T10:16:32.373Z",
+  "description": "该挑战用来理解继承、修改器、权限控制与转移以及合约函数中调用其他合约。\n",
+  "estimateTime": 14400,
+  "passingScore": 80
+}

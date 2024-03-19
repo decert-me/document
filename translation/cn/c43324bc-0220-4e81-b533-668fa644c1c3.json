@@ -1,0 +1,19 @@
+{
+  "title": "用 Solidity 编写 Bank 智能合约",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "编写一个 Bank 合约，实现功能：\n\n1. 可以通过 Metamask 等钱包直接给 Bank 合约地址存款\n2. 在 Bank 合约你几率每个地址的存款金额\n3. 编写 withdraw() 方法，仅管理员可以通过该方法提取资金。\n4. 用数组记录存款金额的前 3 名用户\n\n请提交完成项目代码或 github 仓库地址。"
+    }
+  ],
+  "startTime": "2024-02-19T09:39:17.729Z",
+  "description": "该挑战用来理解合约账号、合约如何接收 ETH，receive/fallfack函数的使用，理解 payable，如何从合约里面转出 ETH，以及映射和数组的使用。\n",
+  "estimateTime": 14400,
+  "passingScore": 80
+}

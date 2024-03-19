@@ -1,0 +1,19 @@
+{
+  "title": "组合使用 MerkleTree 白名单、 Permit 授权 及 Multicall  ",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "实现一个 AirdopMerkleNFTMarket 合约，功能如下：\n\n1. 基于 Merkel 树验证某用户是否在白名单中\n2. 在白名单中的用户可以使用优惠价格（如 100）的 Token，购买 NFT， Token 需支持 permit 授权。\n\n要求使用 multicall( delegateCall 方式) 一次性调用两个方法：\n1. `permitPrePay()` : 完成预授权\n2. `claimNFT()` : 验证白名单，并通过 permitPrePay 的授权，转入 token 转出 NFT 。 \n\n\n请贴出你的代码 github ，代码需包含合约，multicall 调用封装，Merkel 树的构建。\n\n\n "
+    }
+  ],
+  "startTime": "2024-03-12T04:11:59.707Z",
+  "description": "通过本挑战了解：如何构建 MerkleTree， 合约中如何验证  MerkleTree ； 如何使用 ERC2612 permit 离线授权； 如何使用 Multicall 封装多个方法 。",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

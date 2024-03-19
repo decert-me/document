@@ -1,0 +1,19 @@
+{
+  "title": "编写一个可升级的 NFT Market 合约",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "实现⼀个可升级的 NFT 市场合约：\n• 实现合约的第⼀版本和[这个挑战](https://decert.me/challenge/5f11aa15-b101-480b-91b5-4888b9aafdbb) 的逻辑一致。\n• 逻辑合约的第⼆版本，加⼊离线签名上架 NFT 功能⽅法（签名内容：tokenId， 价格），实现⽤户⼀次性使用 setApproveAll 给 NFT 市场合约，每个 NFT 上架时仅需使⽤签名上架。\n\n需要部署到测试⽹，并开源到区块链浏览器，在你的Github的 Readme.md 中备注代理合约及两个实现的合约地址。\n\n请提交你的 github 仓库地址。\n"
+    }
+  ],
+  "startTime": "2024-03-11T09:32:21.472Z",
+  "description": "理解可升级合约的编写，理解代理合约及实现合约的作用，以及如何对合约进行升级，如何开源实现合约？",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

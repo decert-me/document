@@ -1,0 +1,19 @@
+{
+  "title": "Solidity 编写 TokenBank ",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "编写一个 TokenBank 合约，可以将[自己的 Token](https://decert.me/quests/aa45f136-27a3-4bc9-b4f7-15308e1e0daa) 存入到 TokenBank， 和从 TokenBank 取出。\n\nTokenBank 有两个方法：\n1. deposit() : 需要记录每个地址的存入数量；\n2. withdraw（）: 用户可以提取自己的之前存入的 token。\n\n在回答框内输入你的代码或者 github 链接。"
+    }
+  ],
+  "startTime": "2024-02-27T10:35:26.129Z",
+  "description": "该挑战用来理解合约与合约的交互，理解ERC20 的使用，尤其是 Token 的 transfer， 以及 approve 与 tansferFrom 的组合使用。",
+  "estimateTime": 1800,
+  "passingScore": 80
+}

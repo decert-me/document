@@ -1,0 +1,29 @@
+{
+  "title": "扩展 ERC20 加入Hook，并使用 Hook",
+  "answers": "Nxo9AD1nITMfCWMERF4KPw==",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "扩展 ERC20 合约，使其具备在转账的时候，如果目标地址是合约的话，调用目标地址的 tokensReceived() 方法.\n\n\n\n请贴出你的代码或代码库链接。"
+    },
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "扩展 [TokenBank](https://decert.me/quests/eeb9f7d8-6fd0-4c38-b09c-75a29bd53af3), 在TokenBank 中利用上一题的转账回调实现存款。\n\n提出扩展后的TokenBank代码或代码库链接。"
+    },
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "扩展挑战[Token 购买 NFT](https://decert.me/quests/5f11aa15-b101-480b-91b5-4888b9aafdbb) 合约，能够使用ERC20扩展中的回调函数来购买某个 NFT ID。\n\n贴出你的代码或代码库链接。\n"
+    }
+  ],
+  "startTime": "2024-02-28T03:58:30.052Z",
+  "description": "理解 Hook 回调功能， 同时理解 Hook 可能带来的重入问题。",
+  "estimateTime": 3600,
+  "passingScore": 240
+}
