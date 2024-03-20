@@ -1,0 +1,24 @@
+{
+  "title": "Connect to MetaMask using Web3Modal in JavaScript",
+  "answers": "Nxo9AD1nITMfCRI=",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 70,
+      "title": "Provide a 'Connect Wallet' button on a webpage using JS and HTML, which when clicked requests the MetaMask wallet, and upon authorization, displays the authorized wallet address on the webpage.\n\nUse the web3modal SDK and provide the code or a GitHub source code link."
+    },
+    {
+      "type": "open_quest",
+      "score": 30,
+      "title": "Provide a 'Connect Wallet' button on a webpage using JS and HTML, which when clicked requests the MetaMask wallet, and upon authorization, displays the authorized wallet address on the webpage. Use the web3modal SDK and deploy it on https://vercel.com, then provide the corresponding access link!"
+    }
+  ],
+  "startTime": "2024-03-11T13:56:48.305Z",
+  "description": "The Web3Modal SDK allows you to easily connect your Web3 dapp to a wallet. It provides a simple and intuitive interface for dapps to request signature transactions and interact with smart contracts on the blockchain.",
+  "estimateTime": 1800,
+  "passingScore": 60
+}

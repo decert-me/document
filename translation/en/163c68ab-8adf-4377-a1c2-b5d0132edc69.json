@@ -1,0 +1,25 @@
+{
+  "title": "Using Solidity inline assembly to modify the contract Owner address",
+  "answers": "N1Z6Tn0lOiofOA==",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "fill_blank",
+      "score": 2,
+      "title": "Please fill in the storage slot value of the owner state variable in the contract below:\n\n```solidity\n\n\ncontract MyWallet { \n    public string name;\n    private mapping (address => bool) approved;\n    public address owner;\n\n    modifier auth {\n        require (msg.sender == owner, \"Not authorized\");\n        _;\n    }\n\n    constructor(string _name) {\n        name = _name;\n        owner = msg.sender;\n    } \n\n    function transferOwernship(address _addr) auth {\n        require(_addr!=address(0), \"New owner is the zero address\");\n        require(owner != _addr, \"New owner is the same as the old owner\");\n        owner = _addr;\n    }\n}\n```",
+      "options": ["2"]
+    },
+    {
+      "type": "open_quest",
+      "score": 8,
+      "title": "Re-modify the transferOwernship and auth logic of the MyWallet contract, using inline assembly to set and get the `owner` address.\n\n```solidity\n\n\ncontract MyWallet { \n    public string name;\n    private mapping (address => bool) approved;\n    public address owner;\n\n    modifier auth {\n        require (msg.sender == owner, \"Not authorized\");\n        _;\n    }\n\n    constructor(string _name) {\n        name = _name;\n        owner = msg.sender;\n    } \n\n    function transferOwernship(address _addr) auth {\n        require(_addr!=address(0), \"New owner is the zero address\");\n        require(owner != _addr, \"New owner is the same as the old owner\");\n        owner = _addr;\n    }\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T10:39:49.53Z",
+  "description": "Although Solidity is designed to be high-level enough to simplify the development process of smart contracts, in some cases, directly writing code snippets in assembly language may be more efficient or necessary. Solidity's inline assembly provides this possibility, allowing developers to directly write lower-level EVM (Ethereum Virtual Machine) instructions in Solidity code. By completing this challenge, you can master the basic usage of assembly, and understand the underlying principles of contract data storage and reading and writing from the ground up.",
+  "estimateTime": 3600,
+  "passingScore": 6
+}

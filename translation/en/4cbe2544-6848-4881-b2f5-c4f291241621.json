@@ -1,0 +1,19 @@
+{
+  "title": "Implement Token-based Voting Governance",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "1. First, implement a token that can be voted on.\n2. Implement fund management of Bank through DAO:\n    * The Bank contract has a method to withdraw funds (withdraw()), which can only be called by the administrator.\n    * The governance contract (Gov) acts as the administrator of the Bank, and the Gov contract uses token voting to execute corresponding actions.\n    * Manage the funds of Bank by initiating proposals from the Bank contract funds.\n\nIn addition to the contract code, complete proposals, voting, and execution test cases are required.\nPlease paste your GitHub link."
+    }
+  ],
+  "startTime": "2024-03-13T02:53:52.413Z",
+  "description": "Master how to implement a token that can be voted on, and understand how to implement the three stages of proposal, voting, and execution based on governance.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

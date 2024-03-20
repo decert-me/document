@@ -1,0 +1,19 @@
+{
+  "title": "Using EIP712 for Off-Chain Permit and Whitelist Design",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "1. Write your own ERC20 contract using the EIP2612 standard (based on the OpenZeppelin library).\n2. Modify the [TokenBank deposit contract](https://decert.me/challenge/eeb9f7d8-6fd0-4c38-b09c-75a29bd53af3) to support off-chain signature authorization (permit) for deposits.\n3. Modify [Token purchase NFT](https://decert.me/challenge/5f11aa15-b101-480b-91b5-4888b9aafdbb) so that only whitelisted addresses with off-chain authorization can purchase NFTs."
+    }
+  ],
+  "startTime": "2024-03-06T10:40:10.17Z",
+  "description": "Understand the EIP712 standard and try to master the off-chain signature method for token authorization and whitelist design.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

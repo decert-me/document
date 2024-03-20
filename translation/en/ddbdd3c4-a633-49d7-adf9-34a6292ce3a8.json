@@ -1,0 +1,19 @@
+{
+  "title": "Write an upgradable NFT Market contract",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Implement an upgradable NFT market contract:\n• Implement the first version of the contract consistent with [this challenge](https://decert.me/challenge/5f11aa15-b101-480b-91b5-4888b9aafdbb) logic.\n• For the second version of the logic contract, add the method of offline signature listing NFT (signature content: tokenId, price), allowing users to use setApproveAll to the NFT market contract for one-time use, and each NFT only needs to be listed using the signature.\n\nIt needs to be deployed to the test network, open-sourced to the blockchain browser, and note the proxy contract and the addresses of the two implemented contracts in your Github Readme.md.\n\nPlease submit your Github repository address.\n"
+    }
+  ],
+  "startTime": "2024-03-11T09:32:21.472Z",
+  "description": "Understanding the writing of upgradable contracts, understanding the role of proxy contracts and implementation contracts, and how to upgrade contracts, and how to open source implementation contracts?",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

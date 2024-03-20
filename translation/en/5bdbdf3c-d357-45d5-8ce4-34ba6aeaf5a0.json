@@ -1,0 +1,19 @@
+{
+  "title": "Provide Liquidity for Fair Launch",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "1. Create an inscription minting factory to implement the function of minting coins by paying a certain fee, referring to [Minimum Agent Implementation ERC20 Minting Factory](https://decert.me/quests/75782f22-edb8-4e82-9b68-0a4f46fcaadd) for iteration.\n\n2. Half of the user's minting fee (ETH) and half of the inscribed token obtained are combined and added to the DEX as liquidity, which cannot be withdrawn, and all liquidity income belongs to the project party.\n\n3. The project party withdraws the liquidity income.\n\n4. It is necessary to list all the tokens that can be minted on the front end, and users participate in minting from the front end (requires the back end to cooperate in indexing event data).\n\nPlease reply with the code repository link.\n"
+    }
+  ],
+  "startTime": "2024-02-28T10:50:39.108Z",
+  "description": "This is a DApp. Completing this challenge requires the operation mechanism of AMM DEX, and customizing your own requirements based on it. At the same time, understand how the front end and back end interact.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

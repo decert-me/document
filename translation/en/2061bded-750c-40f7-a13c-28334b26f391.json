@@ -1,0 +1,24 @@
+{
+  "title": "Create Dune Trading Data Panel",
+  "answers": "Nxo9AD1nITMfCRI=",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 6,
+      "title": "Write a Query in Dune to query the daily number of transactions and the daily transaction gas fees consumed by the Ethereum wallet 0xae2fc483527b8ef99eb5d9b44875f005ba1fae13. Submit the public Dune Query link. The fields of the Query dataset are:\n\n1. workday: Transaction date\n2. txs: Number of transactions for this address on the workday\n3. fees: Transaction gas fees paid by this address on the workday"
+    },
+    {
+      "type": "open_quest",
+      "score": 6,
+      "title": "Take the Query data obtained in question 1 and create a visualization chart, showing a line chart of the daily number of transactions. Submit the public Dashboard link."
+    }
+  ],
+  "startTime": "2024-03-09T10:11:48.597Z",
+  "description": "Dune Analytics is a well-known blockchain data analysis platform that provides users with a convenient way to create and share visualized analysis of Ethereum blockchain data. Through Dune Analytics, users can query, analyze, and display blockchain transaction data and the usage of DeFi (decentralized finance) projects, making it a powerful tool for researchers, analysts, investors, and project developers to gain insights into the Ethereum ecosystem. Complete this challenge and master Dune data visualization analysis!",
+  "estimateTime": 14400,
+  "passingScore": 6
+}

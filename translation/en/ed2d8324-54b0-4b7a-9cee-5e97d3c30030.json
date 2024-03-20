@@ -1,0 +1,19 @@
+{
+  "title": "Simulating the Principles of the Smallest Blockchain",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Simulate the principles of the smallest blockchain in your familiar language, including two functions:\n1. POW proves the generation of blocks, with a difficulty of starting with 4 zeros\n2. Each block contains `previous_hash` to link the blocks together.\n\nBelow is a reference block structure:\n\n```json\nblock = {\n'index': 1,\n'timestamp': 1506057125,\n'transactions': [\n    { 'sender': \"xxx\", \n    'recipient': \"xxx\", \n    'amount': 5, } ], \n'proof': 324984774000,\n'previous_hash': \"xxxx\"\n}\n```\n\nPlease **submit the link to the completed GitHub code repository**, including running instructions and running logs or screenshots in the Readme.\n"
+    }
+  ],
+  "startTime": "2024-02-19T03:46:37.733Z",
+  "description": "Understand the proof of work and chain structure of blockchain through practice.",
+  "estimateTime": 14400,
+  "passingScore": 70
+}

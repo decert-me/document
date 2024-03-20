@@ -1,0 +1,19 @@
+{
+  "title": "Implementing a Linked List in Solidity",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Write a Bank deposit contract to achieve the following functions:\n\n1. Depositing directly to the Bank contract address through wallets like Metamask\n2. Recording the deposit amount for each address in the Bank contract\n3. Using an iterable linked list to store the top 10 users with deposit amounts\n\n\nPlease submit your github repository address.\n"
+    }
+  ],
+  "startTime": "2024-03-11T10:58:44.629Z",
+  "description": "Understanding how to use a linked list to optimize the Gas issue of maintaining an ordered array.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

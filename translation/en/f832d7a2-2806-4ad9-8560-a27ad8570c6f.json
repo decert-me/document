@@ -1,0 +1,19 @@
+{
+  "title": "Implementing a Simple Multisig Contract",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Implementing a simple multi-signature contract wallet, the contract includes the following functions:\n1. When creating a multi-signature wallet, determine all multi-signature holders and the signature threshold.\n2. Multi-signature holders can submit proposals.\n3. Other multi-signature holders confirm the proposal (confirmation can be done using transaction).\n4. When the multi-signature threshold is reached, anyone can execute the transaction.\n\nSubmit the code or github link."
+    }
+  ],
+  "startTime": "2024-03-12T12:12:41.036Z",
+  "description": "Understand the contract wallet and the implementation of multi-signature through challenges, and comprehend the underlying Call invocation.",
+  "estimateTime": 3600,
+  "passingScore": 85
+}

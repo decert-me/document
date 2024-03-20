@@ -1,0 +1,19 @@
+{
+  "title": "Solidity Writing TokenBank",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Write a TokenBank contract that can deposit [your own Token](https://decert.me/quests/aa45f136-27a3-4bc9-b4f7-15308e1e0daa) into TokenBank and withdraw from TokenBank.\n\nTokenBank has two methods:\n1. deposit(): needs to record the deposit amount for each address;\n2. withdraw(): users can withdraw their previously deposited tokens.\n\nEnter your code or github link in the answer box."
+    }
+  ],
+  "startTime": "2024-02-27T10:35:26.129Z",
+  "description": "This challenge is used to understand the interaction between contracts, understand the use of ERC20, especially the transfer of Tokens, and the combined use of approve and transferFrom.",
+  "estimateTime": 1800,
+  "passingScore": 80
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Combining MerkleTree Whitelist, Permit Authorization, and Multicall",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Implement an AirdopMerkleNFTMarket contract with the following functions:\n\n1. Verify if a user is in the whitelist based on the Merkel tree\n2. Users in the whitelist can purchase NFT at a discounted price (e.g., 100) using tokens, and the token needs to support permit authorization.\n\nUse multicall (delegateCall method) to call two methods at once:\n1. `permitPrePay()`: Complete pre-authorization\n2. `claimNFT()`: Verify the whitelist, and transfer tokens using the authorization from permitPrePay to obtain NFT.\n\nPlease provide your code on GitHub, including the contract, multicall invocation encapsulation, and Merkel tree construction.\n\n"
+    }
+  ],
+  "startTime": "2024-03-12T04:11:59.707Z",
+  "description": "Through this challenge, understand: how to construct a MerkleTree, how to verify the MerkleTree in the contract; how to use ERC2612 permit for offline authorization; and how to use Multicall to encapsulate multiple methods.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

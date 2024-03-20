@@ -1,0 +1,32 @@
+{
+  "title": "Using ABI to reverse decode transaction data",
+  "answers": "N1Y8HjAlPCAWF2cLVVYUBwESVkVZCkdzb0xhQBtvfwgDZFJ9O1ALHGEpcFRxdgsJd0kCc2BedmpwDlMJfHZ6A14ycA9ifncgUUltWwIFXlNDU00GEjk=",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "fill_blank",
+      "score": 5,
+      "title": "What is the contract method corresponding to this transaction data? Answer format such as “abc(bool,bool,bool)”",
+      "options": ["transfer(address,uint256)"]
+    },
+    {
+      "type": "fill_blank",
+      "score": 3,
+      "title": "What is the value of the first parameter of the method call for this transaction? Answer format such as “12345”, “hi”,\"0x123456...1234\"\n",
+      "options": ["0x5494befe3CE72A2CA0001fE0Ed0C55B42F8c358f"]
+    },
+    {
+      "type": "fill_blank",
+      "score": 2,
+      "title": "What is the value of the second parameter of the method call for this transaction? Answer format such as “12345”, “hi”,\"0x123456...1234\"\n",
+      "options": ["137811276"]
+    }
+  ],
+  "startTime": "2024-02-29T04:20:41.547Z",
+  "description": "When the contract deployer does not upload the contract source code, can we reverse analyze the contract's method information? By learning about ABI-related knowledge, you can try to reverse parse the execution intent of a transaction by combining public data! Please analyze the intent expressed by this transaction data: 0xa9059cbb0000000000000000000000005494befe3ce72a2ca0001fe0ed0c55b42f8c358f000000000000000000000000000000000000000000000000000000000836d54c",
+  "estimateTime": 600,
+  "passingScore": 6
+}

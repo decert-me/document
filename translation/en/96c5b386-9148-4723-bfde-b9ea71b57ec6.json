@@ -1,0 +1,29 @@
+{
+  "title": "Extend ERC20 to Include Hook and Use Hook",
+  "answers": "Nxo9AD1nITMfCWMERF4KPw==",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Extend the ERC20 contract to enable the invocation of the tokensReceived() method at the target address when transferring tokens to a contract address.\n\nPlease paste your code or code repository link."
+    },
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Extend [TokenBank](https://decert.me/quests/eeb9f7d8-6fd0-4c38-b09c-75a29bd53af3) to implement deposits using the transfer callback from the previous question.\n\nProvide the extended TokenBank code or code repository link."
+    },
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Extend the challenge [Token Purchase NFT](https://decert.me/quests/5f11aa15-b101-480b-91b5-4888b9aafdbb) contract to be able to purchase a specific NFT ID using the callback function from the ERC20 extension.\n\nPaste your code or code repository link."
+    }
+  ],
+  "startTime": "2024-02-28T03:58:30.052Z",
+  "description": "Understand the callback function of Hook and the potential reentrancy issues it may bring.",
+  "estimateTime": 3600,
+  "passingScore": 240
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Using Solidity to Exchange ETH from Uniswap",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "Write the MyDex contract, where anyone can sell ETH to exchange for USDT using the `sellETH` method, and also exchange USDT for ETH using the `buyETH` method.\nYou need to submit the source code of the MyDex contract. Below is the MyDex interface specification.\n\n```solidity\ninterface IDex {\n\n    /**\n     * @dev Sell ETH and exchange for buyToken\n     *      msg.value is the amount of ETH to sell\n     * @param buyToken Address of the target token to exchange\n     * @param minBuyAmount Minimum amount of buyToken to be received\n     */\n    function sellETH(address buyToken,uint256 minBuyAmount) external payable  \n\n    /**\n     * @dev Buy ETH using sellToken\n     * @param sellToken Address of the token to sell\n     * @param sellAmount Amount of the token to sell\n     * @param minBuyAmount Minimum amount of ETH to be received\n     */\n    function buyETH(address sellToken,uint256 sellAmount,uint256 minBuyAmount) external   \n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T09:51:17.165Z",
+  "description": "Uniswap V2 is a decentralized exchange (DEX) running on the Ethereum blockchain, which is the second version of the Uniswap protocol. Uniswap V2 introduces multiple improvements and new features based on its predecessor, further strengthening its role in decentralized finance (DeFi). By learning the UniswapV2 AMM principle, you can address 95% of Dex interaction requirements in your work.",
+  "estimateTime": 14400,
+  "passingScore": 6
+}

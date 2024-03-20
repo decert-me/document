@@ -1,0 +1,19 @@
+{
+  "title": "Using the Minimum Proxy to Implement an ERC20 Coin Minting Factory",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Simulate the minting of ERC20 tokens with inscriptions on Ethereum, and write a factory contract that can create ERC20 through the minimum proxy. The factory contract contains two methods:\n\n• `deployInscription(string name, string symbol, uint totalSupply, uint perMint)`, which users call to create an ERC20 contract\n\n• `mintInscription(address tokenAddr)`: Issues the `perMint` quantity of tokens determined at the time of creation each time it is called. \n\nPlease reply with code or a code repository link."
+    }
+  ],
+  "startTime": "2024-02-28T08:46:59.356Z",
+  "description": "Understand how the minimum proxy saves gas, use the minimum proxy to implement a coin minting factory for the 'fair' issuance of ERC20 tokens.",
+  "estimateTime": 1800,
+  "passingScore": 90
+}

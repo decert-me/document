@@ -1,0 +1,19 @@
+{
+  "title": "Write the BigBank smart contract in Solidity",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Write a BigBank contract that inherits from the [challenge](https://decert.me/quests/c43324bc-0220-4e81-b533-668fa644c1c3) Bank contract and implements the following features:\n\n1. Require deposit amount `>0.001 ether` (controlled by modifier)\n2. BigBank contract supports transferring administrators\n3. Also write an Ownable contract, transfer the administrator of BigBank to the Ownable contract, and ensure that only Ownable can call BigBank's withdraw().\n4. Write the withdraw() method, and only the administrator can withdraw funds through this method.\n5. Use an array to record the top 3 users with deposit amounts\n\nPlease submit the completed project code or the GitHub repository address."
+    }
+  ],
+  "startTime": "2024-02-19T10:16:32.373Z",
+  "description": "This challenge is designed to understand inheritance, modifiers, permission control and transfer, as well as calling other contracts in contract functions.\n",
+  "estimateTime": 14400,
+  "passingScore": 80
+}

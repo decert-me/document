@@ -1,0 +1,19 @@
+{
+  "title": "Automated Contract Invocation Using Third-Party Services",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "First, implement a Bank contract. Users should be able to deposit funds using the `deposit()` function. Then, use ChainLink Automation, Gelato, or OpenZepplin Defender Action to create an automated task. The automated task should transfer half of the funds to a specified address (such as the Owner) when the deposits in the Bank contract exceed x (customizable amount).\n\nPlease provide the GitHub link to your code and the execution link in the third-party execution tool."
+    }
+  ],
+  "startTime": "2024-03-13T02:13:17.148Z",
+  "description": "Implementing periodic tasks, scheduled tasks, or conditional tasks is a very common scenario. Developing backend services on your own may lead to single point of failure and hot wallet security issues. This challenge leverages third-party services (such as ChainLink Automation, Gelato, OpenZepplin Defender Action) to achieve automated contract invocation.",
+  "estimateTime": 3600,
+  "passingScore": 85
+}

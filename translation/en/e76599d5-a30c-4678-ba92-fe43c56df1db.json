@@ -1,0 +1,19 @@
+{
+  "title": "Writing ETH Staking Mining Contract in Solidity",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "Write the StakingPool contract to implement the Stake and Unstake methods, allowing anyone to stake ETH to earn KK Tokens. Where KK Tokens are produced 10 per block, and the produced KK Tokens need to be fairly distributed based on the staking duration and amount.\n\nBelow is the contract interface information\n\n```solidity\n\n\n/**\n * @title KK Token \n */\ninterface IToken is IERC20 {\n    function mint(address to, uint256 amount) external;\n}\n\n/**\n * @title Staking Interface\n */\ninterface IStaking {\n    /**\n     * @dev Stake ETH to the contract\n     */\n    function stake()  payable external;\n\n    /**\n     * @dev Redeem staked ETH\n     * @param amount Redeem amount\n     */\n    function unstake(uint256 amount) external; \n\n    /**\n     * @dev Claim KK Token earnings\n     */\n    function claim() external;\n\n    /**\n     * @dev Get the amount of staked ETH\n     * @param account Staking account\n     * @return Amount of staked ETH\n     */\n    function balanceOf(address account) external view returns (uint256);\n\n    /**\n     * @dev Get the pending KK Token earnings\n     * @param account Staking account\n     * @return Pending KK Token earnings\n     */\n    function earned(address account) external view returns (uint256);\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T08:29:05.047Z",
+  "description": "Learn the staking mining algorithm and master the precise distribution of Token rewards to each staker based on staking time and amount.",
+  "estimateTime": 14400,
+  "passingScore": 6
+}

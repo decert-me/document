@@ -1,0 +1,19 @@
+{
+  "title": "Create and Deploy Your First Smart Contract",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Use Remix to create a Counter contract and deploy it to **any Ethereum testnet**: \nCounter contract should have\n1. A state variable counter\n2. `get()` method: to retrieve the value of counter\n3. `add(x)` method: to increment the variable by x.\n\nPlease submit the URL of the blockchain explorer for the transaction hash of the call to `add(x)` in the answer box."
+    }
+  ],
+  "startTime": "2024-02-19T06:55:12.662Z",
+  "description": "This challenge is designed to understand accounts and Gas, as well as the entire process of writing, compiling, and deploying contracts.\nAt the same time, master the simple use of Remix, wallets, and blockchain explorers.",
+  "estimateTime": 600,
+  "passingScore": 80
+}

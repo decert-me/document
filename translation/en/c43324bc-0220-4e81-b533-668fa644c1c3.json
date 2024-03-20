@@ -1,0 +1,19 @@
+{
+  "title": "Write Bank smart contract in Solidity",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Write a Bank contract to achieve the following functionalities:\n\n1. Allow deposit to the Bank contract address directly through wallets like Metamask\n2. Keep track of the deposit amount for each address in the Bank contract\n3. Implement a withdraw() method that allows only the administrator to withdraw funds\n4. Use an array to record the deposit amounts for the top 3 users\n\nPlease submit the completed project code or the GitHub repository address."
+    }
+  ],
+  "startTime": "2024-02-19T09:39:17.729Z",
+  "description": "This challenge is designed to understand contract accounts, how contracts receive ETH, the use of receive/fallback functions, understanding payable, how to transfer ETH out of a contract, and the use of mappings and arrays.\n",
+  "estimateTime": 14400,
+  "passingScore": 80
+}

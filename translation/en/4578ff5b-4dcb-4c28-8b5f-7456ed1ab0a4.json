@@ -1,0 +1,19 @@
+{
+  "title": "Using Foundry to Write Solidity Unit Tests",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "Write tests for the DepositETH method of the Bank contract, check if the event output meets the expectations, and check if the balanceOf balance update meets the expectations.\n\n```solidity\ncontract Bank {\n    mapping(address => uint) public balanceOf;\n\n    event Deposit(address indexed user, uint amount);\n\n    function depositETH() external payable {\n        require(msg.value > 0, \"Deposit amount must be greater than 0\");\n        balanceOf[user] += amount;\n        emit Deposit(user, amount);\n    }\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-11T13:13:09.179Z",
+  "description": "Using Foundry to write Solidity unit tests is an efficient way to ensure the robustness and correctness of your smart contract code. Foundry is a widely used smart contract development and testing framework in the Solidity developer community, providing a powerful set of tools to compile, test, and deploy Ethereum smart contracts.",
+  "estimateTime": 1800,
+  "passingScore": 6
+}

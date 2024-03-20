@@ -1,0 +1,19 @@
+{
+  "title": "Simulated Lightning Exchange Arbitrage",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Deploy two of your own ERC20 contracts MyToken on the test network, then deploy two Uniswaps, and create two Uniswap V2 liquidity pools (referred to as PoolA and PoolB) to create price differences and arbitrage conditions.\n\nWrite a contract to execute a flash exchange, you can refer to the V2 ExampleFlashSwap.\nHint: You need to use TokenA received from PoolA to exchange for TokenB in PoolB and return it to the uniswapV2 Pair in UniswapV2Call.\n\nRequirements for solving the problem:\n1. Post a link to your code repository\n2. Upload the log of the flash exchange execution, which can reflect the successful execution of the flash exchange."
+    }
+  ],
+  "startTime": "2024-03-01T13:17:18.343Z",
+  "description": "This challenge allows you to understand the principles of flash loans and flash exchanges, and how to use Uniswap to execute flash exchanges.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

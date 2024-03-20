@@ -1,0 +1,19 @@
+{
+  "title": "Retrieve ETH Price from Oracle (ChainLink)",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0x7B082A51792c5528f98dC6F5660bdeB3573766Fd",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 10,
+      "title": "Deploy the MyETHOracle contract to the Polygon network and open source the code. MyETHOracle provides the ethUSDPrice method to return the USD price of ETH queried from ChainLink and the last update time.\n\n```\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyETHOracle {\n    \n    /**\n     * @dev Get the price of ETH in USD\n     * @return price1e8 Price multiplied by 1e8\n     * @return lastUpdate Last update time of the price\n     */\n    function ethUSDPrice() external returns (uint256 price1e8,uint256 lastUpdate){\n       // Get the price from ChainLink\n\n    }\n\n}\n```"
+    }
+  ],
+  "startTime": "2024-03-09T07:37:09.729Z",
+  "description": "ChainLink is a decentralized oracle network designed to be a bridge between blockchain and real-world data. The on-chain DataFeed service provided by ChainLink is a key feature that allows any smart contract to securely read the price of Ethereum (ETH) and real-time data of various cryptocurrencies and traditional assets. This service is achieved through ChainLink's decentralized oracle network, where nodes in the network collect price information from different data sources and then process and aggregate this data through aggregation contracts to provide an accurate and trusted average price.",
+  "estimateTime": 3600,
+  "passingScore": 6
+}

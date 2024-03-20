@@ -1,0 +1,19 @@
+{
+  "title": "Security Challenge: Hack Vault",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Fork Repository: \nhttps://github.com/OpenSpace100/openspace_ctf\n\nRead the code in `Vault.sol` and the test cases. Add some code in the `testExploit` function in the test cases to try to withdraw all the funds from the pre-deployed Vault contract. \nSo that running `forge test` can pass all the tests. \n\nYou can add code in `Vault.t.sol` or add a new contract, but do not modify the existing code. \n\nPlease submit the link to your forked repository. \n\n"
+    }
+  ],
+  "startTime": "2024-02-22T02:30:24.236Z",
+  "description": "This challenge examines reentrancy attacks, ABI encoding, and understanding of delegatecall.\n\n",
+  "estimateTime": 3600,
+  "passingScore": 80
+}

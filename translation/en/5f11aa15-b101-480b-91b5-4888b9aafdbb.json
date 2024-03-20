@@ -1,0 +1,24 @@
+{
+  "title": "Solidity implements the purchase of NFT using Token",
+  "answers": "Nxo9AD1nITMfCRI=",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Use the ERC721 standard to issue your own NFT contract, and mint several NFTs with images. Please upload the images and Meta Json data to a decentralized storage service, and provide the NFT link on OpenSea."
+    },
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Write a simple NFT market contract, using your own issued Token to buy and sell NFTs. The functions include:\n1. `list()`: Implement the listing function, where the NFT holder can set a price (how many tokens are needed to purchase the NFT) and list the NFT on the NFT market.\n2. `buyNFT()`: Implement the purchase function for NFTs, where users transfer the specified token quantity and receive the corresponding NFT.\n\nPlease post your code or GitHub link in your answer."
+    }
+  ],
+  "startTime": "2024-02-27T10:57:19.253Z",
+  "description": "The challenge is used to implement and issue NFT contracts, master the use of decentralized storage (such as IPFS), and understand the buying and selling of Tokens and NFTS.",
+  "estimateTime": 7200,
+  "passingScore": 160
+}
