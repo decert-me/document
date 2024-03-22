@@ -1,0 +1,19 @@
+{
+  "title": "设计一个看涨期权 Token",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "设计一个看涨期权 Token（ERC20）：\n1. 创建期权Token 时，确认标的的价格与行权日期；\n2. 发行方法（项目方角色）：根据转入的标的（ETH）发行期权 Token；\n3. （可选）：可以用期权Token 与 USDT 以一个较低的价格创建交易对，模拟用户购买期权。\n4. 行权方法（用户角色）：在到期日当天，可通过指定的价格兑换出标的资产，并销毁期权Token\n5. 过期销毁（项目方角色）：销毁所有期权Token 赎回标的 。\n\n解题要求：\n1. 贴出你的代码库链接\n2. 上传模拟执行发行、行权过程的日志截图"
+    }
+  ],
+  "startTime": "2024-03-01T14:01:27.882Z",
+  "description": "了解金融里期权的概念，尝试用合约来实现期权。",
+  "estimateTime": 14400,
+  "passingScore": 85
+}

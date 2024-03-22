@@ -1,0 +1,19 @@
+{
+  "title": "Design a Bullish Option Token",
+  "answers": "Nxo9AD0W",
+  "content": "",
+  "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+  "endTIme": null,
+  "version": 1.2,
+  "questions": [
+    {
+      "type": "open_quest",
+      "score": 100,
+      "title": "Design a Bullish Option Token (ERC20):\n1. When creating the option token, confirm the price and exercise date of the underlying asset;\n2. Issuance method (project role): Issue option tokens based on the transferred underlying asset (ETH);\n3. (Optional): Option tokens can be used to create a trading pair with USDT at a lower price, simulating user purchase of options.\n4. Exercise method (user role): On the expiration date, the underlying asset can be exchanged at the specified price, and the option tokens are destroyed.\n5. Expiry destruction (project role): Destroy all option tokens and redeem the underlying asset.\n\nRequirements:\n1. Post your code repository link\n2. Upload a screenshot of the simulated issuance and exercise process"
+    }
+  ],
+  "startTime": "2024-03-01T14:01:27.882Z",
+  "description": "Understand the concept of options in finance and try to implement options using contracts.",
+  "estimateTime": 14400,
+  "passingScore": 85
+}
