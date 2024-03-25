@@ -13,7 +13,7 @@
     }
   ],
   "startTime": "2024-02-19T10:16:32.373Z",
-  "description": "This challenge is designed to understand inheritance, modifiers, permission control and transfer, as well as calling other contracts in contract functions.\n",
+  "description": "This challenge is designed to understand inheritance, modifiers, permission control and transfer, as well as calling other contracts in contract functions..\n",
   "estimateTime": 14400,
   "passingScore": 80
 }
