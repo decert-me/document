@@ -1,0 +1,19 @@
+{
+    "title": "测试0416-2",
+    "answers": "Nxo9AD0W",
+    "content": "",
+    "creator": "0xC27018ca6c6DfF213583eB504df4a039Cc7d8043",
+    "endTIme": null,
+    "version": 1.2,
+    "questions": [
+        {
+            "type": "open_quest",
+            "score": 100,
+            "title": "答案1"
+        }
+    ],
+    "startTime": "2024-04-16T03:14:30.979Z",
+    "description": "测试2-001",
+    "estimateTime": null,
+    "passingScore": 100
+}
