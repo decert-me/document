@@ -1,0 +1,168 @@
+{
+    "title": "Sui Move 技能基础挑战",
+    "answers": "N0VkXX17Y3dfV2NbHQJKU15QVgIcVh9wdktkU2o=",
+    "content": "",
+    "creator": "0xB2fB0B6A80Ce4eE741e7053A0e78C823a3Ba807B",
+    "endTIme": null,
+    "version": 1.2,
+    "questions": [
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "哪家公司负责开发 Sui 区块链?",
+            "options": [
+                "ConsenSys",
+                "Mysten Labs",
+                "Ethereum Foundation",
+                "Hyperledger"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Sui 区块链的主要关注点是什么?",
+            "options": [
+                "匿名性",
+                "可扩展性和安全性",
+                "能源效率",
+                "公共无许可网络"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Sui 和原始 Diem 项目（Libra）之间的一个关键区别是什么?",
+            "options": [
+                "Sui 使用不同的账户模型。",
+                "Sui 专注于去中心化应用（dApps）。",
+                "Sui 使用完全不同的编程语言。",
+                "Sui 不像原始 Diem 项目那样需要权限。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Move 编程语言的主要目的是什么?",
+            "options": [
+                "通用编程用于 Web 开发",
+                "在区块链上安全智能合约开发",
+                "数据分析和机器学习",
+                "用于移动应用的脚本编写"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Move 的哪个特性有助于确保智能合约的安全性?",
+            "options": [
+                "动态类型系统",
+                "自动内存管理",
+                "资源所有权和访问控制",
+                "广泛使用继承"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Move 和 Python 或 Java 等传统编程语言之间的主要区别是什么?",
+            "options": [
+                "Move 是编译的，而其他语言是解释的。",
+                "Move 专门为区块链环境设计。",
+                "Move 允许无限递归。",
+                "Move 不区分大小写。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Move 语言的一个关键特性是什么?",
+            "options": [
+                "静态类型(在编译时强制执行变量类型)",
+                "动态类型(允许变量更改类型)",
+                "集中在自然语言处理",
+                "主要用于 Web 开发"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "在哪里可以找到有关Sui Move编程语言的详细文档?",
+            "options": [
+                "https://move-language.github.io/move/",
+                "https://docs.sui.io/concepts/sui-move-concepts",
+                "https://docs.soliditylang.org/",
+                "https://hyperledger-fabric.readthedocs.io/"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "为什么 Sui 选择利用 Move 编程语言?",
+            "options": [
+                "Move 允许与现有的以太坊智能合约轻松集成。",
+                "Move 的安全重点与 Sui 的目标一致。",
+                "Move 是一种流行的通用编程语言。",
+                "move 上有许多经验丰富的开发人员。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "以下哪一项最能描述 Move 中的借用检查的概念?",
+            "options": [
+                "确保正确的内存分配和释放的机制。",
+                "在变量赋值期间验证类型兼容性的过程。",
+                "保证资源在销毁后不再使用的方法。",
+                "通过删除不必要的检查来优化代码执行速度的技术。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "访问 Move 中资源字段时，`copy`关键字的目的是什么?",
+            "options": [
+                "它创建整个资源的深度复制，包括其内部状态。",
+                "它允许修改资源字段值，而不影响原始资源。",
+                "它创建资源字段的浅复制，引用原始数据。",
+                "在访问资源字段时，复制关键字是不必要的。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Move 如何处理泛型类型，允许不同数据类型的代码重用?",
+            "options": [
+                "Move 不支持泛型类型，代码必须针对特定数据类型编写。",
+                "使用模板定义通用类型，并为特定数据类型提供占位符。",
+                "Move 依赖继承来实现与不同数据类型的代码重用。",
+                "通用类型是根据函数参数由编译器自动推断的。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "使用 Move 的`event`关键字有哪些好处?",
+            "options": [
+                "定义可异步从其他模块调用的函数。",
+                "创建一个记录智能合约执行信息的机制。",
+                "实现基于特定条件触发代码执行的回调。",
+                "定义可由函数返回的自定义错误消息。"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "考虑到智能合约的安全性，Move 如何处理可变性?",
+            "options": [
+                "Move 中的所有数据和资源本质上都是可变的。",
+                "Move 通过关键字如 mut 允许选择性的可变性，用于修改资源的函数。",
+                "Move 中完全禁用可变性，以强制使用纯函数式编程风格。",
+                "Move 依赖垃圾回收系统来管理可变性和内存清理。"
+            ]
+        }
+    ],
+    "startTime": "2024-05-15T06:38:59.246Z",
+    "description": "一些关于 Sui 和 Move 编程语言基础知识的测验问题，以测试对 Sui 的基本理解。",
+    "estimateTime": null,
+    "passingScore": 120
+}
