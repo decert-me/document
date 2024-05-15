@@ -1,0 +1,168 @@
+{
+    "title": "Sui Move Skills Basic Challenge ",
+    "answers": "N0VkXX17Y3dfV2NbHQJKU15QVgIcVh9wdktkU2o=",
+    "content": "",
+    "creator": "0xB2fB0B6A80Ce4eE741e7053A0e78C823a3Ba807B",
+    "endTIme": null,
+    "version": 1.2,
+    "questions": [
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Which company is behind the development of the Sui blockchain?",
+            "options": [
+                "ConsenSys",
+                "Mysten Labs",
+                "Ethereum Foundation",
+                "Hyperledger"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is the primary focus of the Sui blockchain?",
+            "options": [
+                "Anonymity",
+                "Scalability and Security",
+                "Energy Efficiency",
+                "Public Permissionless Network"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is a key difference between Sui and the original Diem project (Libra)?",
+            "options": [
+                "Sui uses a different account model.",
+                "Sui focuses on decentralized applications (dApps).",
+                "Sui uses a completely different programming language.",
+                "Sui is not permissioned like the original Diem project."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is the primary purpose of the Move programming language?",
+            "options": [
+                "General-purpose programming for web development",
+                "Secure smart contract development on blockchains",
+                "Data analysis and machine learning",
+                "Scripting for mobile applications"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Which feature of Move helps ensure the security of smart contracts?",
+            "options": [
+                "Dynamic typing system",
+                "Automatic memory management",
+                "Resource ownership and access control",
+                "Extensive use of inheritance"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is the main difference between Move and traditional programming languages like Python or Java?",
+            "options": [
+                "Move is compiled while others are interpreted.",
+                "Move is specifically designed for blockchain environments.",
+                "Move allows unrestricted recursion.",
+                "Move is not case-sensitive."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is a key feature of the Move language?",
+            "options": [
+                "Static typing (enforcing variable types at compile time)",
+                "Dynamic typing (allowing variables to change type)",
+                "Focus on natural language processing",
+                "Primarily used for web development"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Where can you find detailed documentation on the Sui Move programming language?",
+            "options": [
+                "https://move-language.github.io/move/",
+                "https://docs.sui.io/concepts/sui-move-concepts",
+                "https://docs.soliditylang.org/",
+                "https://hyperledger-fabric.readthedocs.io/"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Why did Sui choose to leverage the Move programming language?",
+            "options": [
+                "Move allows for easy integration with existing Ethereum smart contracts.",
+                "Move's focus on security aligns with Sui's goals.",
+                "Move is a popular general-purpose programming language.",
+                "Move offers a large pool of experienced developers."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Which of the following best describes the concept of borrow checking in Move?",
+            "options": [
+                "A mechanism to ensure proper memory allocation and deallocation.",
+                "A process for verifying type compatibility during variable assignment.",
+                "A method for guaranteeing that resources are not used after they are destroyed.",
+                "A technique for optimizing code execution speed by removing unnecessary checks."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is the purpose of the `copy` keyword when accessing resource fields in Move?",
+            "options": [
+                "It creates a deep copy of the entire resource, including its internal state.",
+                "It allows modifying the resource field value without affecting the original resource.",
+                "It creates a shallow copy of the resource field, referencing the original data.",
+                "The copy keyword is not necessary when accessing resource fields."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "How does Move handle generic types, allowing for code reusability with different data types?",
+            "options": [
+                "Move does not support generic types; code must be written for specific data types.",
+                "Generic types are defined using templates with placeholders for specific data types.",
+                "Move relies on inheritance to achieve code reusability with different data types.",
+                "Generic types are automatically inferred by the compiler based on function arguments."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What are the benefits of using the event keyword in Move?",
+            "options": [
+                "To define functions that can be called asynchronously from other modules.",
+                "To create a mechanism for logging information about smart contract execution.",
+                "To implement callbacks that trigger code execution based on specific conditions.",
+                "To define custom error messages that can be returned by functions."
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "How does Move handle mutability, considering the importance of immutability for secure smart contracts?",
+            "options": [
+                "All data and resources are inherently mutable in Move.",
+                "Move allows selective mutability through specific keywords like mut for functions modifying resources.",
+                "Mutability is completely disabled in Move to enforce a purely functional programming style.",
+                "Move relies on a garbage collection system to manage mutability and memory cleanup."
+            ]
+        }
+    ],
+    "startTime": "2024-05-15T06:38:59.246Z",
+    "description": "Some quiz questions on the basics of Sui and the Move programming language to examine your basic understanding of Sui.\n\n",
+    "estimateTime": null,
+    "passingScore": 120
+}
