@@ -9,7 +9,7 @@
     {
       "type": "open_quest",
       "score": 10,
-      "title": "Write tests for the DepositETH method of the Bank contract, check if the event output meets the expectations, and check if the balanceOf balance update meets the expectations.\n\n```solidity\ncontract Bank {\n    mapping(address => uint) public balanceOf;\n\n    event Deposit(address indexed user, uint amount);\n\n    function depositETH() external payable {\n        require(msg.value > 0, \"Deposit amount must be greater than 0\");\n        balanceOf[user] += amount;\n        emit Deposit(user, amount);\n    }\n}\n```"
+      "title": "Write test cases for the DepositETH method of the bank contract to check the following:\n\n1. Assert that the Deposit event output meets expectations.\n2. Assert that the user's deposit amount in the Bank contract is updated correctly before and after the deposit.\n\nRequirement: Submit the complete source code of the BankTest.sol test contract directly.\n```\ncontract Bank {\n mapping(address => uint) public balanceOf;\n\n event Deposit(address indexed user, uint amount);\n\n function depositETH() external payable {\n require(msg.value > 0, \"Deposit amount must be greater than 0\");\n balanceOf[msg.sender] += amount;\n emit Deposit(msg.sender, amount);\n }\n}\n```\n"
     }
   ],
   "startTime": "2024-03-11T13:13:09.179Z",
