@@ -6,7 +6,7 @@
             "title": "关于 Foundry 开发框架，以下描述正确的是：",
             "options": [
                 "Foundry 是一个智能合约开发工具。",
-                "Foundry 由三个不同的命令行工具（CLI）组成，包括 forge，cast，和 anvil。",
+                "Foundry 由四个不同的命令行工具（CLI）组成，包括 forge，cast，anvil 和 chisel。",
                 "帮助 Solidity 开发者更加高效地开发和测试智能合约。",
                 "帮助 Move 开发者更加高效地开发和测试智能合约。"
             ]

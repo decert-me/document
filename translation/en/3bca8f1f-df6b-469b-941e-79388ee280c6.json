@@ -6,7 +6,7 @@
             "title": "Regarding the Foundry development framework, which of the following descriptions is correct:",
             "options": [
                 "Foundry is a smart contract development tool.",
-                "Foundry consists of three different command-line tools (CLI), including forge, cast, and anvil.",
+                "Foundry consists of four different command-line tools (CLI), including forge, cast, anvil and chisel",
                 "It helps Solidity developers develop and test smart contracts more efficiently.",
                 "It helps Move developers develop and test smart contracts more efficiently."
             ]
