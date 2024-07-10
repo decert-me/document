@@ -9,7 +9,7 @@
         {
             "type": "open_quest",
             "score": 10,
-            "title": "为银行合约的 DepositETH 方法编写测试 Case，检查以下内容：\n\n 1. 断言检查 Deposit 事件输出是否符合预期。\n 2. 断言检查存款前后用户在 Bank 合约中的存款额更新是否正确。\n\n要求：直接提交完整的 BankTest.sol 测试合约源代码。\n```\ncontract Bank {\n    mapping(address => uint) public balanceOf;\n\n    event Deposit(address indexed user, uint amount);\n\n    function depositETH() external payable {\n        require(msg.value > 0, \"Deposit amount must be greater than 0\");\n        balanceOf[msg.sender] += amount;\n        emit Deposit(msg.sender, amount);\n    }\n}\n```\n"
+            "title": "为银行合约的 DepositETH 方法编写测试 Case，检查以下内容：\n\n 1. 断言检查 Deposit 事件输出是否符合预期。\n 2. 断言检查存款前后用户在 Bank 合约中的存款额更新是否正确。\n\n要求：直接提交完整的 BankTest.sol 测试合约源代码。\n```\ncontract Bank {\n    mapping(address => uint) public balanceOf;\n\n    event Deposit(address indexed user, uint amount);\n\n    function depositETH() external payable {\n        require(msg.value > 0, \"Deposit amount must be greater than 0\");\n        balanceOf[msg.sender] += msg.value;\n        emit Deposit(msg.sender, msg.value);\n    }\n}\n```\n"
         }
     ],
     "startTime": "2024-03-11T13:13:09.179Z",
