@@ -1,0 +1,24 @@
+{
+    "title": "实践 POW 与非对称加密",
+    "description": "编写程序，获得满足某条件的 Hash 值的随机数， 理解非对称加密签名与验证。\n",
+    "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+    "content": "",
+    "questions": [
+        {
+            "title": "实践 POW， 编写程序（编程语言不限）用自己的昵称 + nonce，不断修改nonce 进行 sha256 Hash 运算：\n\n1. 直到满足 4 个 0 开头的哈希值，打印出花费的时间、Hash 的内容及Hash值。\n2. 再次运算直到满足 5 个 0 开头的哈希值，打印出花费的时间、Hash 的内容及Hash值。\n\n提交程序你的 Github 链接",
+            "type": "open_quest",
+            "score": 100
+        },
+        {
+            "title": "实践非对称加密 RSA（编程语言不限）：\n1. 先生成一个公私钥对\n2. 用私钥对符合 POW 4 个 0 开头的哈希值的 “昵称 + nonce” 进行私钥签名\n3. 用公钥验证\n\n\n提交程序你的 Github 链接",
+            "type": "open_quest",
+            "score": 100
+        }
+    ],
+    "answers": "Nxo9AD1nITMfCRI=",
+    "startTime": "2024-04-15T01:08:03.1Z",
+    "endTIme": null,
+    "estimateTime": 3600,
+    "passingScore": 160,
+    "version": 1.2
+}
