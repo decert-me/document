@@ -1,0 +1,24 @@
+{
+    "title": "Practice POW and Asymmetric Encryption",
+    "description": "Write a program to obtain a random number that satisfies a certain condition of the Hash value, and understand asymmetric encryption signature and verification.\n",
+    "creator": "0xD6823f807C45eFDC56c9aE8Db0226CA10af6E8AB",
+    "content": "",
+    "questions": [
+        {
+            "title": "Practice POW, write a program (programming language is not limited) using your own nickname + nonce, continuously modify the nonce to perform sha256 Hash calculation:\n\n1. Until a hash value starting with 4 zeros is satisfied, print the time spent, the content of the Hash, and the Hash value.\n2. Recalculate until a hash value starting with 5 zeros is satisfied, print the time spent, the content of the Hash, and the Hash value.\n\nSubmit your program's Github link",
+            "type": "open_quest",
+            "score": 100
+        },
+        {
+            "title": "Practice asymmetric encryption RSA (programming language is not limited):\n1. First generate a pair of public and private keys\n2. Use the private key to sign the \"nickname + nonce\" that meets the POW 4 zeros starting hash value\n3. Verify with the public key\n\n\nSubmit your program's Github link",
+            "type": "open_quest",
+            "score": 100
+        }
+    ],
+    "answers": "Nxo9AD1nITMfCRI=",
+    "startTime": "2024-04-15T01:08:03.1Z",
+    "endTIme": null,
+    "estimateTime": 3600,
+    "passingScore": 160,
+    "version": 1.2
+}
