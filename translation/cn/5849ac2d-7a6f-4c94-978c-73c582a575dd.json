@@ -72,7 +72,7 @@
         },
         {
             "title": "call 调用函数",
-            "description": " 补充完整 `Caller` 合约的 `callSetValue` 方法，用于设置 `Callee` 合约的 `value` 值。要求：\n- 使用 `call` 方法调用用 `Callee` 的 `setValue` 方法，并附带任意 Ether\n- 如果发送失败，抛出“call function failed”异常并回滚交易。\n- 如果发送成功，则返回 true",
+            "description": " 补充完整 `Caller` 合约的 `callSetValue` 方法，用于设置 `Callee` 合约的 `value` 值。要求：\n- 使用 `call` 方法调用用 `Callee` 的 `setValue` 方法，并附带 1 Ether\n- 如果发送失败，抛出“call function failed”异常并回滚交易。\n- 如果发送成功，则返回 true",
             "type": "coding",
             "score": 20,
             "languages": [

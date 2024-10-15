@@ -72,7 +72,7 @@
         },
         {
             "title": "call function",
-            "description": "Complete the `callSetValue` method of the `Caller` contract to set the `value` of the `Callee` contract. Requirements:\n- Use the `call` method to call the `setValue` method of `Callee` with any Ether\n- If the send fails, throw a \"call function failed\" exception and revert the transaction.\n- If the send is successful, return true",
+            "description": "Complete the `callSetValue` method of the `Caller` contract to set the `value` of the `Callee` contract. Requirements:\n- Use the `call` method to call the `setValue` method of `Callee` with 1 Ether\n- If the send fails, throw a \"call function failed\" exception and revert the transaction.\n- If the send is successful, return true",
             "type": "coding",
             "score": 20,
             "languages": [
