@@ -1,0 +1,124 @@
+{
+    "title": "call, delegatecall, staticcall",
+    "description": "In Solidity, call, delegatecall, and staticcall are three low-level function call methods used to interact with other contracts.",
+    "creator": "0xB2fB0B6A80Ce4eE741e7053A0e78C823a3Ba807B",
+    "content": "",
+    "questions": [
+        {
+            "title": "Which of the following function calls will not change the state of the calling contract?",
+            "type": "multiple_choice",
+            "score": 10,
+            "options": [
+                "call",
+                "delegatecall",
+                "staticcall",
+                "All of the above will change the state"
+            ]
+        },
+        {
+            "title": "Which of the following statements is correct?",
+            "type": "multiple_response",
+            "score": 10,
+            "options": [
+                "call executes its code in the storage and context of the called contract",
+                "delegatecall executes the called contract's code in the context of the caller",
+                "call automatically reverts the transaction on failure, while delegatecall does not",
+                "When using call to send Ether, gas is limited by default"
+            ]
+        },
+        {
+            "title": "staticcall",
+            "description": "- Complete the `callGetData` method of the `Caller` contract, use `staticcall` to call the `getData` function in the `Callee` contract, and return the value. Throw a \"staticcall function failed\" exception when the call fails.",
+            "type": "coding",
+            "score": 20,
+            "languages": [
+                "Solidity"
+            ],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "pragma solidity ^0.8.0;\n\ncontract Callee {\n    function getData() public pure returns (uint256) {\n        return 42;\n    }\n}\n\ncontract Caller {\n    function callGetData(address callee) public view returns (uint256 data) {\n        // call by staticcall\n\n        return data;\n    }\n}\n",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgN6BhQUDFQiIQREMQg9eXYMFT4PUEM4a1dqFlkSJSRWUC5cBQ1qLiZMcw0AKUR4az8zEQkmCRFCExAXQQhVRBFBLylaYBdeIztCA2ZCaSJpA1lyShVDYxcZOFMNRzE/GAdoDjYNamljGEowGjUwPxchJRwLOxhQURJCMQAWXFUWEzoGFGhCF20pBVgzHyA2W00aMwZZJCZDfStCGBoiNVxBP0YZQykoL1RSCV1oHCQpIy8QRTkDVEVGEBcVD0JeFxNpLxMmFgV4eVBSMR8ocBUWJTxKFUNjFxlqFhtLNzRLEzdQBww4MGNIWw0NJAMwL297UwQtAx9XCAEdBR9nWRBbEjMdJgNDOD0VHgxJLjxBKRgmCx1KHxUQcWoXEmNxGBN6FUpLKCYsVBcfASsPNDg8alMHNh5UQUYPFwwVQklEUTguHzsmVjkuWRZtSyo4WQEcN0RGFyJDUClVGF4veUhfO0wGDCstagNrAigmTHFrb2ZTRW8YVEMTCwAEUkNFB1AkKQlkQmtvPARXJAIqOlQBFXIMQA0gQ1AlWFlUIjhUVj5pSEpxFS1kWUxUaExxa29mFwQ7CxEPRgMQCFRUVQdcJT9SKhtDKDw0VyQKZXkdGBA8HgdWdR4QcWoXbi1xGBN6FUpDajsmTEIeGmgIMD8ufS8Lb0oREhs+HBwmXhI="
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Foundry",
+                    "code": "pragma solidity ^0.8.0;\n\nimport {Test} from \"forge-std/Test.sol\";\n\ncontract TestContract is Test {\n    Callee public callee;\n    Caller public caller;\n\n    function setUp() public {\n        callee = new Callee();\n        caller = new Caller();\n    }\n\n    function test_callGetData() public {\n        uint256 result = caller.callGetData(address(callee));\n\n        assertEq(result, callee.getData());\n    }\n\n    function test_should_fail_when_callee_not_exixts() public {\n        vm.expectRevert(\"staticcall function failed\");\n\n        caller.callGetData(address(this)); // address(this) is not callee\n    }\n}\n"
+                }
+            ]
+        },
+        {
+            "title": "Use call method to send Ether",
+            "description": "Complete the `sendEther` method of the `Caller` contract to send Ether to a specified address. Requirements:\n- Use the `call` method to send Ether\n- If the send fails, throw a \"sendEther failed\" exception and revert the transaction.\n- If the send is successful, return true\n",
+            "type": "coding",
+            "score": 20,
+            "languages": [
+                "Solidity"
+            ],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "pragma solidity ^0.8.0;\n\ncontract Caller {\n    function sendEther(address to, uint256 value) public returns (bool) {\n        // 使用 call 发送 ether\n\n        return success;\n    }\n\n    receive() external payable {}\n}\n",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgN6BhQUDFQiIQREMQg9eXYMFT4PR0M4a1dqFlkSJSRWUC5cBQ1qOiZWUykAIAkjYy4iFxcqGUISEg1eQQ9ZXhABdGxaPgNbOCpZFiAeKzVcDlkgD0EWMVlKah4bXSw9ERMhaQRDamljGBdMVGdDceS8tOeVp2YQBCMGEeWPo+mBp0IXFRJVQjhdHTRaaEIXbW9QFngJJjZZTQonCVYGMEQVYxZEEjMwQVI4WQ9LPiZqFlQNGCQXJyojMxZfbxxQXhMHD0kmEmxGGnoGFBQMF21vUBZwS2krUBwMOxhQSzBCWilTCkFvcWQRKVAEBw89K11FTBIpBT0uKxpRTHQ2X24IQlJBWhAQRBMzPw49EFltPAVVMw46Kg4xF3JKFUM+a1cWWFkSY3FKVjlQAxUvYWoYUhQALR4/KiNmAwQ2C1NeA0IJHCZeTThdYw=="
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Foundry",
+                    "code": "pragma solidity ^0.8.0;\n\nimport {Test} from \"forge-std/Test.sol\";\n\ncontract TestContract is Test {\n    Caller public caller;\n\n    function setUp() public {\n        caller = new Caller();\n    }\n\n    function testFuzz_sendEther(uint256 value) public {\n        // 随机地址\n        uint256 privateKey = uint256(keccak256(abi.encodePacked(block.timestamp, block.prevrandao)));\n        address receiver = vm.addr(privateKey);\n\n        // 发送 ether 给 caller\n        vm.deal(address(caller), value);\n\n        // caller 发送 ether\n        bool success = caller.sendEther(receiver, value);\n\n        assertEq(success, true);\n        assertEq(receiver.balance, value);\n    }\n\n    function test_should_fail_when_not_enough_ether(uint256 value) public {\n        vm.assume(value > 0);\n\n        // 随机地址\n        uint256 privateKey = uint256(keccak256(abi.encodePacked(block.timestamp, block.prevrandao)));\n        address receiver = vm.addr(privateKey);\n\n        // 发送 1/2 ether 给 caller\n        vm.deal(address(caller), value / 2);\n\n        vm.expectRevert(\"sendEther failed\");\n\n        // caller 发送 ether\n        caller.sendEther(receiver, value);\n    }\n}\n"
+                }
+            ]
+        },
+        {
+            "title": "call function",
+            "description": "Complete the `callSetValue` method of the `Caller` contract to set the `value` of the `Callee` contract. Requirements:\n- Use the `call` method to call the `setValue` method of `Callee` with 1 Ether\n- If the send fails, throw a \"call function failed\" exception and revert the transaction.\n- If the send is successful, return true",
+            "type": "coding",
+            "score": 20,
+            "languages": [
+                "Solidity"
+            ],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "pragma solidity ^0.8.0;\n\ncontract Callee {\n    uint256 value;\n\n    function getValue() public view returns (uint256) {\n        return value;\n    }\n\n    function setValue(uint256 value_) public payable {\n        require(msg.value > 0);\n        value = value_;\n    }\n}\n\ncontract Caller {\n    function callSetValue(address callee, uint256 value) public returns (bool) {\n        // call setValue()\n    }\n}\n",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgN6BhQUDFQiIQREMQg9eXYMFT4PUEM4a1dqFlkSNjhWR2gAXEM8KC9NUlcoJjA/a29mUwM6BFJGDw0cQR1VRDJSLS8fYEsXPToSWjkIaS9cCA5yGFAXNkVXORZRRyo/TAFvA0NDMRUtGBdMVGhMcWs9IwcQPQQRRAcOBwRBbF5EE2F6BxQMayNvUBZwDTw3VhkQPQQVECZDbytaDFdrJFFdLgdfVWo/IlRCCSthTCE+LSoaBm8aUEsHAB4EWktsChNhelpoQhdtPRVHJQI7PB0ACjVEQwIvQlxqCFkCampkXXoVSkNqaWMYQQ0YPQlxdm8wEgk6D24JOgxSQVoQTThdPAYUFAxUIiEERDEIPXl2DBU+D0dDOGtXahZZEiUkVlAuXAUNaioiVFs/ETw6MCc6I1sEKw5DVxURUgIbXFwBVm16DyEMQ396RhYmCiUsUERZIh9XDypUGThTDUcxP0sTclcFDCZgY0NrAlRoTHFrb2ZTBzYeVEFGDxcMFUJJREMtOwMkDVYpb00WMQkgd1ADGj0OUDQqQ1EZXx5cIiVNQT8dNkE5LDduVgABLUQkIiEyQVB5Q20QSkIEABZFVU0IHTRaaEIXbW9QFngJJjZZTQonCVYGMEQVYxZEEiAwVF8/UEQAKyUvQ0ENGD0Ja2t+ZhYRJw9DT04SHgADXF8FV2hhJiY+WW1vUBZwS2l5RwgIJwNHBmtETClVHEEwfRhveFYLDyZpJU1ZDwAhAz9rKScaCSoObRBPWS4PJl4QRBNhelpoQkUoOwVEPks6LFYOHCEZDj8tFxlqFgRuLSxkXXg="
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Foundry",
+                    "code": "pragma solidity ^0.8.0;\n\nimport {Test} from \"forge-std/Test.sol\";\n\ncontract TestContract is Test {\n    Callee public callee;\n    Caller public caller;\n\n    function setUp() public {\n        callee = new Callee();\n        caller = new Caller();\n    }\n\n    function testFuzz_callSetValue(uint256 x) public {\n        // 发送 ether 给 caller\n        vm.deal(address(caller), 1 ether);\n\n        bool success = caller.callSetValue(address(callee), x);\n\n        assertEq(success, true);\n        assertEq(x, callee.getValue());\n    }\n\n    function test_should_fail_when_not_enough_ether(uint256 x, uint256 etherVallue) public {\n        vm.assume(etherVallue < 1 ether);\n\n        // 发送 ether 给 caller\n        vm.deal(address(caller), etherVallue);\n\n        vm.expectRevert(\"call function failed\");\n\n        // caller 发送 ether\n        caller.callSetValue(address(callee), x);\n    }\n}\n"
+                }
+            ]
+        },
+        {
+            "title": "Use delegatecall to invoke function",
+            "description": "Complete the `delegateSetValue` method of the `Caller` contract to call the `setValue` method of `Callee` to set the `value`. Requirements:\n- Use `delegatecall`\n- If the send fails, throw a \"delegate call failed\" exception and revert the transaction.",
+            "type": "coding",
+            "score": 20,
+            "languages": [
+                "Solidity"
+            ],
+            "code_snippets": [
+                {
+                    "lang": "Solidity",
+                    "code": "pragma solidity ^0.8.0;\n\ncontract Callee {\n    uint256 public value;\n\n    function setValue(uint256 _newValue) public {\n        value = _newValue;\n    }\n}\n\ncontract Caller {\n    uint256 public value;\n\n    function delegateSetValue(address callee, uint256 _newValue) public {\n        // delegatecall setValue()\n\n    }\n}\n",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgN6BhQUDFQiIQREMQg9eXYMFT4PUEM4a1dqFlkSNjhWR2gAXEM6PCFUXg9UPg09Pip9LwsTBBESRkIUFBRTRA1cL3oJLRZhLCMFU3geIDdBX0xkSmoNJkBvK1oMV2pxSEY4WQMAajIfVhdMVGhMcWtvMBIJOg8RD0Y9HAQNZlEIRiRhJiZCF21vDWo+FhU3aQMaPQRBESJUTWp1GF4vNEoTIWkEQ2ppY01eAgB6WWdrPzMRCSYJEUQHDgcEQWxeOF1helpoBEIjLARfPwVpPVABHDULQQYQUk0cVxVHJnlZVz5HDxA5aSBZWwARLUBxPiYoB1d6XBFtCAcFNxtcRQEaYSoPKg5eLm8Laj5LaXkVTVlySlcaN1JKalscXywjQRMqWQsaJiYiXBdRVCkOOGUqKBAKKw9mWxIKIQgdXlEQRjM/UhRARCg7Jlc8HixxQAQXJlgAVWprG2YWJlwmJm5SNkAPSnEVLWRZTFRoTHFrb2ZbByAFXRIVFxECH0NDSBphZ1orA1shKhUYNA4lPFIMDTcJVA8vH0kmVwBeLDBcGmFpBENqaWMYF0xUOgkgPiY0Fk08H1JRAxEBTVpsEgBWLT8dKRZSbSwRWjxLLzhcARw2NhdKeGtXahZZEj4NVk4GW0g="
+                }
+            ],
+            "spj_code": [
+                {
+                    "frame": "Foundry",
+                    "code": "pragma solidity ^0.8.0;\n\nimport {Test} from \"forge-std/Test.sol\";\n\ncontract TestContract is Test {\n    Callee public callee;\n    Caller public caller;\n\n    function setUp() public {\n        callee = new Callee();\n        caller = new Caller();\n    }\n\n    function testFuzz_delegateSetValue(uint256 value) public {\n        caller.delegateSetValue(address(callee), value);\n\n        assertEq(caller.value(), value);\n        assertEq(callee.value(), 0);\n    }\n\n    function test_should_fail_when_callee_not_exixts(uint256 value) public {\n        vm.expectRevert(\"delegate call failed\");\n\n        caller.delegateSetValue(address(this), value); // address(this) is not callee\n    }\n}\n"
+                }
+            ]
+        }
+    ],
+    "answers": "N0ZkN2FnfhtfCzoGXR4IFx4NVl5FCF9tNA8kDmo=",
+    "startTime": "2024-08-27T06:34:23.579Z",
+    "endTIme": null,
+    "estimateTime": 600,
+    "passingScore": 100,
+    "version": 1.2
+}
