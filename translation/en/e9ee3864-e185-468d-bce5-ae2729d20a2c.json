@@ -1,0 +1,129 @@
+{
+    "title": "Transient Storage",
+    "answers": "N1Y8HjAlPC8WCztIHQFKOUJNSxwDOR8aa1Z6Pxt/Y0AaC1plaxleJH5aGUFzFRUkQxVeHg==",
+    "content": "",
+    "creator": "0xC27018ca6c6DfF213583eB504df4a039Cc7d8043",
+    "endTIme": null,
+    "version": 1.2,
+    "questions": [
+        {
+            "type": "fill_blank",
+            "score": 10,
+            "title": "In Solidity, transient storage is declared using the ____ keyword?",
+            "options": [
+                "transient"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "When will the data in transient storage be cleared?",
+            "options": [
+                "After the contract is deployed",
+                "After the function execution ends",
+                "After the external function call ends",
+                "After the transaction is completed"
+            ]
+        },
+        {
+            "type": "multiple_response",
+            "score": 10,
+            "title": "Which of the following statements about transient storage and storage is correct?",
+            "options": [
+                "Transient storage will be cleared after the transaction ends",
+                "The gas cost of transient storage is lower than that of storage",
+                "Transient storage can maintain state between different transactions",
+                "Both transient storage and storage can be read and written multiple times within the same transaction"
+            ]
+        },
+        {
+            "type": "multiple_response",
+            "score": 10,
+            "title": "What are the use cases for transient storage?",
+            "options": [
+                "Persistent data storage",
+                "Temporary data sharing during cross-contract calls",
+                "Passing temporary data between multiple function calls in the same transaction",
+                "Event log recording"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Which of the following statements is incorrect?",
+            "options": [
+                "Transient storage can pass data between internal functions",
+                "Transient storage can retain data during external function calls",
+                "Transient storage data can be saved across transactions",
+                "Transient storage is more gas-efficient than storage"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "What is the initial value of a transient storage variable?",
+            "options": [
+                "0 value",
+                "undefined",
+                "null",
+                "the value from the previous transaction"
+            ]
+        },
+        {
+            "type": "multiple_response",
+            "score": 10,
+            "title": "Which data types are currently not supported for transient storage?",
+            "options": [
+                "uint256",
+                "mapping",
+                "struct",
+                "array"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "Where can transient storage variables be declared?",
+            "options": [
+                "Contract level",
+                "Inside functions",
+                "In library functions",
+                "In interface definitions"
+            ]
+        },
+        {
+            "type": "fill_blank",
+            "score": 20,
+            "title": "The return value after calling `multiply(1)` is ____\n\n```\npragma solidity ^0.8.28;\n\ncontract TMultiplier {\n    uint transient multiplier;\n\n    function setMultiplier(uint mul) external {\n        multiplier = mul;\n    }\n\n    function multiply(uint value) external view returns (uint) {\n        return value * multiplier;\n    }\n}\n```\n\n```\nsetMultiplier(10);\nmultiply(1);\n```",
+            "options": [
+                "0"
+            ]
+        },
+        {
+            "type": "coding",
+            "score": 50,
+            "title": "Implement a reentrancy guard contract using transient storage",
+            "spj_code": [
+                {
+                    "code": "pragma solidity ^0.8.28;\n\nimport {Test} from \"forge-std/Test.sol\";\n\ncontract TReentrantTest is Test {\n    TReentrant public reentrant;\n    AttackerContract public attacker;\n\n    address public owner;\n    address public alice;\n\n    function setUp() public {\n        // Set up test accounts\n        owner = makeAddr(\"owner\");\n        alice = makeAddr(\"alice\");\n\n        // Deploy contract\n        vm.prank(owner);\n        reentrant = new TReentrant();\n\n        // Transfer 5 ETH to the contract\n        vm.deal(address(reentrant), 5 ether);\n\n        // Deploy attacker contract\n        attacker = new AttackerContract(address(reentrant));\n        vm.deal(address(attacker), 1 ether);\n    }\n\n    function test_ValidClaim() public {\n        // Record Alice's initial balance\n        uint256 aliceInitialBalance = alice.balance;\n\n        // Simulate Alice calling claim\n        vm.prank(alice);\n        reentrant.claim();\n\n        // Verify Alice received 1 ETH\n        assertEq(alice.balance - aliceInitialBalance, 1 ether, \"Claim amount should be 1 ETH\");\n    }\n\n    function test_RevertDoubleClaim() public {\n        // First claim succeeds\n        vm.prank(alice);\n        reentrant.claim();\n\n        // Second claim should fail\n        vm.prank(alice);\n        vm.expectRevert();\n        reentrant.claim();\n    }\n\n    function test_RevertReentrancyAttack() public {\n        // Attempt reentrancy attack\n        vm.prank(address(attacker));\n        vm.expectRevert(\"Claim failed\");\n        attacker.attack();\n    }\n}\n\ncontract AttackerContract {\n    TReentrant public target;\n    uint256 public count;\n\n    constructor(address _target) {\n        target = TReentrant(_target);\n    }\n\n    function attack() external payable {\n        target.claim();\n    }\n\n    receive() external payable {\n        if (count < 2) {\n            count++;\n            target.claim();\n        }\n    }\n}\n",
+                    "frame": "Foundry"
+                }
+            ],
+            "languages": [
+                "Solidity"
+            ],
+            "description": "Complete the following contract with the requirements:\n- Declare a transient storage variable locked\n- Complete the `nonReentrant` modifier to implement reentrancy protection\n",
+            "code_snippets": [
+                {
+                    "code": "    pragma solidity ^0.8.28;\n\n\n    contract TReentrant {\n        mapping(address => bool) claimed;\n        // Declare transient storage variable locked\n\n        modifier nonReentrant {\n            require(!locked, \"Reentrancy attempt\");\n\n            // Complete the remaining code\n        }\n\n        function claim() nonReentrant public {\n            require(address(this).balance >= 1 ether);\n\n            require(!claimed[msg.sender],\"Already claimed\");\n\n            (bool success, ) = msg.sender.call{value: 1 ether}(\"\");\n\n            require(success, \"Claim failed\");\n\n            claimed[msg.sender] = true;\n        }\n    }",
+                    "lang": "Solidity",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgF5YSYmPlkRIRNZPh87OFYZWQY4UAYtQ0srWA0SOA1WE3oVSg4rOTNRWQtcKQg1OSo1AEVyVBFQCQ0eSFpTXAVaLD8ecz5ZbW9QFjIEJjUVGQszBEYKJllNaloWUSg0XAgGWzYNamljGFoDECEKOC49Zh0KIThUVwgWAAAURBAfby96WmhCF21vUEQ1GjwwRwhRcwZaAChSXWYWJRARNF1dLkcLDSkwY1lDGBElHCUXbW9IOSE2XxJGQlJBWhAQCFwiMR8sQgptOwJDNVAVN2kDWXJKFUNjFxkVDSVcHz8YE3oVSkNqaS9XVAcRLExsayknHxYqUW1cRkJSQQdsXjhdYXpaaARCIywEXz8FaTpZDBA/QhxDLVhXGFMcXDcjWV0uFRoWKCUqWxcXKCZMcWtvZlNFbxhUQxMLAARSUVQAQSQpCWAWXyQ8WRgyCiU4Ww4cclQIQ3IXXD5eHEBqamRdBltKQ2ppYxgXTAYtHSQiPSNbRCwGUFsLBxY6F0NXSkAkNB4tEGphbywUEQc7PFQJAHIJWQIqWlwualsbeA1WbzQVSkNqaWMYF0QWJwM9azwzEAYqGUIeRktSXFpdQwMdMj8ULAdFYywRWjwQPzhZGBxoSgRDJkNRL0QEGh9zZBFzDjYNFidjGBdMVGhMcTkqNwYMPQ8ZQRMBEQQJQxxEb2MZFikLWm0pEV88Di0FF0RCDgRpDWMXGWoWWRJjMlRSM1gPBxEkMF8ZHxEmCDQ5EmZORTsYRFddPhxBWhAQGW8vJ1g="
+                }
+            ]
+        }
+    ],
+    "startTime": "2024-11-06T02:51:00.772Z",
+    "description": "Transient storage is a storage method in Solidity, primarily used for temporary data storage. Unlike persistent storage, the data in transient storage is not retained after the function execution ends, making it very suitable for scenarios that require quick calculations but do not need to keep results for a long time.",
+    "estimateTime": 1800,
+    "passingScore": 100
+}

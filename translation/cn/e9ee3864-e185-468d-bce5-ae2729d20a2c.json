@@ -1,0 +1,129 @@
+{
+    "title": "瞬态存储",
+    "answers": "N1Y8HjAlPC8WCztIHQFKOUJNSxwDOR8aa1Z6Pxt/Y0AaC1plaxleJH5aGUFzFRUkQxVeHg==",
+    "content": "",
+    "creator": "0xC27018ca6c6DfF213583eB504df4a039Cc7d8043",
+    "endTIme": null,
+    "version": 1.2,
+    "questions": [
+        {
+            "type": "fill_blank",
+            "score": 10,
+            "title": "Solidity 中瞬态存储使用 ____ 关键字声明？",
+            "options": [
+                "transient"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "瞬态存储的数据在什么时候会被清除？",
+            "options": [
+                "合约部署后",
+                "函数执行结束后",
+                "外部函数调用结束后",
+                "交易执行完成后"
+            ]
+        },
+        {
+            "type": "multiple_response",
+            "score": 10,
+            "title": "关于瞬态存储和存储的说法，下列哪项是正确的？",
+            "options": [
+                "瞬态存储在交易结束后会被清除",
+                "瞬态存储的 gas 成本比存储低",
+                "瞬态存储可以在不同交易之间保持状态",
+                "瞬态存储和存储都可以在同一交易内多次读写"
+            ]
+        },
+        {
+            "type": "multiple_response",
+            "score": 10,
+            "title": "瞬态存储的使用场景有哪些？",
+            "options": [
+                "持久化数据存储",
+                "跨合约调用时的临时数据共享",
+                "同一笔交易的多个函数调用之间传递临时数据",
+                "事件日志记录"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "以下哪个说法是错误的？",
+            "options": [
+                "瞬态存储可以在内部函数间传递数据",
+                "瞬态存储可以在外部函数调用时保持数据",
+                "瞬态存储数据可以跨交易保存",
+                "瞬态存储比存储更省 gas"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "瞬态存储变量的初始值是什么？",
+            "options": [
+                "0 值",
+                "未定义",
+                "null",
+                "上一个交易的值"
+            ]
+        },
+        {
+            "type": "multiple_response",
+            "score": 10,
+            "title": "以下哪些数据类型目前不支持使用瞬态存储？",
+            "options": [
+                "uint256",
+                "mapping",
+                "struct",
+                "array"
+            ]
+        },
+        {
+            "type": "multiple_choice",
+            "score": 10,
+            "title": "瞬态存储变量可以在哪里声明",
+            "options": [
+                "合约级别",
+                "函数内部",
+                "库函数中",
+                "接口定义中"
+            ]
+        },
+        {
+            "type": "fill_blank",
+            "score": 20,
+            "title": "调用 `multiply(1)` 后的返回值为 ____\n\n```\npragma solidity ^0.8.28;\n\ncontract TMultiplier {\n    uint transient multiplier;\n\n    function setMultiplier(uint mul) external {\n        multiplier = mul;\n    }\n\n    function multiply(uint value) external view returns (uint) {\n        return value * multiplier;\n    }\n}\n```\n\n```\nsetMultiplier(10);\nmultiply(1);\n```",
+            "options": [
+                "0"
+            ]
+        },
+        {
+            "type": "coding",
+            "score": 50,
+            "title": "使用瞬态存储实现防止重入合约  ",
+            "spj_code": [
+                {
+                    "code": "pragma solidity ^0.8.28;\n\nimport {Test} from \"forge-std/Test.sol\";\n\ncontract TReentrantTest is Test {\n    TReentrant public reentrant;\n    AttackerContract public attacker;\n\n    address public owner;\n    address public alice;\n\n    function setUp() public {\n        // 设置测试账户\n        owner = makeAddr(\"owner\");\n        alice = makeAddr(\"alice\");\n\n        // 部署合约\n        vm.prank(owner);\n        reentrant = new TReentrant();\n\n        // 向合约转入 5 ETH\n        vm.deal(address(reentrant), 5 ether);\n\n        // 部署攻击者合约\n        attacker = new AttackerContract(address(reentrant));\n        vm.deal(address(attacker), 1 ether);\n    }\n\n    function test_ValidClaim() public {\n        // 记录 Alice 初始余额\n        uint256 aliceInitialBalance = alice.balance;\n\n        // 模拟 Alice 调用 claim\n        vm.prank(alice);\n        reentrant.claim();\n\n        // 验证 Alice 获得了 1 ETH\n        assertEq(alice.balance - aliceInitialBalance, 1 ether, \"Claim amount should be 1 ETH\");\n    }\n\n    function test_RevertDoubleClaim() public {\n        // 第一次claim成功\n        vm.prank(alice);\n        reentrant.claim();\n\n        // 第二次claim应该失败\n        vm.prank(alice);\n        vm.expectRevert();\n        reentrant.claim();\n    }\n\n    function test_RevertReentrancyAttack() public {\n        // 尝试重入攻击\n        vm.prank(address(attacker));\n        vm.expectRevert(\"Claim failed\");\n        attacker.attack();\n    }\n}\n\ncontract AttackerContract {\n    TReentrant public target;\n    uint256 public count;\n\n    constructor(address _target) {\n        target = TReentrant(_target);\n    }\n\n    function attack() external payable {\n        target.claim();\n    }\n\n    receive() external payable {\n        if (count < 2) {\n            count++;\n            target.claim();\n        }\n    }\n}\n",
+                    "frame": "Foundry"
+                }
+            ],
+            "languages": [
+                "Solidity"
+            ],
+            "description": "补充完整以下合约，要求：\n- 声明一个瞬态存储变量 locked \n- 补充完整 `nonReentrant` 修饰器，实现防止重入功能\n",
+            "code_snippets": [
+                {
+                    "code": "    pragma solidity ^0.8.28;\n\n\n    contract TReentrant {\n        mapping(address => bool) claimed;\n        // 声明瞬态存储变量 locked\n\n        modifier nonReentrant {\n            require(!locked, \"Reentrancy attempt\");\n\n            // 补充剩余代码\n        }\n\n        function claim() nonReentrant public {\n            require(address(this).balance >= 1 ether);\n\n            require(!claimed[msg.sender],\"Already claimed\");\n\n            (bool success, ) = msg.sender.call{value: 1 ether}(\"\");\n\n            require(success, \"Claim failed\");\n\n            claimed[msg.sender] = true;\n        }\n    }",
+                    "lang": "Solidity",
+                    "correctAnswer": "TgQ6DTYmLmYACiMDVVsSG1I/Sh4ISgF5YSYmPlkRIRNZPh87OFYZWQY4UAYtQ0srWA0SOA1WE3oVSg4rOTNRWQtcKQg1OSo1AEVyVBFQCQ0eSFpTXAVaLD8ecz5ZbW9QFjIEJjUVGQszBEYKJllNaloWUSg0XAgGWzYNamljGFoDECEKOC49Zh0KIThUVwgWAAAURBAfby96WmhCF21vUEQ1GjwwRwhRcwZaAChSXWYWJRARNF1dLkcLDSkwY1lDGBElHCUXbW9IOSE2XxJGQlJBWhAQCFwiMR8sQgptOwJDNVAVN2kDWXJKFUNjFxkVDSVcHz8YE3oVSkNqaS9XVAcRLExsayknHxYqUW1cRkJSQQdsXjhdYXpaaARCIywEXz8FaTpZDBA/QhxDLVhXGFMcXDcjWV0uFRoWKCUqWxcXKCZMcWtvZlNFbxhUQxMLAARSUVQAQSQpCWAWXyQ8WRgyCiU4Ww4cclQIQ3IXXD5eHEBqamRdBltKQ2ppYxgXTAYtHSQiPSNbRCwGUFsLBxY6F0NXSkAkNB4tEGphbywUEQc7PFQJAHIJWQIqWlwualsbeA1WbzQVSkNqaWMYF0QWJwM9azwzEAYqGUIeRktSXFpdQwMdMj8ULAdFYywRWjwQPzhZGBxoSgRDJkNRL0QEGh9zZBFzDjYNFidjGBdMVGhMcTkqNwYMPQ8ZQRMBEQQJQxxEb2MZFikLWm0pEV88Di0FF0RCDgRpDWMXGWoWWRJjMlRSM1gPBxEkMF8ZHxEmCDQ5EmZORTsYRFddPhxBWhAQGW8vJ1g="
+                }
+            ]
+        }
+    ],
+    "startTime": "2024-11-06T02:51:00.772Z",
+    "description": "瞬态存储（Transient Storage）是 Solidity 中的一种存储方式，主要用于临时存储数据。与持久存储不同，瞬态存储的数据在函数执行结束后不会被保留，这使得它非常适合于需要快速计算但不需要长期保存结果的场景。",
+    "estimateTime": 1800,
+    "passingScore": 100
+}
